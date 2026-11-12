@@ -1,0 +1,9 @@
+{
+  "archive": "genesis-cotton-wiping-full-2026-11-12.tar.gz",
+  "archive_bytes": 1319780883,
+  "archive_sha256": "8f96133026a604e95d40ee8d7a35670daaa0f58c8d93d0388ddc7de7562905fd",
+  "verified_file_count": 3212,
+  "all_archive_file_hashes_verified": true,
+  "manifest_sha256": "e9ee43ef4683e58abead2e97b5ab29388484d0e180a9767679528e6aceb58a77",
+  "engine_commit": "ffd119c30118ebb9745fc009349efb2112a8cb76"
+}

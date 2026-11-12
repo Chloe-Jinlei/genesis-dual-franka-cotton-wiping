@@ -1,0 +1,144 @@
+{
+  "seed": 17,
+  "simulation": {
+    "dt": 0.004,
+    "substeps": 40,
+    "settle_steps": 250
+  },
+  "table": {
+    "size": [
+      1.6,
+      1.0,
+      0.06
+    ],
+    "height": 0.76
+  },
+  "robots": {
+    "left_base": [
+      -0.57,
+      0.22,
+      0.78
+    ],
+    "right_base": [
+      0.57,
+      0.22,
+      0.78
+    ],
+    "left_yaw": -0.65,
+    "right_yaw": 3.791592653589793,
+    "home": [
+      0.0,
+      -0.45,
+      0.0,
+      -2.15,
+      0.0,
+      1.7,
+      0.785398
+    ],
+    "finger_opening": 0.04
+  },
+  "cloth": {
+    "position_xy": [
+      0,
+      -0.23
+    ],
+    "initial_clearance": 0.004,
+    "particle_size": 0.006,
+    "areal_density": 0.4,
+    "stretch_compliance": 1e-07,
+    "bending_compliance": 1e-05,
+    "friction": 0.65
+  },
+  "soy": {
+    "position_xy": [
+      0,
+      0.04
+    ],
+    "initial_clearance": 0.001,
+    "depth_scale": 1.0,
+    "particle_size": 0.002,
+    "density": 1100.0,
+    "viscosity": 0.001,
+    "surface_tension": 2e-05,
+    "pressure_solver": "WCSPH",
+    "color": [
+      0.095,
+      0.022,
+      0.006,
+      1.0
+    ],
+    "xy_scale": [
+      0.5,
+      0.6
+    ]
+  },
+  "coupling": {
+    "enabled": true,
+    "capacity_kg_m2": 2.4,
+    "absorption_flux_kg_m2_s": 1.0,
+    "minimum_contact_time_s": 0.035,
+    "drag_rate_s": 25.0,
+    "collision_distance_m": 0.0015,
+    "absorption_gap_m": 0.0035
+  },
+  "cameras": {
+    "overview": {
+      "position": [
+        1.35,
+        -1.8,
+        1.8
+      ],
+      "target": [
+        0,
+        -0.02,
+        1.0
+      ],
+      "fov": 46
+    },
+    "detail": {
+      "position": [
+        0.4,
+        -0.9,
+        1.35
+      ],
+      "target": [
+        0,
+        -0.06,
+        0.83
+      ],
+      "fov": 40
+    },
+    "top": {
+      "position": [
+        0.0,
+        -0.04,
+        2.65
+      ],
+      "target": [
+        0.0,
+        0.0,
+        0.76
+      ],
+      "fov": 42
+    }
+  },
+  "profile_notes": {
+    "purpose": "Robot wiping of a smaller finite soy puddle with thick cotton; illustrative uncalibrated porous-sheet model.",
+    "puddle_initial_xy_extent_m": [
+      0.1,
+      0.084
+    ],
+    "puddle_mesh_max_thickness_m": 0.002,
+    "cloth_dry_areal_mass_kg_m2": 0.4,
+    "liquid_capacity_per_dry_mass_kg_kg": 6.0,
+    "capacity_is_finite": true,
+    "requires_xy_scale_support_in_scene": true
+  },
+  "robot_task": {
+    "enabled": true,
+    "grasp_half_span_m": 0.13,
+    "pinch_tcp_z_m": 0.772,
+    "maximum_press_cycles": 14,
+    "final_pinch_tcp_z_m": 0.7705
+  }
+}

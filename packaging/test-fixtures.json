@@ -1,0 +1,7 @@
+[
+  "output/pdf_cotton_pickup_feedback/robot_wipe_validation.json",
+  "output/cotton_fp64_layout_tracking/run/source_at_run/robot_wipe.py",
+  "output/cotton_fp64_tail_wipe/config.json",
+  "output/cotton_fp64_wide_wipe/run/source_at_run/robot_wipe.py",
+  "output/cotton_fp64_task/source_at_run/robot_wipe.py"
+]

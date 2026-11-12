@@ -1,0 +1,62 @@
+{
+  "run": "/home/chloe/Desktop/genesis-local/soy_cloth_scene/output/contact_first_full/run_02",
+  "production_task_passed": true,
+  "independent_task_evidence_passed": true,
+  "independent_failures": [],
+  "unknown": [],
+  "additional_final_two_nodes_per_finger_passed": true,
+  "strict_material_passed": false,
+  "strict_material_checks": {
+    "warp": false,
+    "weft": false,
+    "bias": true
+  },
+  "sampled_material_limits_respected_throughout": false,
+  "sampled_peak_edge_extension": 1.0058776617284986,
+  "sampled_peak_time_s": 66.5,
+  "sampled_peak_phase": "08 Press cycle 5: wipe outward",
+  "liquid_and_capacity": {
+    "native_particle_mass_source": "/home/chloe/Desktop/genesis-local/soy_cloth_scene/output/contact_first_full/run_01/after_dry_lift.pkl",
+    "particle_count": 1489,
+    "active_count": 0,
+    "bound_position_count": 1489,
+    "vertex_reservoir_mass_kg": 0.010482560000000005,
+    "capacity_kg": 0.05443200000000001,
+    "maximum_saturation": 0.8226772355293804,
+    "minimum_vertex_reservoir_kg": 0.0,
+    "capacity_excess_max_kg": -1.1409022122535114e-06,
+    "expected_dry_mass_from_reference_area_kg": 0.009072,
+    "final_native_mass_directly_exported": true,
+    "final_parcel_barycentric_ledger_directly_exported": true,
+    "initial_mass_kg": 0.010482560000000002,
+    "active_mass_kg": 0.0,
+    "inactive_particle_mass_kg": 0.010482560000000002,
+    "liquid_mass_balance_error_kg": 3.469446951953614e-18,
+    "dry_native_mass_kg": 0.009072000000000002,
+    "expected_final_native_wet_mass_kg": 0.019554560000000006,
+    "reported_final_native_wet_mass_kg": 0.019554560000000006,
+    "reported_final_native_total_minus_expected_kg": 0.0,
+    "final_native_vertex_loading_max_error_kg": 8.470329472543003e-22,
+    "final_direct_native_wet_mass_kg": 0.019554560000000006
+  },
+  "carried_liquid": {
+    "bound_surface_distance_max_m": 2.5907268972605967e-16,
+    "inactive_position_to_bound_max_m": 0.0,
+    "minimum_bound_z_m": 0.9174504857572396,
+    "minimum_cloth_z_m": 0.8718733715110831,
+    "runtime_exact_pre_lift_median_rise_m": 0.23261938386516345,
+    "runtime_exact_pre_lift_rise_independently_recomputable": true,
+    "baseline": "before_final_pickup checkpoint, before final preshape/regrasp, not exact pre-lift instant",
+    "median_rise_from_before_pickup_checkpoint_m": 0.23261938386516356,
+    "minimum_rise_from_before_pickup_checkpoint_m": 0.1567004857572396,
+    "exact_saved_pre_lift_measurement": {
+      "available": true,
+      "baseline": "Terminal task_state.bound_before_lift, captured after the real final bilateral grasp immediately before lift",
+      "parcel_correspondence": "Every original liquid parcel ID, in ascending order; final active mask is empty",
+      "parcel_count": 1489,
+      "median_rise_m": 0.23261938386516345,
+      "minimum_rise_m": 0.15670048575723972,
+      "reported_median_difference_m": 0.0
+    }
+  }
+}

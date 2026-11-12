@@ -1,0 +1,221 @@
+{
+  "scope": "Actual final four-second wet-cloth hold and the requested transient strain frame. No all-node trajectory is reconstructed.",
+  "source_directory": "/home/chloe/Desktop/genesis-local/soy_cloth_scene/output/contact_first_full/run_02",
+  "windows": [
+    {
+      "time_interval_s": [
+        87.05,
+        91.05
+      ],
+      "trace_rows": 2003,
+      "scalar_height_samples": 81,
+      "cloth_min_z_range_m": [
+        0.8715371451716365,
+        0.8721149035792721
+      ],
+      "cloth_min_z_peak_to_peak_m": 0.0005777584076356312,
+      "hands": {
+        "left": {
+          "tcp_coordinate_ranges_m": [
+            1.4595075009671277e-08,
+            1.2836954291217673e-08,
+            2.280144517641247e-08
+          ],
+          "max_tcp_distance_from_window_start_m": 2.4384725183221486e-08
+        },
+        "right": {
+          "tcp_coordinate_ranges_m": [
+            1.5433248359841834e-08,
+            2.0270945661621242e-08,
+            3.717737673269994e-09
+          ],
+          "max_tcp_distance_from_window_start_m": 1.8048090969848595e-08
+        }
+      }
+    },
+    {
+      "time_interval_s": [
+        87.05,
+        88.05
+      ],
+      "trace_rows": 503,
+      "scalar_height_samples": 21,
+      "cloth_min_z_range_m": [
+        0.8715371451716365,
+        0.8721149035792721
+      ],
+      "cloth_min_z_peak_to_peak_m": 0.0005777584076356312,
+      "hands": {
+        "left": {
+          "tcp_coordinate_ranges_m": [
+            1.4595075009671277e-08,
+            1.2836954291217673e-08,
+            2.280144517641247e-08
+          ],
+          "max_tcp_distance_from_window_start_m": 2.4384725183221486e-08
+        },
+        "right": {
+          "tcp_coordinate_ranges_m": [
+            1.5433248359841834e-08,
+            2.0270945661621242e-08,
+            3.717737673269994e-09
+          ],
+          "max_tcp_distance_from_window_start_m": 1.8048090969848595e-08
+        }
+      }
+    },
+    {
+      "time_interval_s": [
+        88.05,
+        89.05
+      ],
+      "trace_rows": 501,
+      "scalar_height_samples": 21,
+      "cloth_min_z_range_m": [
+        0.8716904669564993,
+        0.8719825234379633
+      ],
+      "cloth_min_z_peak_to_peak_m": 0.0002920564814640203,
+      "hands": {
+        "left": {
+          "tcp_coordinate_ranges_m": [
+            7.659265194304155e-09,
+            7.460251097435311e-09,
+            1.2772337854016769e-08
+          ],
+          "max_tcp_distance_from_window_start_m": 1.1469093540773876e-08
+        },
+        "right": {
+          "tcp_coordinate_ranges_m": [
+            7.71802052823567e-09,
+            1.0239100376591148e-08,
+            1.959526541028822e-09
+          ],
+          "max_tcp_distance_from_window_start_m": 9.038357413300165e-09
+        }
+      }
+    },
+    {
+      "time_interval_s": [
+        89.05,
+        90.05
+      ],
+      "trace_rows": 501,
+      "scalar_height_samples": 21,
+      "cloth_min_z_range_m": [
+        0.8717693169469916,
+        0.8719176204542408
+      ],
+      "cloth_min_z_peak_to_peak_m": 0.0001483035072492589,
+      "hands": {
+        "left": {
+          "tcp_coordinate_ranges_m": [
+            4.079071191931405e-09,
+            3.91407936617405e-09,
+            6.7829057925905545e-09
+          ],
+          "max_tcp_distance_from_window_start_m": 8.829586103793615e-09
+        },
+        "right": {
+          "tcp_coordinate_ranges_m": [
+            4.121894381370339e-09,
+            5.542179413314807e-09,
+            1.3020746703062969e-09
+          ],
+          "max_tcp_distance_from_window_start_m": 6.85292545250045e-09
+        }
+      }
+    },
+    {
+      "time_interval_s": [
+        90.05,
+        91.05
+      ],
+      "trace_rows": 501,
+      "scalar_height_samples": 21,
+      "cloth_min_z_range_m": [
+        0.8718074359811139,
+        0.8718846474242503
+      ],
+      "cloth_min_z_peak_to_peak_m": 7.721144313643791e-05,
+      "hands": {
+        "left": {
+          "tcp_coordinate_ranges_m": [
+            2.3342389965375077e-09,
+            2.2829344109576155e-09,
+            3.895086697625061e-09
+          ],
+          "max_tcp_distance_from_window_start_m": 5.0825229247266115e-09
+        },
+        "right": {
+          "tcp_coordinate_ranges_m": [
+            2.366558227162585e-09,
+            3.1580515980067503e-09,
+            6.653433359815608e-10
+          ],
+          "max_tcp_distance_from_window_start_m": 3.9845661236680804e-09
+        }
+      }
+    }
+  ],
+  "maximum_local_strain_sample": {
+    "time_s": "66.5",
+    "phase": "08 Press cycle 5: wipe outward",
+    "edge_extension_max": "1.0058776617284986",
+    "edge_extension_p99": "0.0028469250193338025"
+  },
+  "extracted_frames": [
+    {
+      "requested_s": 66.0,
+      "actual_s": 66.0,
+      "source_frame_index": 413,
+      "image": "/home/chloe/Desktop/genesis-local/soy_cloth_scene/output/contact_first_full/continuation_review/visual_native_66.000s.png"
+    },
+    {
+      "requested_s": 66.5,
+      "actual_s": 66.528,
+      "source_frame_index": 421,
+      "image": "/home/chloe/Desktop/genesis-local/soy_cloth_scene/output/contact_first_full/continuation_review/visual_native_66.528s.png"
+    },
+    {
+      "requested_s": 67.0,
+      "actual_s": 66.99,
+      "source_frame_index": 428,
+      "image": "/home/chloe/Desktop/genesis-local/soy_cloth_scene/output/contact_first_full/continuation_review/visual_native_66.990s.png"
+    },
+    {
+      "requested_s": 87.05,
+      "actual_s": 87.054,
+      "source_frame_index": 732,
+      "image": "/home/chloe/Desktop/genesis-local/soy_cloth_scene/output/contact_first_full/continuation_review/visual_native_87.054s.png"
+    },
+    {
+      "requested_s": 88.05,
+      "actual_s": 88.044,
+      "source_frame_index": 747,
+      "image": "/home/chloe/Desktop/genesis-local/soy_cloth_scene/output/contact_first_full/continuation_review/visual_native_88.044s.png"
+    },
+    {
+      "requested_s": 89.05,
+      "actual_s": 89.034,
+      "source_frame_index": 762,
+      "image": "/home/chloe/Desktop/genesis-local/soy_cloth_scene/output/contact_first_full/continuation_review/visual_native_89.034s.png"
+    },
+    {
+      "requested_s": 90.05,
+      "actual_s": 90.024,
+      "source_frame_index": 777,
+      "image": "/home/chloe/Desktop/genesis-local/soy_cloth_scene/output/contact_first_full/continuation_review/visual_native_90.024s.png"
+    },
+    {
+      "requested_s": 91.05,
+      "actual_s": 91.014,
+      "source_frame_index": 792,
+      "image": "/home/chloe/Desktop/genesis-local/soy_cloth_scene/output/contact_first_full/continuation_review/visual_native_91.014s.png"
+    }
+  ],
+  "limitations": [
+    "cloth_min_z is the lowest point at each sample, not a tracked material point or all-node displacement/RMS benchmark.",
+    "A stable-looking render cannot disprove the measured localized material strain residual."
+  ]
+}

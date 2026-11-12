@@ -1,0 +1,206 @@
+{
+  "scope": "Complete contact-first workflow assembled only from explicitly linked native checkpoint-continuous execution segments. An interrupted suffix is excluded; this is not an uninterrupted single run.",
+  "time_s": {
+    "production_completed_s": 87.05,
+    "final_after_hold_s": 91.05,
+    "additional_hold_s": 4.0,
+    "terminal_checkpoint": "after_complete_hold.pkl",
+    "terminal_snapshot": "13_after_hold_cloth.npz",
+    "legacy_helper_cross_time_snapshot_check": false,
+    "legacy_cross_time_check_not_applicable": "Original helper compared final NPZ directly to stage12. This wrapper explicitly evolves another hold; each snapshot is instead compared to its own same-time native checkpoint above. No material or contact threshold is changed."
+  },
+  "task": {
+    "original_task_checks_passed": true,
+    "independent_checks_passed": true,
+    "independent_check_count": 82,
+    "failures": [],
+    "unknown": [],
+    "cycles": 6
+  },
+  "mass": {
+    "native_particle_mass_source": "/home/chloe/Desktop/genesis-local/soy_cloth_scene/output/contact_first_full/run_01/after_dry_lift.pkl",
+    "particle_count": 1489,
+    "active_count": 0,
+    "bound_position_count": 1489,
+    "vertex_reservoir_mass_kg": 0.010482560000000005,
+    "capacity_kg": 0.05443200000000001,
+    "maximum_saturation": 0.8226772355293804,
+    "minimum_vertex_reservoir_kg": 0.0,
+    "capacity_excess_max_kg": -1.1409022122535114e-06,
+    "expected_dry_mass_from_reference_area_kg": 0.009072,
+    "final_native_mass_directly_exported": true,
+    "final_parcel_barycentric_ledger_directly_exported": true,
+    "initial_mass_kg": 0.010482560000000002,
+    "active_mass_kg": 0.0,
+    "inactive_particle_mass_kg": 0.010482560000000002,
+    "liquid_mass_balance_error_kg": 3.469446951953614e-18,
+    "dry_native_mass_kg": 0.009072000000000002,
+    "expected_final_native_wet_mass_kg": 0.019554560000000006,
+    "reported_final_native_wet_mass_kg": 0.019554560000000006,
+    "reported_final_native_total_minus_expected_kg": 0.0,
+    "final_native_vertex_loading_max_error_kg": 8.470329472543003e-22,
+    "final_direct_native_wet_mass_kg": 0.019554560000000006
+  },
+  "carry": {
+    "bound_surface_distance_max_m": 2.5907268972605967e-16,
+    "inactive_position_to_bound_max_m": 0.0,
+    "minimum_bound_z_m": 0.9174504857572396,
+    "minimum_cloth_z_m": 0.8718733715110831,
+    "runtime_exact_pre_lift_median_rise_m": 0.23261938386516345,
+    "runtime_exact_pre_lift_rise_independently_recomputable": true,
+    "baseline": "before_final_pickup checkpoint, before final preshape/regrasp, not exact pre-lift instant",
+    "median_rise_from_before_pickup_checkpoint_m": 0.23261938386516356,
+    "minimum_rise_from_before_pickup_checkpoint_m": 0.1567004857572396,
+    "exact_saved_pre_lift_measurement": {
+      "available": true,
+      "baseline": "Terminal task_state.bound_before_lift, captured after the real final bilateral grasp immediately before lift",
+      "parcel_correspondence": "Every original liquid parcel ID, in ascending order; final active mask is empty",
+      "parcel_count": 1489,
+      "median_rise_m": 0.23261938386516345,
+      "minimum_rise_m": 0.15670048575723972,
+      "reported_median_difference_m": 0.0
+    }
+  },
+  "final_contacts": {
+    "left": {
+      "left_finger": 2,
+      "right_finger": 5
+    },
+    "right": {
+      "left_finger": 7,
+      "right_finger": 2
+    }
+  },
+  "endpoint_material": {
+    "04_cloth_lifted": {
+      "warp": {
+        "max_percent": 2.0495395291185714,
+        "p99_percent": 1.0901943922872237,
+        "edges_over_limit_plus_residual": 0,
+        "max_edge": [
+          659,
+          660
+        ]
+      },
+      "weft": {
+        "max_percent": 2.194231147940373,
+        "p99_percent": 0.6343180854337084,
+        "edges_over_limit_plus_residual": 0,
+        "max_edge": [
+          4943,
+          5038
+        ]
+      },
+      "bias": {
+        "max_percent": 3.195712877029666,
+        "p99_percent": 0.6749027299265405,
+        "edges_over_limit_plus_residual": 0,
+        "max_edge": [
+          4944,
+          5038
+        ]
+      }
+    },
+    "12_wet_cloth_lifted": {
+      "warp": {
+        "max_percent": 2.725091821371839,
+        "p99_percent": 1.8666573863562008,
+        "edges_over_limit_plus_residual": 10,
+        "max_edge": [
+          5324,
+          5325
+        ]
+      },
+      "weft": {
+        "max_percent": 3.1416151513370183,
+        "p99_percent": 1.1931906767174822,
+        "edges_over_limit_plus_residual": 4,
+        "max_edge": [
+          662,
+          757
+        ]
+      },
+      "bias": {
+        "max_percent": 3.941015818417326,
+        "p99_percent": 1.0748799450614661,
+        "edges_over_limit_plus_residual": 0,
+        "max_edge": [
+          662,
+          756
+        ]
+      }
+    },
+    "13_after_hold": {
+      "warp": {
+        "max_percent": 2.7170284982788617,
+        "p99_percent": 1.8652039399106435,
+        "edges_over_limit_plus_residual": 10,
+        "max_edge": [
+          5324,
+          5325
+        ]
+      },
+      "weft": {
+        "max_percent": 3.120008759620019,
+        "p99_percent": 1.1988069750091745,
+        "edges_over_limit_plus_residual": 3,
+        "max_edge": [
+          662,
+          757
+        ]
+      },
+      "bias": {
+        "max_percent": 3.9181225645321005,
+        "p99_percent": 1.0719084533227443,
+        "edges_over_limit_plus_residual": 0,
+        "max_edge": [
+          662,
+          756
+        ]
+      }
+    }
+  },
+  "transient_material": {
+    "all_samples_within_limits": false,
+    "peak_sample": {
+      "time_s": 66.5,
+      "phase": "08 Press cycle 5: wipe outward",
+      "free_liquid_g": 0.26752000000000004,
+      "absorbed_g": 10.215040000000002,
+      "active_particles": 38.0,
+      "max_saturation": 0.9144418342955019,
+      "cloth_min_z_m": 0.7603340783166821,
+      "left_tcp_error_m": 4.130058526545622e-05,
+      "right_tcp_error_m": 4.179737191571016e-05,
+      "edge_extension_p95": 0.0010790251606687315,
+      "edge_extension_p99": 0.0028469250193338025,
+      "edge_extension_max": 1.0058776617284986,
+      "edges_extended_over_5pct": 53.0,
+      "directional_residual_tolerance": 0.002,
+      "warp_edge_count": 5734.0,
+      "warp_extension_limit": 0.02,
+      "warp_edge_extension_max": 0.6065619372113085,
+      "warp_edge_extension_p99": 0.0023685344880956106,
+      "warp_bound_excess_max": 0.5865619372113084,
+      "warp_edges_over_limit": 23.0,
+      "warp_edges_over_limit_plus_residual": 22.0,
+      "weft_edge_count": 5700.0,
+      "weft_extension_limit": 0.02,
+      "weft_edge_extension_max": 1.0058776617284986,
+      "weft_edge_extension_p99": 0.0034577983476896217,
+      "weft_bound_excess_max": 0.9858776617284986,
+      "weft_edges_over_limit": 37.0,
+      "weft_edges_over_limit_plus_residual": 36.0,
+      "bias_edge_count": 5640.0,
+      "bias_extension_limit": 0.1,
+      "bias_edge_extension_max": 0.7080362954969697,
+      "bias_edge_extension_p99": 0.0034960065820654612,
+      "bias_bound_excess_max": 0.6080362954969697,
+      "bias_edges_over_limit": 7.0,
+      "bias_edges_over_limit_plus_residual": 7.0
+    },
+    "peak_geometry_available": false
+  },
+  "original_report_unchanged": true,
+  "audit_sha256": "08c38fbcf179fcfc1125ece59b6cff1399616771d5b4771d5aa1fdd235f28b72"
+}

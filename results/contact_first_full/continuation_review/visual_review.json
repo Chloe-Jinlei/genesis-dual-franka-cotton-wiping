@@ -1,0 +1,84 @@
+{
+  "status": "media_and_sampled_visual_review_complete",
+  "scope": "本次从初态运行，因用户中断在38.7秒完整状态接续；仅使用本次run_01有效前缀和run_02后缀，不是不中断的一轮。",
+  "video": {
+    "path": "/home/chloe/Desktop/genesis-local/soy_cloth_scene/output/contact_first_full/continuation_review/cotton_contact_first_full_cn.mp4",
+    "sha256": "990f4b6d4c14a892b76dd8e0713aeef6f5cb3c843f1f47e4d875a08ebfd43535",
+    "frames": 1379,
+    "duration_s": 91.02310231023102,
+    "fps": "303/20",
+    "original_speed": true,
+    "source1_kept_frames": 586,
+    "source2_kept_frames": 793,
+    "excluded_interrupted_branch_frames": 38,
+    "first_simulation_time_s": 0.066,
+    "last_recorded_simulation_time_s": 91.014,
+    "actual_final_simulation_time_s": 91.05
+  },
+  "provenance": {
+    "file": "/home/chloe/Desktop/genesis-local/soy_cloth_scene/output/contact_first_full/continuation_review/composition_provenance.json",
+    "checkpoint_state_and_source_hashes_match": true,
+    "global_stride_sequence_without_gap_or_overlap": true,
+    "caption_switches_use_actual_frame_time": true,
+    "keyframe_contact_before_closure_limit": "The cadence did not record an exact frame after confirmation but before closure. Keyframes 02/08 explicitly show the nearest frame before confirmation.",
+    "completion_keyframe_time_s": 87.054
+  },
+  "visual_observations_zh": [
+    "已检查初始、干布夹持/提起、铺布、湿布夹持/提起、末态、恢复接缝的实际录制帧和中文编码画面；字幕位于原画面外，没有遮挡或更改场景像素。",
+    "干布与湿布均由双臂两端对角提起；悬空布面与自由角保持下垂，末态棕色湿斑随布一起悬空。",
+    "38.676秒与38.742秒两幅接缝画面位置连续，来源标签从1/2切换到2/2；完整物理数组哈希相等及33步帧序验证另有证据。",
+    "66.528秒实际帧（最接近66.5秒峰值采样）显示布面总体仍在桌面展开、两手在其两侧擦拭；这个视角和分辨率不足以检查单条网格边的极端应变，不能用画面否认数值超限。",
+    "87.054、88.044、89.034、90.024、91.014秒分时画面的下垂形状相近，未见明显整布大幅弹跳；最低布点高度标量波动逐秒减小。此观察不是全节点运动验收。"
+  ],
+  "final_hold": {
+    "interval_s": [
+      87.05,
+      91.05
+    ],
+    "scalar_min_z_peak_to_peak_mm": 0.5777584076356312,
+    "successive_one_second_height_peak_to_peak_mm": [
+      0.5777584076356312,
+      0.2920564814640203,
+      0.1483035072492589,
+      0.07721144313643791
+    ],
+    "final_minimum_height_above_table_cm": 11.187337151108313,
+    "tcp_max_drift_from_hold_start_m": {
+      "left": 2.4384725183221486e-08,
+      "right": 1.8048090969848595e-08
+    },
+    "samples": 81,
+    "plot": "/home/chloe/Desktop/genesis-local/soy_cloth_scene/output/contact_first_full/continuation_review/final_hold_height.png",
+    "numeric_report": "/home/chloe/Desktop/genesis-local/soy_cloth_scene/output/contact_first_full/continuation_review/final_hold_and_strain_observation.json",
+    "all_node_position_velocity_acceptance_asserted": false
+  },
+  "task_and_material_separation": {
+    "task_passed": true,
+    "strict_material_passed": false,
+    "raw_passed": false,
+    "local_edge_extension_peak_percent": 100.58776617284985,
+    "local_peak_time_s": 66.5,
+    "p99_at_same_sample_percent": 0.28469250193338025,
+    "whole_trajectory_p99_peak_percent": 3.6463751850619612,
+    "whole_trajectory_p99_peak_time_s": 13.950000000000001,
+    "interpretation_zh": "动作和吸液验收通过；经/纬方向严格材料诊断仍失败。局部最大边伸长100.5878%是原始日志中的真实数值残差，未更改阈值或隐藏原帧。"
+  },
+  "limitations": [
+    "分时视觉检查不替代全节点位置/速度、力闭合或连续三角形碰撞验证。",
+    "末段有完整4秒保持，但没有保存连续全布节点轨迹，因此不重用早前独立干布P95/RMS阈值宣称此次也通过。",
+    "材料仍为未实验标定的离散近似；任务完成与所有物理指标通过分开报告。"
+  ],
+  "evidence_images": [
+    "/home/chloe/Desktop/genesis-local/soy_cloth_scene/output/contact_first_full/continuation_review/key_stage_evidence.png",
+    "/home/chloe/Desktop/genesis-local/soy_cloth_scene/output/contact_first_full/continuation_review/encoded_qa.png",
+    "/home/chloe/Desktop/genesis-local/soy_cloth_scene/output/contact_first_full/continuation_review/stages_qa.png",
+    "/home/chloe/Desktop/genesis-local/soy_cloth_scene/output/contact_first_full/continuation_review/wet_lift_hold_qa.png",
+    "/home/chloe/Desktop/genesis-local/soy_cloth_scene/output/contact_first_full/continuation_review/visual_native_66.528s.png",
+    "/home/chloe/Desktop/genesis-local/soy_cloth_scene/output/contact_first_full/continuation_review/final_hold_height.png"
+  ],
+  "source_data_sha256": {
+    "mass_and_motion.csv": "3d17a90697f8a0e7ddff4d38d68eeeb437e51a99c130853278d6235236441f40",
+    "contact_trace.csv": "615e5a2f72d55ba5136ad631ba58fd9728872117a9ad8f1fd717535daa25e2e5",
+    "robot_wipe_validation.json": "eae02b3d7cb9f3fe3959bb7047d56153004fb367ff41c90c47101d3675bf8faa"
+  }
+}

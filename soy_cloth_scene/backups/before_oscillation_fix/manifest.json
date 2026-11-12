@@ -1,0 +1,11 @@
+{
+  "cotton_material.py": "b3f40dd6867efeee498d08172cb22b70d77a1bb40d43d63362cbb7899202b9c3",
+  "robot_grasp.py": "7fb8120a9551e3628209d34dae04c192e4d661251cf8ffe6a155b6060d556020",
+  "scene.py": "9d884d5dfd63e2178a75c29ac35b0faada2c54dfe7c6b2892621171214d7d06e",
+  "config.json": "ab91c247c233b4bb41c68d110ba6fad7a5be85a6cb93ca0e8805255fe9ac8840",
+  "config_robot_wipe.json": "2a4e3074d51cd5d9ecc5a70e88085da2e3e4489706ae4feb151f5d94a3136c2d",
+  "robot_wipe.py": "2b03fca10c5fc2b5fbd000032c8f6ebf544aec6cd9db2478348890a382c354dc",
+  "README_CN.md": "00ff88b3a11912ff832396fcf52afd409751c20d1046e4e5a2d87eb163053279",
+  "cotton_material_validation.md": "5045a0892668fbcd16b198b2ee3daf0186303606a0a911518838714209db5cce",
+  "probe_cotton_hang.py": "81273a11adb31b5ff1ec9356eec9d95b722e525b6d485d8ee6f5b2fd3306ae47"
+}

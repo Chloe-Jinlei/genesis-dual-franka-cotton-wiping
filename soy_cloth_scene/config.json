@@ -1,0 +1,154 @@
+{
+  "seed": 17,
+  "simulation": {
+    "dt": 0.004,
+    "substeps": 40,
+    "settle_steps": 250,
+    "stretch_iterations": 10,
+    "bending_iterations": 4,
+    "precision": "64"
+  },
+  "table": {
+    "size": [
+      1.6,
+      1.0,
+      0.06
+    ],
+    "height": 0.76
+  },
+  "robots": {
+    "left_base": [
+      -0.57,
+      0.22,
+      0.78
+    ],
+    "right_base": [
+      0.57,
+      0.22,
+      0.78
+    ],
+    "left_yaw": -0.65,
+    "right_yaw": 3.791592653589793,
+    "home": [
+      0.0,
+      -0.45,
+      0.0,
+      -2.15,
+      0.0,
+      1.7,
+      0.785398
+    ],
+    "finger_opening": 0.04
+  },
+  "cloth": {
+    "position_xy": [
+      0.23,
+      -0.2
+    ],
+    "initial_clearance": 0.006,
+    "particle_size": 0.003,
+    "areal_density": 0.18,
+    "stretch_compliance": 1e-07,
+    "friction": 0.6,
+    "collision_radius_m": 0.00075,
+    "air_density_kg_m3": 1.225,
+    "air_drag_coefficient": 1.0,
+    "material_profile": "plush_cotton_pdf",
+    "stretch_relaxation": 0.3,
+    "bending_rigidity_nm": 5e-05,
+    "bending_relaxation": 0.5,
+    "warp_max_extension": 0.02,
+    "weft_max_extension": 0.02,
+    "bias_max_extension": 0.1,
+    "strain_limit_iterations": 24,
+    "internal_damping_per_s": 4.0,
+    "linear_drag_per_s": 1.0,
+    "kinetic_friction": 0.45,
+    "physical_mesh": "material_aligned_grid",
+    "size_m": [
+      0.28,
+      0.18
+    ],
+    "material_description": "plush_cotton PDF reference: 180 g/m2 planar woven-cotton approximation with directional finite-extension limits and physical dihedral bending; not experimentally calibrated.",
+    "material_source_pdf": "/home/chloe/Desktop/熊与棉布_物理参数设置_plush_cotton.pdf",
+    "preserve_integrated_velocity": true,
+    "internal_damping_model": "rigid_motion_residual",
+    "bending_damping_ratio": 0.5
+  },
+  "soy": {
+    "position_xy": [
+      -0.13,
+      -0.2
+    ],
+    "initial_clearance": 0.0015,
+    "depth_scale": 3.0,
+    "particle_size": 0.003,
+    "density": 1100.0,
+    "viscosity": 0.001,
+    "surface_tension": 2e-05,
+    "pressure_solver": "WCSPH",
+    "color": [
+      0.095,
+      0.022,
+      0.006,
+      1.0
+    ]
+  },
+  "coupling": {
+    "enabled": true,
+    "capacity_kg_m2": 1.08,
+    "absorption_flux_kg_m2_s": 1.0,
+    "minimum_contact_time_s": 0.035,
+    "drag_rate_s": 25.0,
+    "collision_distance_m": 0.0015,
+    "absorption_gap_m": 0.0035
+  },
+  "cameras": {
+    "overview": {
+      "position": [
+        1.6,
+        -2.1,
+        1.85
+      ],
+      "target": [
+        0.0,
+        0.0,
+        0.83
+      ],
+      "fov": 44
+    },
+    "detail": {
+      "position": [
+        0.3,
+        -0.85,
+        1.48
+      ],
+      "target": [
+        0.02,
+        -0.19,
+        0.76
+      ],
+      "fov": 43
+    },
+    "top": {
+      "position": [
+        0.0,
+        -0.04,
+        2.65
+      ],
+      "target": [
+        0.0,
+        0.0,
+        0.76
+      ],
+      "fov": 42
+    }
+  },
+  "profile_notes": {
+    "purpose": "PDF-referenced woven cotton with diagonal grasping and conservative local soy absorption.",
+    "cloth_dry_areal_mass_kg_m2": 0.18,
+    "liquid_capacity_per_dry_mass_kg_kg": 6.0,
+    "absorption_parameters_source": "Independent uncalibrated 6 g/g assumption; the provided PDF contains no absorption measurements.",
+    "numerical_deviations_from_pdf": "Keep existing SPH-stable 100 us substeps and 1.5 mm cloth collision diameter; these are numerical settings, not fabric thickness."
+  }
+}

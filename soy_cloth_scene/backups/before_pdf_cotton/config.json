@@ -1,0 +1,126 @@
+{
+  "seed": 17,
+  "simulation": {
+    "dt": 0.004,
+    "substeps": 40,
+    "settle_steps": 250,
+    "stretch_iterations": 32,
+    "bending_iterations": 4
+  },
+  "table": {
+    "size": [
+      1.6,
+      1.0,
+      0.06
+    ],
+    "height": 0.76
+  },
+  "robots": {
+    "left_base": [
+      -0.57,
+      0.22,
+      0.78
+    ],
+    "right_base": [
+      0.57,
+      0.22,
+      0.78
+    ],
+    "left_yaw": -0.65,
+    "right_yaw": 3.791592653589793,
+    "home": [
+      0.0,
+      -0.45,
+      0.0,
+      -2.15,
+      0.0,
+      1.7,
+      0.785398
+    ],
+    "finger_opening": 0.04
+  },
+  "cloth": {
+    "position_xy": [
+      0.23,
+      -0.2
+    ],
+    "initial_clearance": 0.004,
+    "particle_size": 0.003,
+    "areal_density": 0.22,
+    "stretch_compliance": 1e-09,
+    "bending_compliance": 1e-05,
+    "friction": 0.65,
+    "collision_radius_m": 0.00075,
+    "air_density_kg_m3": 1.225,
+    "air_drag_coefficient": 1.2
+  },
+  "soy": {
+    "position_xy": [
+      -0.13,
+      -0.2
+    ],
+    "initial_clearance": 0.0015,
+    "depth_scale": 3.0,
+    "particle_size": 0.003,
+    "density": 1100.0,
+    "viscosity": 0.001,
+    "surface_tension": 2e-05,
+    "pressure_solver": "WCSPH",
+    "color": [
+      0.095,
+      0.022,
+      0.006,
+      1.0
+    ]
+  },
+  "coupling": {
+    "enabled": true,
+    "capacity_kg_m2": 1.2,
+    "absorption_flux_kg_m2_s": 1.0,
+    "minimum_contact_time_s": 0.035,
+    "drag_rate_s": 25.0,
+    "collision_distance_m": 0.0015,
+    "absorption_gap_m": 0.0035
+  },
+  "cameras": {
+    "overview": {
+      "position": [
+        1.6,
+        -2.1,
+        1.85
+      ],
+      "target": [
+        0.0,
+        0.0,
+        0.83
+      ],
+      "fov": 44
+    },
+    "detail": {
+      "position": [
+        0.3,
+        -0.85,
+        1.48
+      ],
+      "target": [
+        0.02,
+        -0.19,
+        0.76
+      ],
+      "fov": 43
+    },
+    "top": {
+      "position": [
+        0.0,
+        -0.04,
+        2.65
+      ],
+      "target": [
+        0.0,
+        0.0,
+        0.76
+      ],
+      "fov": 42
+    }
+  }
+}

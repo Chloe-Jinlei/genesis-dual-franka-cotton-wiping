@@ -1,0 +1,4248 @@
+{
+  "upstream": "https://github.com/Genesis-Embodied-AI/genesis-world.git",
+  "commit": "ffd119c30118ebb9745fc009349efb2112a8cb76",
+  "version": "1.4.3",
+  "files": {
+    ".gitattributes": {
+      "bytes": 270,
+      "sha256": "11b22710ace08a785449ec15a1bb22a95f9734e89553b4f64a4c6fc67c307b05"
+    },
+    ".github/CODEOWNERS": {
+      "bytes": 45,
+      "sha256": "f661668e5cf7353e02faf7de74018e815ccdccc36359527d15150564eb52e205"
+    },
+    ".github/ISSUE_TEMPLATE/1-bug-report.yml": {
+      "bytes": 2880,
+      "sha256": "0cd96f7c456119bd5c0faaaab66f020ceca09b5946062b0dfabf55605a5ff1a1"
+    },
+    ".github/ISSUE_TEMPLATE/2-feature-request.yml": {
+      "bytes": 1902,
+      "sha256": "b626f833f25790330c273b528679bc7a398cf2eb388428c9aa0d74fd38066a79"
+    },
+    ".github/ISSUE_TEMPLATE/3-documentation.yml": {
+      "bytes": 1480,
+      "sha256": "ad206489a1ed3b631a5427782091a28343f9220040ca6b6df5430c3e14079859"
+    },
+    ".github/ISSUE_TEMPLATE/config.yml": {
+      "bytes": 224,
+      "sha256": "8f6af4bac171f1e0fe453e2c835f7a4581b71e8d5caf1a33a46521ccb1fe4d1d"
+    },
+    ".github/contributing/ARCHITECTURE.md": {
+      "bytes": 5464,
+      "sha256": "c152d38444f663df530847fe47f40bc4f1e0b39feae79a08dda9e06d0b64f017"
+    },
+    ".github/contributing/CODING_CONVENTIONS.md": {
+      "bytes": 2497,
+      "sha256": "3a3de506345b310e1752256b8fc0836fcb511a5b3232a0f47f469bacdcd1eadd"
+    },
+    ".github/contributing/EXAMPLES.md": {
+      "bytes": 4568,
+      "sha256": "02a9321659cc9f41945a08fca47ae1ea520f82443beb545918017329d27eb783"
+    },
+    ".github/contributing/PULL_REQUESTS.md": {
+      "bytes": 2956,
+      "sha256": "152375a39942871ae7ed037a41fc423e927de4cdbcd2ead5554e677b32ed680b"
+    },
+    ".github/contributing/TESTING.md": {
+      "bytes": 3965,
+      "sha256": "218002dcf7ccdb77478420e3125c890342d0ad4c09fcb78549ccb3e1d77d1df0"
+    },
+    ".github/contributing/USD_PARSER.md": {
+      "bytes": 3287,
+      "sha256": "b75b790f37cf31a4c398a228325f49d36ff9b7f561e3f35903fba6753d781ab9"
+    },
+    ".github/genesis_image_ver": {
+      "bytes": 5,
+      "sha256": "6bae559676ae36ae1e41e4c63729b528461926ad8187237116262f9425d4546e"
+    },
+    ".github/nyx_plugin_commit": {
+      "bytes": 41,
+      "sha256": "ef1b2f3564050d654781aee5114c6666d005da60c6170f97c7190447d4abe77a"
+    },
+    ".github/pull_request_template.md": {
+      "bytes": 2475,
+      "sha256": "42ca5cb041b1961b59cfd62c8e98c2f644268fc4c6b88fa63eaba8a8df8b84a6"
+    },
+    ".github/workflows/alarm.yml": {
+      "bytes": 9782,
+      "sha256": "a2754432465ff721e2c1c0995ab624c1049446f808be3225003dc8b7a1ef1255"
+    },
+    ".github/workflows/examples.yml": {
+      "bytes": 2380,
+      "sha256": "9e83c234e77e6577875364dcd991be022de25f3ad57cc6c25510fb62927027d1"
+    },
+    ".github/workflows/format.yml": {
+      "bytes": 535,
+      "sha256": "30e5b1c5e12ae65bec80387751d2a23f6c1fc609bc8810d7c38d3eba9f21aa60"
+    },
+    ".github/workflows/generic.yml": {
+      "bytes": 7886,
+      "sha256": "71db9bc9681eb1dd78bf8ebed98c2faaf6cb8ae9cb3ffa24618f9a00f98bdc5e"
+    },
+    ".github/workflows/nyx_plugin.yml": {
+      "bytes": 10158,
+      "sha256": "4267b275f3107a6b065c1465735400c7ba5e42aa92400676dbf726554ba5f84f"
+    },
+    ".github/workflows/production.yml": {
+      "bytes": 22759,
+      "sha256": "113d746c424232ad4e5422fc9634351e3652858a0de20ee45cc9b82773c92445"
+    },
+    ".github/workflows/scripts/alarm.py": {
+      "bytes": 23312,
+      "sha256": "5ce0b40fd40a8689c7d27451baaf622c7be8a033d2dececb168e2f10023164ee"
+    },
+    ".github/workflows/scripts/production_build.sh": {
+      "bytes": 1125,
+      "sha256": "fcf333c5afb9e3e92f08aac59c8cad9cf0515978b7f7807ec74ee63a9577de04"
+    },
+    ".gitignore": {
+      "bytes": 2207,
+      "sha256": "11258da47183ee601b477fb568eb38a61b2dea7157c83b37bd386489f17383e4"
+    },
+    ".gitmodules": {
+      "bytes": 329,
+      "sha256": "f9925d082c362ecc303c46139dc2d63e21468727c9981ea21da6590f0353172c"
+    },
+    ".pre-commit-config.yaml": {
+      "bytes": 196,
+      "sha256": "b16c9b7e695e29095aa23ef7c614a51210e85a42a92cd438a2f54988bc45f29f"
+    },
+    ".readthedocs.yaml": {
+      "bytes": 224,
+      "sha256": "2f64cc9af4c8168b3a0e7e1e5360b19fa73803ad620a3d9506afefd71951ff96"
+    },
+    "CLAUDE.md": {
+      "bytes": 48374,
+      "sha256": "2a35863b11898336118506582ff5522ef866ec22bd3e75038a3693ad57aa495c"
+    },
+    "CODING_GUIDELINES.md": {
+      "bytes": 73221,
+      "sha256": "c6a5f332447ea6efd708906dd45a8b05e2d95f27febb7eb4805eae0f3ef6872c"
+    },
+    "LICENSE": {
+      "bytes": 11356,
+      "sha256": "43070e2d4e532684de521b885f385d0841030efa2b1a20bafb76133a5e1379c1"
+    },
+    "MANIFEST.in": {
+      "bytes": 199,
+      "sha256": "4c3a29c65872ac6fe7ee71fff4b78eee9f22b1fe04fa1214653dc7080f172ac2"
+    },
+    "README.md": {
+      "bytes": 23419,
+      "sha256": "d0d2206b9bbb9cf615798342f491f3405cf5576b9ab645b1bab0dc4bf21b9b01"
+    },
+    "RELEASE.md": {
+      "bytes": 73599,
+      "sha256": "c6147a8763056ad79e67d19da7ca2814b958e4ea9abb71ac59209a7cf8ce7863"
+    },
+    "examples/collision/contact_manifold.py": {
+      "bytes": 6188,
+      "sha256": "3aaa4deaec00e60015ce43ed25b434d6f46ab193b4fc9918a29cec12f93504ac"
+    },
+    "examples/collision/contype.py": {
+      "bytes": 2420,
+      "sha256": "fbc4b00d6581de8247ab312dd182b17a0eafc141e87b4684d4536dc38b96eb7e"
+    },
+    "examples/collision/pyramid.py": {
+      "bytes": 1878,
+      "sha256": "3eae4a9aea0cdfb74c5bfb74ec842e36561bcab8ed5f4b9291b01b58cfde4ca2"
+    },
+    "examples/collision/tower.py": {
+      "bytes": 2911,
+      "sha256": "96d1244c0fd748ee02deead506b2ebb0ebc0067007f3be94a06d6ca2cb304274"
+    },
+    "examples/coupling/cloth_attached_to_rigid.py": {
+      "bytes": 2719,
+      "sha256": "2ba73434fffd95700e07a941bc90c0167fc3900eec3da199a7d4aa1d58a44fa3"
+    },
+    "examples/coupling/cloth_on_rigid.py": {
+      "bytes": 1840,
+      "sha256": "a5701513f0048be64945d3ef6235a56a1c03976a565b6560d34141de695c5945"
+    },
+    "examples/coupling/cut_dragon.py": {
+      "bytes": 1987,
+      "sha256": "895f4bee064fac302d15acfec3b6bf091afb56420f8c0be4385952bf1b519f97"
+    },
+    "examples/coupling/fem_cube_linked_with_arm.py": {
+      "bytes": 4601,
+      "sha256": "76b0efa993506d694fa1321eca6f027adeb1c9a3f87f7403b0ac01c73f3bb077"
+    },
+    "examples/coupling/flush_cubes.py": {
+      "bytes": 3143,
+      "sha256": "2c1061ecd481b4e3a58e9ba4e49ec8ecc8a81e50f4253b2ba99dd29ca2aeed95"
+    },
+    "examples/coupling/grasp_soft_cube.py": {
+      "bytes": 2799,
+      "sha256": "1c6aeb3a77801859458c42cee2a01c7c18a7b966abfcfd057feb92284517f22c"
+    },
+    "examples/coupling/rigid_mpm_attachment.py": {
+      "bytes": 2026,
+      "sha256": "580e2cfdaf49f622d3ef35469d9cdd24eb02adf2e317e09704050133ee342bd1"
+    },
+    "examples/coupling/sand_wheel.py": {
+      "bytes": 3081,
+      "sha256": "4c746664dc38cd381842e28834776bb03bc7e52f3cb2d567a5e19d1c3f46e61d"
+    },
+    "examples/coupling/sph_mpm.py": {
+      "bytes": 1964,
+      "sha256": "e8747107764792f91eafa31e738c046d524480fef47a7d21c1dfbdba6c3c72e3"
+    },
+    "examples/coupling/sph_rigid.py": {
+      "bytes": 1784,
+      "sha256": "f49c291a7748abd1193b68e832017c1a05bc417a95467198c60fd80bf6c7b205"
+    },
+    "examples/coupling/water_wheel.py": {
+      "bytes": 2304,
+      "sha256": "399f9c1bc43d8b91fa3b005fafab4e4450b080af07ad5902ab2fd11abb7b4214"
+    },
+    "examples/deformable/differentiable_push.py": {
+      "bytes": 4189,
+      "sha256": "ddc60003f6cdac50c91aba9c46d5f49f661252c6a8097034d31e556e52314f2e"
+    },
+    "examples/deformable/elastic_dragon.py": {
+      "bytes": 1217,
+      "sha256": "bcdcb0f86d253db1db4d5f1c5b43c4e343381319de9b82dff61bc86c1985fb99"
+    },
+    "examples/deformable/fem_hard_and_soft_constraint.py": {
+      "bytes": 4631,
+      "sha256": "dc620b749cc8e12c60f48edd5ed6728fa9d6bfa6dedf9c91fbf7a997fe6755e7"
+    },
+    "examples/deformable/pbd_liquid.py": {
+      "bytes": 1332,
+      "sha256": "05428bceaed466dcf4d73503061a794055fa0c339b51ed179584e6671684d698"
+    },
+    "examples/drone/README.md": {
+      "bytes": 3411,
+      "sha256": "f999ba3dc1f9ef3158be432a090673063a53d2c51db40e5c3311b3e32ef61927"
+    },
+    "examples/drone/fly.py": {
+      "bytes": 8006,
+      "sha256": "063b40fb1e3dc3dfbaf7d8aaf1744f9a78ae6052a8c9cfa04b6317341e68f100"
+    },
+    "examples/drone/fly_route.py": {
+      "bytes": 2721,
+      "sha256": "9c09f493f272630797b7d8111979701994101d1526314648887e49b4b8b2771b"
+    },
+    "examples/drone/hover_env.py": {
+      "bytes": 11035,
+      "sha256": "c2230130b9748b69416a18edad8491579e68c67882c8a6b6ab3662c5bbf76703"
+    },
+    "examples/drone/hover_eval.py": {
+      "bytes": 2540,
+      "sha256": "d4cfa82b79b4a5c8553206c63bb263d6b263e59efb06179c0dcb21cfb495aa15"
+    },
+    "examples/drone/hover_train.py": {
+      "bytes": 4793,
+      "sha256": "7063ef24df253a234351c9bb9f7b90eb13dcea175e47fc154c4e3413f585c907"
+    },
+    "examples/drone/interactive_drone.py": {
+      "bytes": 4198,
+      "sha256": "f2af0f1f6acb1e5fe341ecc967de10ca0b5bf3761fdfda6046fecc0938e13762"
+    },
+    "examples/drone/quadcopter_controller.py": {
+      "bytes": 3779,
+      "sha256": "7c096157f2249eb5f87da272e34954f8733e386f7e0722af61f6f0e7d4e021bc"
+    },
+    "examples/fluid/smoke.py": {
+      "bytes": 4339,
+      "sha256": "ab9d3fee3b2d2e2ce3c7610265dfc8248ec75e5aa616e50074d63355566829d8"
+    },
+    "examples/gui/imgui_joint_control.py": {
+      "bytes": 1864,
+      "sha256": "2818e7e2e051c62750542556ff9625e24fca8290e0f7dbaebb6dc21408d7fc13"
+    },
+    "examples/ipc/README.md": {
+      "bytes": 1298,
+      "sha256": "9156ad934748cb902513378d7d9f49373972cbffcc2b794313536d8f4eb7f3b2"
+    },
+    "examples/ipc/ipc_momentum.py": {
+      "bytes": 10689,
+      "sha256": "d3199207ed9b0cbaf9401f05019d79a6f0344d9c394153c6e3fa4792c08b6411"
+    },
+    "examples/ipc/ipc_objects_falling.py": {
+      "bytes": 3259,
+      "sha256": "5ae0b92c15eb1d103aa2d77d3098d3e6fb88481682aa04cb36678f260b9bca95"
+    },
+    "examples/ipc/ipc_robot_cloth_teleop.py": {
+      "bytes": 9292,
+      "sha256": "f107788d9712903e5aeae87f4df9e7eca69d9f4ea383a1b7e43fc92b3226d2ec"
+    },
+    "examples/ipc/ipc_robot_grasp_cube.py": {
+      "bytes": 4336,
+      "sha256": "899bb8297bf044a1326fbaff92e0db521c63aec401d30828ea29918c87fe09ae"
+    },
+    "examples/kinematic/go2_kinematic.py": {
+      "bytes": 2678,
+      "sha256": "67dc124407f2b08b45baf26bb0a92daefeeeffd811f2c7efe5dc6d77cde09754"
+    },
+    "examples/locomotion/backflip/double.pt": {
+      "bytes": 790911,
+      "sha256": "2036cd4537c10befe8cbab2173ee097ed96373b1f3538839e430267df8a397ea"
+    },
+    "examples/locomotion/backflip/readme.md": {
+      "bytes": 412,
+      "sha256": "7b16f1b755bca12a5a7876f3493575ce051b5d21113e0dcdd58e450a99a0e7a4"
+    },
+    "examples/locomotion/backflip/single.pt": {
+      "bytes": 790911,
+      "sha256": "0e90719b15d2037d18c74af2d326d690632699b6700098feaa65812f51f69f19"
+    },
+    "examples/locomotion/go2_backflip.py": {
+      "bytes": 4487,
+      "sha256": "54ef59c987ca98982dcc22a3199ac8bd2d91bd41d50e126d2bededc65d063759"
+    },
+    "examples/locomotion/go2_env.py": {
+      "bytes": 13583,
+      "sha256": "22a08b9f1f5c765732a7b3d04c98b3cb6a25b565aa024479a0526bbc654c1a63"
+    },
+    "examples/locomotion/go2_eval.py": {
+      "bytes": 1662,
+      "sha256": "2e80b1c65dea21b28a97b2c11eb6f035bfa7ded87701e3e2abe8e9bd41824bd0"
+    },
+    "examples/locomotion/go2_train.py": {
+      "bytes": 5320,
+      "sha256": "9d78b33a90e8833be648c302a818f1b10ebfb632d0f5de5214f68bf1d714cb00"
+    },
+    "examples/manipulation/behavior_cloning.py": {
+      "bytes": 16501,
+      "sha256": "29260025769111df21445b6bfb3f88795feefe6db966768265d636b81d631150"
+    },
+    "examples/manipulation/grasp_env.py": {
+      "bytes": 22176,
+      "sha256": "2b7b425cc6f3ac9644518fb1acf2f63f0d4cad14a34c5991f1cc0b1a3a89ac3b"
+    },
+    "examples/manipulation/grasp_eval.py": {
+      "bytes": 4324,
+      "sha256": "72d1b127c47e32a316c92c1001f435d8207d404d7032ee37454ad0630aefdeb8"
+    },
+    "examples/manipulation/grasp_train.py": {
+      "bytes": 7269,
+      "sha256": "6bcac06d5ca40391bda52d9cc0885d1149599225c74e08f9ed2c3babdf10e39a"
+    },
+    "examples/rendering/demo.py": {
+      "bytes": 4311,
+      "sha256": "8277658783fa82fca1a3fc1f250bb4c73ba9bb1664fc23813d8e28a8e19d75a8"
+    },
+    "examples/rendering/follow_entity.py": {
+      "bytes": 1208,
+      "sha256": "e4f7cf7c9cbed63882b9e1efbe8ba2fd11b61463e10bda504d1147309954c2bc"
+    },
+    "examples/rendering/moving_camera.py": {
+      "bytes": 1076,
+      "sha256": "775a606c6cee6907cf50de5512a64f64e12db4c43273086c74b97d4f6f673baa"
+    },
+    "examples/rendering/render_async.py": {
+      "bytes": 1034,
+      "sha256": "c6e04592a295436e3f9b6add8b1ff39fbe136144640e82ac886dd3d4a5012f0a"
+    },
+    "examples/rendering/speed_test.py": {
+      "bytes": 1076,
+      "sha256": "3db2fb16a9f22581a162c238a90675cb01a61d6c8717def6f14c51cc00938ad7"
+    },
+    "examples/rigid/accelerometer_duck.py": {
+      "bytes": 1578,
+      "sha256": "ecb2aa89113a10819729d3eb56bd47c722e906fca3c7a4c2c7e11e8db4bac5e2"
+    },
+    "examples/rigid/accelerometer_franka.py": {
+      "bytes": 1778,
+      "sha256": "caa5082801a70002af9c5c06b606372550c07f46f960cb148ed2b6d55a7cced4"
+    },
+    "examples/rigid/apply_external_wrench.py": {
+      "bytes": 1255,
+      "sha256": "b384177bd4ea3f1d1227fc695f9ea95fd6d0ff94fa061e6f84118883403ec760"
+    },
+    "examples/rigid/authored_decomp.py": {
+      "bytes": 3755,
+      "sha256": "60847645b4026f96ee83bb874135c092f2d8136c9b19ae2f88a9699d68f71388"
+    },
+    "examples/rigid/bolt_nut_self_screw.py": {
+      "bytes": 5346,
+      "sha256": "6827861b0d7f2ebde654b651980a32a57895e4de876af495bccf664535f2c02a"
+    },
+    "examples/rigid/closed_loop.py": {
+      "bytes": 1537,
+      "sha256": "6c6884d450fbb78c163d8b465c7e6bd6c772c4d4889f231559b330ba07fc5374"
+    },
+    "examples/rigid/control_franka.py": {
+      "bytes": 3340,
+      "sha256": "4a17abd38dad0dfaee43a2a43450cf902487a21ddf3d2386873346e194924c2c"
+    },
+    "examples/rigid/control_mesh.py": {
+      "bytes": 1217,
+      "sha256": "c41c00526cd75f690ca4b6498e2c6402bb220cbf3c6118944417ab0a01b42d7b"
+    },
+    "examples/rigid/convex_decomposition.py": {
+      "bytes": 1592,
+      "sha256": "a3871e9e4f76c847b10e7d0077c554458746c93894d649aa71047eeb74a8b65d"
+    },
+    "examples/rigid/ddp_multi_gpu.py": {
+      "bytes": 3455,
+      "sha256": "6a5f772d6b267d09aed3bc4c7c0661c7f22c7c86a7d07fb0d72499bedad72bdd"
+    },
+    "examples/rigid/diffik_controller.py": {
+      "bytes": 2746,
+      "sha256": "50296e0e981c7f8223ac1e62dbc700b8fec1344e3693887c3fb3a32df6397873"
+    },
+    "examples/rigid/domain_randomization.py": {
+      "bytes": 3075,
+      "sha256": "b391488d8dc1ea3ec173aeb2c8717875085a791eb21000275f100a0e7680851a"
+    },
+    "examples/rigid/franka_cube.py": {
+      "bytes": 2331,
+      "sha256": "c3d4ec160f0fd9965ba000e96a4330619c2fe7a9090dd2a046f6a1e0ff251dc5"
+    },
+    "examples/rigid/friction_breakaway.py": {
+      "bytes": 7189,
+      "sha256": "16fe251e55502f3ce615de66276ba3d5d60a8b87f78ce8f39f2749e79dbf18c3"
+    },
+    "examples/rigid/grasp_bottle.py": {
+      "bytes": 3875,
+      "sha256": "469cdb5020655f1c69472902ae96d8c13b14b24efa08b971545e58b0d2eafe8e"
+    },
+    "examples/rigid/gravity_compensation.py": {
+      "bytes": 1343,
+      "sha256": "ecfe456fd3d76446481279e7e5e8bc2ca98f02d05907c26cdf4c3572e65aa67f"
+    },
+    "examples/rigid/heterogeneous_simulation.py": {
+      "bytes": 4359,
+      "sha256": "8f32ae50bd451ae4ecf0f862e8c026ec61c17740e18a783bf17cc209a83c24d7"
+    },
+    "examples/rigid/hibernation.py": {
+      "bytes": 6409,
+      "sha256": "ea30a08df95492944b17fdb446d62a8a4e7294bdab1310ffa818546214e37714"
+    },
+    "examples/rigid/ik_custom_chain.py": {
+      "bytes": 2105,
+      "sha256": "36d4cc4a7bd607346a048710fab00353368eab7b30331f31942a317fe900d3be"
+    },
+    "examples/rigid/ik_duck.py": {
+      "bytes": 1970,
+      "sha256": "721e337e63a7e95a0ec9e9ae507b2e9f6fcfd0722c2046a4d11421cd7315f96f"
+    },
+    "examples/rigid/ik_franka.py": {
+      "bytes": 2068,
+      "sha256": "aef185ae08966badb82858384377c5b88e4ca76af45f129004b0a046a7f9c541"
+    },
+    "examples/rigid/ik_franka_batched.py": {
+      "bytes": 2268,
+      "sha256": "95fdc0990ed16cf9cb32bd8516306b936874e6ec793e6828369f836621fd4be8"
+    },
+    "examples/rigid/ik_shadow_hand.py": {
+      "bytes": 2741,
+      "sha256": "4f71e241a1eed3fb7e68e01a8c86824971958b9e1566f4c86d4a5da7fc6937d6"
+    },
+    "examples/rigid/merge_entities.py": {
+      "bytes": 4061,
+      "sha256": "1e3f92e59bac19ed8c906333b998d7281d938995b388e8a81bda454c2f76c5b8"
+    },
+    "examples/rigid/multi_gpu.py": {
+      "bytes": 1486,
+      "sha256": "531bb772ac723a5bf49cca5dab6e80c1bb5b94c9250ea148a62e75879663a5e6"
+    },
+    "examples/rigid/nonconvex_mesh.py": {
+      "bytes": 1008,
+      "sha256": "8a93536c1b31bdcabf0f82768a45e0951ee37dd1d3f21cbbf4caec053004d56a"
+    },
+    "examples/rigid/rolling_coast.py": {
+      "bytes": 4139,
+      "sha256": "4eb17cfecc1685feff34fe76f74d0f23bb16cecfbda74ad5252a2a7d59f013e7"
+    },
+    "examples/rigid/set_phys_attr.py": {
+      "bytes": 6370,
+      "sha256": "3937367fd615c15aaa5e6baf7e0303659e1ce34afdbb52398703dd4f4a8c5823"
+    },
+    "examples/rigid/single_franka.py": {
+      "bytes": 1068,
+      "sha256": "2f25f50556bce9b29839c67e9c388f92561fb9c855490ac9a9ebf193d1621b98"
+    },
+    "examples/rigid/single_franka_batch_render.py": {
+      "bytes": 4172,
+      "sha256": "d8c7d0bdb577af9ec27ef784491a9997930f9c287b70133b1d80ed3a252dc699"
+    },
+    "examples/rigid/single_franka_envs.py": {
+      "bytes": 2171,
+      "sha256": "7408acaf6a2ba16fc191af94c26b919f4b8be9e487ff4a28163c815e4e4a97ba"
+    },
+    "examples/rigid/suction_cup.py": {
+      "bytes": 3550,
+      "sha256": "04ba45d90afe3f2a3a6136aea618ab32cebec8fec993aad39e72bb53e94cb8e9"
+    },
+    "examples/rigid/terrain_from_mesh.py": {
+      "bytes": 1658,
+      "sha256": "d0fd6fadffd52995c1b181462a5a2aed29654569323670d4b8556ff8f5c0d53a"
+    },
+    "examples/rigid/terrain_height_field.py": {
+      "bytes": 2035,
+      "sha256": "5d629ef34f999aa17b089ed46f2b1700caae54476be5658d25c570a6ac9592f0"
+    },
+    "examples/rigid/terrain_subterrain.py": {
+      "bytes": 2151,
+      "sha256": "0159b74e2113693138dd2a92582f1ecc8f25e7b29fd85c8f22949607a935d75a"
+    },
+    "examples/rigid/torsional_grasp.py": {
+      "bytes": 4155,
+      "sha256": "94d4fa7660287cc6ec35e0843c13bdec526bafaf7e5d7b63e0a8eb4310742f22"
+    },
+    "examples/rigid/wrecking_ball.py": {
+      "bytes": 12099,
+      "sha256": "3643ae380d94a19c309e520b5aa0641cbb1ce425da146e456e7a47f9ffc2bae6"
+    },
+    "examples/sap_coupling/fem_fixed_constraint.py": {
+      "bytes": 2277,
+      "sha256": "f474fddc7be4777ae6cf617bdb0ecc03d2ec0b3cf45f2083ec83581c84326bfc"
+    },
+    "examples/sap_coupling/fem_sphere_and_cube.py": {
+      "bytes": 1863,
+      "sha256": "d0df939d8a1cc57225f5a373fe48791a2f5990e0ba2f417f92add8c772c5a0a0"
+    },
+    "examples/sap_coupling/franka_grasp_fem_sphere.py": {
+      "bytes": 2761,
+      "sha256": "bf1bbf05df5337978e12dfa68054ed233a670e77ad1013231c22ad73e025f53e"
+    },
+    "examples/sap_coupling/franka_grasp_rigid_cube.py": {
+      "bytes": 2441,
+      "sha256": "2c62983242da53202b49ef023e7d6d97dd34c18853fc3ec740ee241058aa9b02"
+    },
+    "examples/sensors/camera_as_sensor.py": {
+      "bytes": 8195,
+      "sha256": "0b5e1aed3ae251e444571bad59cc0e2fa8d0f5874e9520156debf4ef09ddd626"
+    },
+    "examples/sensors/contact_force_go2.py": {
+      "bytes": 3233,
+      "sha256": "c9a43a13a9328e8ee1b4b6e436a3680a16cf5d87120354f12ba5fd53a65887b5"
+    },
+    "examples/sensors/depth_camera_custom_vverts.py": {
+      "bytes": 7621,
+      "sha256": "19d69346661c832fe26466bda374556b9d3c6d0bf531f3ccba5a4bfe5871e363"
+    },
+    "examples/sensors/imu_franka.py": {
+      "bytes": 4763,
+      "sha256": "d27b5ef5a7f03301dbfc3e24fc002d53f8347a4479ff06b8da292d165d74a53f"
+    },
+    "examples/sensors/joint_torque_franka.py": {
+      "bytes": 4751,
+      "sha256": "4dd0ae0545f7aa5987787699c4360612aa5bf40615ad0f2193ca6c156e8aab20"
+    },
+    "examples/sensors/lidar_teleop.py": {
+      "bytes": 6730,
+      "sha256": "b06bdb57c446e8c66ad0b4b5378e247ca37e50d4909efd6bfa656fc6518f65bc"
+    },
+    "examples/sensors/surface_distance_shadowhand.py": {
+      "bytes": 5813,
+      "sha256": "04f3b6cbb4a8511cb55b2b922acd4746e5116cc153ae69f62e5d7e2e2996cb92"
+    },
+    "examples/sensors/tactile_franka.py": {
+      "bytes": 14533,
+      "sha256": "973ca2cf0682c49c7328c6ff2184a8e3cf5d1cdd2f28de8eb2e6364b685e999b"
+    },
+    "examples/sensors/tactile_sandbox.py": {
+      "bytes": 18727,
+      "sha256": "b983516ddf3dcd3d2202089c16543651a869e59cb577987ddba0989def042126"
+    },
+    "examples/sensors/temperature_grid.py": {
+      "bytes": 8665,
+      "sha256": "ccb0a5f582eb1ccce0b737a1dcc2b7d657a3208397083ab618555e05b683d238"
+    },
+    "examples/speed_benchmark/anymal_c.py": {
+      "bytes": 1055,
+      "sha256": "9f5827875faf049b465b397494eef36ce48dac1193778f81b5a972c34c5de0ec"
+    },
+    "examples/speed_benchmark/franka.py": {
+      "bytes": 999,
+      "sha256": "5945159066fcba12617c05129fa3ed91bd1374aefd33ee99387bae2a20ba1eb0"
+    },
+    "examples/speed_benchmark/timers.py": {
+      "bytes": 3788,
+      "sha256": "5c807bb683c0f163bfd91b4da4d811e63d6cb9f9e06734903f915167eed4d405"
+    },
+    "examples/tutorials/IK_motion_planning_grasp.py": {
+      "bytes": 2508,
+      "sha256": "985537566f01642631648e196311c51a01063778c436861be6eecd9d7fbb27e5"
+    },
+    "examples/tutorials/advanced_IK_multilink.py": {
+      "bytes": 2219,
+      "sha256": "c829e594c370fbfd84095921461d39d9a62c2598b3538b3e67fe319490c2e8ea"
+    },
+    "examples/tutorials/advanced_hybrid_robot.py": {
+      "bytes": 2240,
+      "sha256": "cab840be6da86966222882c076d47cfec5ce6c055f18b5a39fa97a87f96dce28"
+    },
+    "examples/tutorials/advanced_muscle.py": {
+      "bytes": 1630,
+      "sha256": "87b67135516e5c56ccd3c288bd68099b51a15da34477e38557925d3ed36db2c1"
+    },
+    "examples/tutorials/advanced_worm.py": {
+      "bytes": 2536,
+      "sha256": "c3a9ce45a6445887db33c39df1f60317169fcdab55b4661c31aebfbf148817c8"
+    },
+    "examples/tutorials/batched_IK.py": {
+      "bytes": 1391,
+      "sha256": "1be0279cd56936c99f6169970022fd0453cf0a5a737da4124ed81ffb25bcd8d9"
+    },
+    "examples/tutorials/control_your_robot.py": {
+      "bytes": 2993,
+      "sha256": "c00db8d5629c4f583db922a8870862d5aa4047feb24ed2f32973ad8bec57f2bb"
+    },
+    "examples/tutorials/draw_debug.py": {
+      "bytes": 2086,
+      "sha256": "896191d0e9db89b5e6b1ed04af4eee681ac307312904c19258b975348b6d0975"
+    },
+    "examples/tutorials/entity_name.py": {
+      "bytes": 1785,
+      "sha256": "c1c59a05cf7c8822bc9ad092c3bce88bef1dacb16f8c1d7c086cbdd2fe05c69d"
+    },
+    "examples/tutorials/hello_genesis.py": {
+      "bytes": 262,
+      "sha256": "c134f0f6a2ae78daa15c0e246c49da48507346bb6f575c8d40c60439b911b243"
+    },
+    "examples/tutorials/interactive_debugging.py": {
+      "bytes": 328,
+      "sha256": "78dd465e5a7c28e0d573fc32bff8c560289fae4bfbee6e57a74f3e632d7c88f9"
+    },
+    "examples/tutorials/mpm.py": {
+      "bytes": 1461,
+      "sha256": "0ccf31723cbc8561270b48cca85bd4ebf52c0305d88c5f99a418b6cf82d50168"
+    },
+    "examples/tutorials/parallel_simulation.py": {
+      "bytes": 979,
+      "sha256": "c9078d87c944b1b8124a9de54015e7200d5e8a34cbf013c6659ad56d11c8d2da"
+    },
+    "examples/tutorials/pbd_cloth.py": {
+      "bytes": 1424,
+      "sha256": "96a3c08611a05b397c501c00cef65fe6b576d5bff634dd229ffac83a2cfdc374"
+    },
+    "examples/tutorials/position_control_comparison.py": {
+      "bytes": 4283,
+      "sha256": "e638576fdfee13ccb3c3d61e025a52a95e58786bf00a70577cfe3d6af2746e5b"
+    },
+    "examples/tutorials/selecting_rendered_envs.py": {
+      "bytes": 701,
+      "sha256": "db5a7eda09f8e5fa353c4d9ae69fd28445ef90d9baecf67b2a925368b8baa73e"
+    },
+    "examples/tutorials/sph_liquid.py": {
+      "bytes": 941,
+      "sha256": "8331d8b6f2805b8c79d8cc40f0bd4fae985993cf60b623c10fc52474ee65a502"
+    },
+    "examples/tutorials/visualization.py": {
+      "bytes": 1337,
+      "sha256": "484f5a4433b0d7f9455a5d0934a9c238a525f34aa24137be180b7d70225e6935"
+    },
+    "examples/usd/import_stage.py": {
+      "bytes": 2719,
+      "sha256": "8a20051c1ffc08db963d1d3b77a821d2906053b1db8cd95dd59ce3468c5ac457"
+    },
+    "examples/usd/kitchen.py": {
+      "bytes": 5581,
+      "sha256": "70af70ecb2510281b590fbecdd5079e832a82d8911e69225358b15b3c32f0403"
+    },
+    "examples/viewer_plugin/keyboard_teleop.py": {
+      "bytes": 5730,
+      "sha256": "e618c87d5f6633a1c377d3cb8a7a04e2ddb45cce00d52faebd3d4c1dd9dfef4f"
+    },
+    "examples/viewer_plugin/mesh_point_selector.py": {
+      "bytes": 10833,
+      "sha256": "715c52f1b589f7895e0236d610b0632cb1ca488e13662bf439891fd0df7081cc"
+    },
+    "examples/viewer_plugin/mouse_interaction.py": {
+      "bytes": 2770,
+      "sha256": "131d67c46ea2c863a8376d7c5c0c466436ead29b4d23550b6157e63989e6ab91"
+    },
+    "genesis/__init__.py": {
+      "bytes": 17971,
+      "sha256": "e589b12c2ca585cf8a9fa40ecc28623f6ef1cd8392cb909e4fde57cb522dc622"
+    },
+    "genesis/_main.py": {
+      "bytes": 10416,
+      "sha256": "73453bb994fb348bfa2229dfa292541e9b6e70bc29e1b4e2b41a4c439693eae2"
+    },
+    "genesis/assets/meshes/Airplane/airplane.mtl": {
+      "bytes": 423,
+      "sha256": "c291f143fba93c8a01206390106b58720fffe710fb61f4753661eda1f2324108"
+    },
+    "genesis/assets/meshes/Airplane/airplane.obj": {
+      "bytes": 101728,
+      "sha256": "43e0726eb7d86409929bf8fe53749a9216e85104938b6058c302f8a42ad4de89"
+    },
+    "genesis/assets/meshes/Airplane/textures/diffuse.dds": {
+      "bytes": 1398256,
+      "sha256": "0f045707f32e789325784c58a90584c9859c47637e677ac6f32b10d234be8fee"
+    },
+    "genesis/assets/meshes/Airplane/textures/normal.png": {
+      "bytes": 27499,
+      "sha256": "e619c6342fec7e8b6857abd4a9966e67ddb40cad808b1049a7830a5d44f4e357"
+    },
+    "genesis/assets/meshes/axis.obj": {
+      "bytes": 22928,
+      "sha256": "dd48526b39daf4246c6cf7a6563d56d5f2307f0a11a0e817c355b7ec8eb99ff1"
+    },
+    "genesis/assets/meshes/bathtub/bathtub.obj": {
+      "bytes": 701463,
+      "sha256": "f3abf41ddda9c137def955960f90471b8e9f0a8cd1a1d5ec97e762b146edd9ad"
+    },
+    "genesis/assets/meshes/bathtub/material.mtl": {
+      "bytes": 176,
+      "sha256": "aff332dad3de4b8007e49e5e92da68f577e3001e081eb3824a44a47e9c7ec938"
+    },
+    "genesis/assets/meshes/boat/boat.obj": {
+      "bytes": 48287,
+      "sha256": "2d4fa27299cb5b5fd2320ef60d3f4b16daac89767cd701283d27769b6e5b3014"
+    },
+    "genesis/assets/meshes/boat/material.mtl": {
+      "bytes": 524,
+      "sha256": "7d0b27ef4e8dbb4e09a9fb0cecb23a604e33cd2317c3ba30ed1d802bd4306988"
+    },
+    "genesis/assets/meshes/boat/material_0.png": {
+      "bytes": 1653590,
+      "sha256": "b196d0635bb5af6f0732a7adee7498da044c21d1e055ed4801148fa66d787759"
+    },
+    "genesis/assets/meshes/boat/material_1.png": {
+      "bytes": 1624200,
+      "sha256": "679643e0b5388ab45c1037c239098bfa6202d63b173244500416703635c5f70c"
+    },
+    "genesis/assets/meshes/boat/material_10.png": {
+      "bytes": 2351612,
+      "sha256": "747762113231f0c5afc739e7d4e610f38b8ce9d5cf568b1c9acb5e0dfa711a48"
+    },
+    "genesis/assets/meshes/boat/material_11.png": {
+      "bytes": 16651,
+      "sha256": "e4c2ddea6fca844c4aed2a05dde40b6ad3da48ba90eaf1e61570e20c79d5960e"
+    },
+    "genesis/assets/meshes/boat/material_12.png": {
+      "bytes": 56434,
+      "sha256": "010a7853eb90f46d2ad7fecfdacbac90189f73ac61d9196a6d72b708dd2d6ab9"
+    },
+    "genesis/assets/meshes/boat/material_13.png": {
+      "bytes": 389512,
+      "sha256": "e230d9688259e92bbee04e81673da549cb9fd67e7d0c90d7ef1528ba7861bc78"
+    },
+    "genesis/assets/meshes/boat/material_14.png": {
+      "bytes": 96218,
+      "sha256": "530b2777985f3b8513a1302797026d816adf77cbe6d1f14783a217aaa878d99a"
+    },
+    "genesis/assets/meshes/boat/material_15.png": {
+      "bytes": 311631,
+      "sha256": "cb80c4f70a01111cdaf45ab13860a1e8e3519307297b0410f50aee513f8fc551"
+    },
+    "genesis/assets/meshes/boat/material_2.png": {
+      "bytes": 1224581,
+      "sha256": "135812300a00ea28ef4e73a4e3dfadd43ca49afaa3a91510bf8d90967cdd2fbd"
+    },
+    "genesis/assets/meshes/boat/material_3.png": {
+      "bytes": 232678,
+      "sha256": "9d40ac65deecfea935c30e9f2c8f112362e8444ccd2165d5b84c5e8ac66489a7"
+    },
+    "genesis/assets/meshes/boat/material_4.png": {
+      "bytes": 96749,
+      "sha256": "814ab8c1f96d8846caf15e4d4b1c7124957c513ad849bae89b70c2f125ea7b92"
+    },
+    "genesis/assets/meshes/boat/material_5.png": {
+      "bytes": 220869,
+      "sha256": "f49f7b1b96a9526563bc01a9932b9f2cb7c90319263d4490d594bf44d2b5a5e9"
+    },
+    "genesis/assets/meshes/boat/material_6.png": {
+      "bytes": 334215,
+      "sha256": "587133021f97dc88a0889d414b516bfb9d937f246e4328ac71f660be5db5a6fe"
+    },
+    "genesis/assets/meshes/boat/material_7.png": {
+      "bytes": 169882,
+      "sha256": "8e6d35651be24bf035f21f2f7d0b5854e78aa86305738b1055a2ef86052add3f"
+    },
+    "genesis/assets/meshes/boat/material_8.png": {
+      "bytes": 205913,
+      "sha256": "0a35cedfd4e4e56f6a35a3ef220d08418b37730440360274ca7b5f40fac8cf55"
+    },
+    "genesis/assets/meshes/boat/material_9.png": {
+      "bytes": 54562,
+      "sha256": "343294bdcefa24e4cbeb26947ffcfb2ab1947722a85358ab1d53a235bb38521c"
+    },
+    "genesis/assets/meshes/bolt_nut/bolt.stl": {
+      "bytes": 535484,
+      "sha256": "99b3a2b0b6119f635375aa9c740e0c4c4cb4ec6e321426b8669217a65b0aa1d7"
+    },
+    "genesis/assets/meshes/bolt_nut/generate_bolt_nut.py": {
+      "bytes": 6781,
+      "sha256": "6162bfd1c2cff9818d442470d6fb33c99fcac92a82eb560b7fbab3a7e70a4b78"
+    },
+    "genesis/assets/meshes/bolt_nut/nut.stl": {
+      "bytes": 307884,
+      "sha256": "bfcb0d6e571a89549e8421177d5d5d89486caacecd12b5a426484554ba4f2609"
+    },
+    "genesis/assets/meshes/bunny.obj": {
+      "bytes": 6224056,
+      "sha256": "5e6e091d3c971f62281db529a005e03000778c27707aff62aa5407f426d7e601"
+    },
+    "genesis/assets/meshes/camera/camera.glb": {
+      "bytes": 83372,
+      "sha256": "d5adf6182bd29799171e09a0908c107700d447dceced0bc6a6500a6a3d5e64aa"
+    },
+    "genesis/assets/meshes/chopping-board/source/chopping_board.glb": {
+      "bytes": 450208,
+      "sha256": "e455cb3a931fef7468153e5327096a44b1af358c7d50db119109546c6a19a3f1"
+    },
+    "genesis/assets/meshes/chopping-board/textures/chopping_board_tx_0.png": {
+      "bytes": 434361,
+      "sha256": "8e7cddb5b2248b92d839e26030a10a7551d9030bb6390ed375383c6e7b28c7a8"
+    },
+    "genesis/assets/meshes/cloth.obj": {
+      "bytes": 437220,
+      "sha256": "c0d9979980737dc882b4c8e1595faaeb7d162bc54b91d46cf259447c7cf8d36b"
+    },
+    "genesis/assets/meshes/cross_cutter.obj": {
+      "bytes": 1688,
+      "sha256": "8b397c8855577bad6f669ef235d1807686b3117aff5e657b20aad8c5416a7782"
+    },
+    "genesis/assets/meshes/dragon.obj": {
+      "bytes": 6616786,
+      "sha256": "a0f33e7b67ff05d2aadd68021512cc5be5700e4f7d29219717a53ee98f0812e3"
+    },
+    "genesis/assets/meshes/dragon/dragon.obj": {
+      "bytes": 1317854,
+      "sha256": "67035fb186aa97ad2372e47b62f975abb17c3454644fbc0dba214fed65f356b0"
+    },
+    "genesis/assets/meshes/dragon/material.mtl": {
+      "bytes": 198,
+      "sha256": "0d90fe7d688a6da0b82b0f8053231a1c8986de34aa839f8113ed53a610c09227"
+    },
+    "genesis/assets/meshes/dragon/material_0.png": {
+      "bytes": 1634026,
+      "sha256": "05b447c2f536403ece73f12e1df295b501be3714a1f8fa59768c2b72aca7e947"
+    },
+    "genesis/assets/meshes/duck.obj": {
+      "bytes": 2312910,
+      "sha256": "b0df328abab9362dba4318669ca7f5137aec462fadeeb5e46c2588ab5ed68e82"
+    },
+    "genesis/assets/meshes/duck/duck.obj": {
+      "bytes": 227694,
+      "sha256": "7a4aad9a4667c4e9c6650e67ce09bb704f399cb590ad2480d9b09c39b2c7eddc"
+    },
+    "genesis/assets/meshes/duck/material.mtl": {
+      "bytes": 198,
+      "sha256": "0d90fe7d688a6da0b82b0f8053231a1c8986de34aa839f8113ed53a610c09227"
+    },
+    "genesis/assets/meshes/duck/material_0.png": {
+      "bytes": 328451,
+      "sha256": "9e567255c005e6f11cb8b5f02db94a75f26a5fa6aadaa012cf445bf9348c09d5"
+    },
+    "genesis/assets/meshes/env_sphere/env_sphere.obj": {
+      "bytes": 241837,
+      "sha256": "86f9f913fe893aededd6207b329ee5144819912539e94a399e51fada1dddd60a"
+    },
+    "genesis/assets/meshes/env_sphere/material.mtl": {
+      "bytes": 198,
+      "sha256": "0d90fe7d688a6da0b82b0f8053231a1c8986de34aa839f8113ed53a610c09227"
+    },
+    "genesis/assets/meshes/env_sphere/material_0.png": {
+      "bytes": 29669,
+      "sha256": "fe37a25c1c1142adc95048a432f8dd54f5536db8497a8d63f370eda30ff8dd54"
+    },
+    "genesis/assets/meshes/icecream_dispenser.obj": {
+      "bytes": 14265049,
+      "sha256": "dafe4923521197858a988001e4944587f2b040986dfe53fcbf8f3011ca38315f"
+    },
+    "genesis/assets/meshes/sphere.obj": {
+      "bytes": 83350,
+      "sha256": "1d821d923b5824100820a8bc362f8a343ff1460646f82ecbe54dde092aee8b54"
+    },
+    "genesis/assets/meshes/stirrer.obj": {
+      "bytes": 1475215,
+      "sha256": "f193480657dde9fb07abc3fc57d4fbdec15e0de16dd90f27ef580eda4088977f"
+    },
+    "genesis/assets/meshes/tank.obj": {
+      "bytes": 3364920,
+      "sha256": "dca00408de62d09725ae7e68a2ce737bc92f049e6b156b72f08f952690ea3558"
+    },
+    "genesis/assets/meshes/terrain_45.obj": {
+      "bytes": 141,
+      "sha256": "1bfa083297656b951fa9dc6685303b0969674ead4d0cd2eba28212b935c776b1"
+    },
+    "genesis/assets/meshes/trashbag_rope.glb": {
+      "bytes": 109544,
+      "sha256": "beba311746bc67f720224682223a8d8e9a399077ab6bf6bd5219cd33de125820"
+    },
+    "genesis/assets/meshes/wooden_sphere_OBJ/wood_Mat_Diffuse.png": {
+      "bytes": 5523354,
+      "sha256": "c1f373b6e2a730cdcc256d17be94674889401fcb3e4044b5c6f391ba92a6d120"
+    },
+    "genesis/assets/meshes/wooden_sphere_OBJ/wood_Mat_Glossiness.png": {
+      "bytes": 25416,
+      "sha256": "10681401d4f0ba478c51ee023fef40a5d7b214d2f6616e18dee8511e7bfa03ea"
+    },
+    "genesis/assets/meshes/wooden_sphere_OBJ/wood_Mat_Normal.png": {
+      "bytes": 58788,
+      "sha256": "2cbc0ee77ec4e254e8c7192e3fdb47d0922ed73fadfe1ac4ea3a4b75f4aaf6ee"
+    },
+    "genesis/assets/meshes/wooden_sphere_OBJ/wood_Mat_Specular.png": {
+      "bytes": 58789,
+      "sha256": "aa1e15b7bcc2c37168f785a5550a5ce46fe927359056e9c4ee27125f81f57347"
+    },
+    "genesis/assets/meshes/wooden_sphere_OBJ/wooden_sphere.mtl": {
+      "bytes": 492,
+      "sha256": "8549309d2c9ed705b40a43bc5a2a36dd2ce6ecd3dc5d8f86a04cbf64350ce586"
+    },
+    "genesis/assets/meshes/wooden_sphere_OBJ/wooden_sphere.obj": {
+      "bytes": 254281,
+      "sha256": "ba713fd5cfe81bf40fc6dfc9c25e007c44c2870cce81b66d4a2ed189f5cfed71"
+    },
+    "genesis/assets/meshes/worm/bdy_Base_Color.png": {
+      "bytes": 3952050,
+      "sha256": "7c18e5c681a56c1c84cbdc223c8ad827b3ba708ba13112e7ca3aee253ba8bdeb"
+    },
+    "genesis/assets/meshes/worm/bdy_Height.png": {
+      "bytes": 987403,
+      "sha256": "b1c089b7f4fd496aa33e5d68f81e500b2eb7cdc9fb4ffd8508cfcd62d91f2f96"
+    },
+    "genesis/assets/meshes/worm/bdy_Metallic.png": {
+      "bytes": 4166,
+      "sha256": "41a8c2d58782abca9d4b79dc2b4d59fa460a731b081212ba4723c7b64017b780"
+    },
+    "genesis/assets/meshes/worm/bdy_Normal_DirectX.png": {
+      "bytes": 4341794,
+      "sha256": "0bb7cb08645a4c257ad3e166dcaa5899af91b33e87ae3b4a84c3689e86df603b"
+    },
+    "genesis/assets/meshes/worm/bdy_Roughness.png": {
+      "bytes": 1116568,
+      "sha256": "d700c866b82428556dc5deee99c21aa24ac06130e50c824e26962e8e715cab34"
+    },
+    "genesis/assets/meshes/worm/worm.mtl": {
+      "bytes": 683,
+      "sha256": "de92282ba53fce67c5b19f5a9e07e3be2c41535209c996694eca122c55e62da7"
+    },
+    "genesis/assets/meshes/worm/worm.obj": {
+      "bytes": 92127,
+      "sha256": "5a00b0f324b8889b486ccd96481ff43d8dde5dc12156341566411c3e5d2f349d"
+    },
+    "genesis/assets/textures/checker.png": {
+      "bytes": 1902,
+      "sha256": "d41a3c09dd7cd2f6b87e4dfdf479688c8e15f0e6adba52f0d598ad1f8396e6aa"
+    },
+    "genesis/assets/textures/indoor_bright.png": {
+      "bytes": 3361817,
+      "sha256": "7d31c1c95184ea00f893fed127429d352314a07bef21e52d6b3aa6e8f564139e"
+    },
+    "genesis/assets/tower/ball.glb": {
+      "bytes": 38764,
+      "sha256": "4e732d32fdc7ae227686c0a69ebb4210cf809f7d5a7e584c12ba01427366772a"
+    },
+    "genesis/assets/tower/ball.urdf": {
+      "bytes": 563,
+      "sha256": "56e5b5ded7c41e7ccc1e4ee58651fa75cc9fe2c47b0c517455020503a341435d"
+    },
+    "genesis/assets/tower/ball_coll.glb": {
+      "bytes": 66772,
+      "sha256": "5bd5984b65542c96b73c0cac9cb45e5aa3d60619d72f4625a52148ec9e0a51b9"
+    },
+    "genesis/assets/tower/base_pole.glb": {
+      "bytes": 29756,
+      "sha256": "d04daca0aeddbf481436032a42b514f2b460139919573972cdba57f522723497"
+    },
+    "genesis/assets/tower/base_pole.urdf": {
+      "bytes": 588,
+      "sha256": "5183d78d758554e3f2e46eb1e54188aa3bdae5b78860cef1d3cea72912079e39"
+    },
+    "genesis/assets/tower/base_pole_coll.glb": {
+      "bytes": 29756,
+      "sha256": "2db7ef1cd050d72dd53ac1f439c2e5a29052552c96afe737362c2975af33707c"
+    },
+    "genesis/assets/tower/generate_tower.py": {
+      "bytes": 14463,
+      "sha256": "3d2a1f08a8d1fa8b7f1d3e4165cac797549426986d44d6972257e1b89e758c27"
+    },
+    "genesis/assets/tower/ring_01.glb": {
+      "bytes": 82204,
+      "sha256": "564ad917bfea6b9cda1193c65ac347092740c1307a7f25f9600baeb73549f1bf"
+    },
+    "genesis/assets/tower/ring_01.urdf": {
+      "bytes": 581,
+      "sha256": "8c5c88a2db4b9ac26a11a6b629c6ca4e2db283042176a105ca3ea1b2d8399adb"
+    },
+    "genesis/assets/tower/ring_01_coll.glb": {
+      "bytes": 14720,
+      "sha256": "3100b0b676deea19ee1cc218b0e24cd53e52bd2ecb3299c8e325be5eef307545"
+    },
+    "genesis/assets/tower/ring_02.glb": {
+      "bytes": 82208,
+      "sha256": "46c5ea43cebb88a159295d101c04d8eed1f191d33eb2d85ed15d0ebea76424ef"
+    },
+    "genesis/assets/tower/ring_02.urdf": {
+      "bytes": 581,
+      "sha256": "cc8d6d5e6a1608ae27f55d539a72e9587fe0601225c42c99c115ab9528dc54b7"
+    },
+    "genesis/assets/tower/ring_02_coll.glb": {
+      "bytes": 16164,
+      "sha256": "7bba42c867e7018c4f3d7f9a4d8aa02a7e0b7fc849ccf071832fcb1611f8c027"
+    },
+    "genesis/assets/tower/ring_03.glb": {
+      "bytes": 82204,
+      "sha256": "0fd46e57f6b53483b4917ad493ad30c660dd84e26a0135a0fd9e1ce8b804ee24"
+    },
+    "genesis/assets/tower/ring_03.urdf": {
+      "bytes": 581,
+      "sha256": "e25a23091ef8266cb2707c0f6f1cfd5c4a0c35a34c890764d6f17c044244e51e"
+    },
+    "genesis/assets/tower/ring_03_coll.glb": {
+      "bytes": 16168,
+      "sha256": "bd753432f63e442892d7d8f68d1722dd99eb4ba776a384d61f977d512b2ea083"
+    },
+    "genesis/assets/tower/ring_04.glb": {
+      "bytes": 82208,
+      "sha256": "9f9db5408fbc0b50785ffecd8413bddef7da0334d520ff850c4a4957b693cd65"
+    },
+    "genesis/assets/tower/ring_04.urdf": {
+      "bytes": 581,
+      "sha256": "6f59319887d8558ed47882ef38d34862e41f74ac37abcb3981cbda94c0d2ac09"
+    },
+    "genesis/assets/tower/ring_04_coll.glb": {
+      "bytes": 15708,
+      "sha256": "cd45137329871f0f468b632a3b2d13cb16a4a24513980be8c12202e04544e5f6"
+    },
+    "genesis/assets/tower/ring_05.glb": {
+      "bytes": 82208,
+      "sha256": "e23c2b4dffc917d5f5898e3632af72649cd1cd812c1462c557cc9e9a93a7eec7"
+    },
+    "genesis/assets/tower/ring_05.urdf": {
+      "bytes": 581,
+      "sha256": "0471c90f6ac29607caec1d6ecf8e6d5edf32575cae02de4d7194edb6280ada91"
+    },
+    "genesis/assets/tower/ring_05_coll.glb": {
+      "bytes": 16184,
+      "sha256": "24b86dafb7dde71cdeb0d8dc40dddd69f9006f3d3d3998022c9a4b36d2785adc"
+    },
+    "genesis/assets/tower/ring_06.glb": {
+      "bytes": 82204,
+      "sha256": "bf504254e421cc8192a52a9691b620f1021caff8eea46cde82d7a25539389f7e"
+    },
+    "genesis/assets/tower/ring_06.urdf": {
+      "bytes": 581,
+      "sha256": "070d7528758fe09f83cf806ca86bedf9fc2d9d6d7112dfd85af18b8eaee31a16"
+    },
+    "genesis/assets/tower/ring_06_coll.glb": {
+      "bytes": 16164,
+      "sha256": "66592bc5902eae2edccb59bb31024b32e9e9e9c1141e76353731300f4b13d0c0"
+    },
+    "genesis/assets/urdf/3763/bounding_box.json": {
+      "bytes": 80,
+      "sha256": "3041ec2fef885c3b7a0348fc048f63c06d6c4e73b50e699a3430e7805df9cedf"
+    },
+    "genesis/assets/urdf/3763/link_and_joint.txt": {
+      "bytes": 303,
+      "sha256": "b3b8fea3a2aa3fe6a30fe9c03b17870b0d0965354e24357b8c45050a523fecac"
+    },
+    "genesis/assets/urdf/3763/meta.json": {
+      "bytes": 154,
+      "sha256": "8aca515b141d093080692da8ab384a254b125d9edb00a87d06bab3fc524085f2"
+    },
+    "genesis/assets/urdf/3763/mobility.urdf": {
+      "bytes": 1699,
+      "sha256": "ca5a3db6bde926c905ae1653ab6cc79621fe00aeb1f5fc3a98d7e97b637b370a"
+    },
+    "genesis/assets/urdf/3763/mobility_v2.json": {
+      "bytes": 481,
+      "sha256": "bed6d8c58724b13161b0e68fe3d54ee2fd764483185b102175bb06ed5edcdb39"
+    },
+    "genesis/assets/urdf/3763/mobility_vhacd.urdf": {
+      "bytes": 1716,
+      "sha256": "6a3970d7d32b071f1bf4cf75046f4fc4e3d6ffbab1c52ded792e009e8e970e5b"
+    },
+    "genesis/assets/urdf/3763/parts_render/0.png": {
+      "bytes": 14719,
+      "sha256": "5b4958eb9086a4e68d82bdc8c4830709492df33aefd640121b5fd28f2fc87e9e"
+    },
+    "genesis/assets/urdf/3763/parts_render/0.txt": {
+      "bytes": 15,
+      "sha256": "49acc80d71a5438f8d1abe8e8ac472c3dce47f15ac36ee08fabfefc78476ec9f"
+    },
+    "genesis/assets/urdf/3763/parts_render/1.png": {
+      "bytes": 14719,
+      "sha256": "5b4958eb9086a4e68d82bdc8c4830709492df33aefd640121b5fd28f2fc87e9e"
+    },
+    "genesis/assets/urdf/3763/parts_render/1.txt": {
+      "bytes": 29,
+      "sha256": "1665cd8d685473a1023cfecda62ba107828870c60260c69ae5af1425735b021c"
+    },
+    "genesis/assets/urdf/3763/parts_render/5.png": {
+      "bytes": 14252,
+      "sha256": "76849755bf9b6697c3d80f57c6882478564d11babca8e149d1e1574f8ca8f462"
+    },
+    "genesis/assets/urdf/3763/parts_render/5.txt": {
+      "bytes": 11,
+      "sha256": "d9593945f761831c192d1cee16f451487796316997796b58369eb43398f5921e"
+    },
+    "genesis/assets/urdf/3763/parts_render/6.png": {
+      "bytes": 11294,
+      "sha256": "2f43d09184720a8fca56eca037f5bbad8f65fd481bb05394ee3ae2c405df1f31"
+    },
+    "genesis/assets/urdf/3763/parts_render/6.txt": {
+      "bytes": 11,
+      "sha256": "559a9459ff445223ea7956745cef9bd3aca824dbd7b650c686d960a9c722360f"
+    },
+    "genesis/assets/urdf/3763/parts_render/7.png": {
+      "bytes": 11362,
+      "sha256": "36a96cfd1cf00282f25f99e69c6ea58bf9efd50928feb68730e7ddc77d500ccd"
+    },
+    "genesis/assets/urdf/3763/parts_render/7.txt": {
+      "bytes": 9,
+      "sha256": "e762eb60d6036f1b0a5a7c20213c1cc7c17beff9fc34e58539d62ec1177e74f1"
+    },
+    "genesis/assets/urdf/3763/parts_render_after_merging/0.png": {
+      "bytes": 19192,
+      "sha256": "fc98f1ed1e93c728a344575dd01ab7748b59a134cb480a3315a67a698846ca74"
+    },
+    "genesis/assets/urdf/3763/parts_render_after_merging/0.txt": {
+      "bytes": 15,
+      "sha256": "2217b23c3138c9d027ddef1de70a85ccb6242f73e5cbe6cf04bb7559fab37eb4"
+    },
+    "genesis/assets/urdf/3763/parts_render_after_merging/1.png": {
+      "bytes": 19192,
+      "sha256": "fc98f1ed1e93c728a344575dd01ab7748b59a134cb480a3315a67a698846ca74"
+    },
+    "genesis/assets/urdf/3763/parts_render_after_merging/1.txt": {
+      "bytes": 29,
+      "sha256": "8ed84f2e771dcf8d458ccb6021caae651a2dc7ea863cb023cdd10f12be5fa237"
+    },
+    "genesis/assets/urdf/3763/parts_render_after_merging/2.png": {
+      "bytes": 18418,
+      "sha256": "7c3226df884417a2773d003e961fdf01206b9732c091f49358e7291189b3eff8"
+    },
+    "genesis/assets/urdf/3763/parts_render_after_merging/2.txt": {
+      "bytes": 11,
+      "sha256": "2b4a4d5ea43579fe74caa27f57ad3bde3418483e849da8a2da3e5ac7c3097810"
+    },
+    "genesis/assets/urdf/3763/parts_render_after_merging/3.png": {
+      "bytes": 14432,
+      "sha256": "420cd37ce367c722ef33cc231d4cdc49aa29b38082df8130d7db914174d3098e"
+    },
+    "genesis/assets/urdf/3763/parts_render_after_merging/3.txt": {
+      "bytes": 11,
+      "sha256": "b0632c10ef638c3ba4293199889c5b1e03bb4dccd77703d014a74bda456daab5"
+    },
+    "genesis/assets/urdf/3763/parts_render_after_merging/4.png": {
+      "bytes": 14296,
+      "sha256": "8df90372dd5dda5173dc2b16bceff148ebe7373a6b386abc0eba3f6ad519bc6e"
+    },
+    "genesis/assets/urdf/3763/parts_render_after_merging/4.txt": {
+      "bytes": 9,
+      "sha256": "94320576c3644491b86e3363426bd21927b8f0c029fc1ff81be5b7ec63eea0b7"
+    },
+    "genesis/assets/urdf/3763/point_sample/label-10000.txt": {
+      "bytes": 20000,
+      "sha256": "14b7bac90171fba4f61892984433f9f1edc5951da7a37bdde38947ce6150e54f"
+    },
+    "genesis/assets/urdf/3763/point_sample/ply-10000.ply": {
+      "bytes": 383249,
+      "sha256": "bf812acee224e24d5e512f626770b1140ecf945d0d486ea860b61b40ab2f4fc4"
+    },
+    "genesis/assets/urdf/3763/point_sample/pts-10000.pts": {
+      "bytes": 554625,
+      "sha256": "b7ce1594752526fa865b62283f3a85928cfc0b7729f50473770ce11f084e93e0"
+    },
+    "genesis/assets/urdf/3763/point_sample/pts-10000.txt": {
+      "bytes": 284625,
+      "sha256": "cbf9f083a25b31acf091efb8b92d9531882a68a1a09fa18b19f59129d4afbd71"
+    },
+    "genesis/assets/urdf/3763/point_sample/sample-points-all-label-10000.txt": {
+      "bytes": 20000,
+      "sha256": "c8fc4391d96d4b1b13f56f77b24327cfec3fb514c54e587c4d6f1b1ab4d15394"
+    },
+    "genesis/assets/urdf/3763/point_sample/sample-points-all-pts-label-10000.ply": {
+      "bytes": 383362,
+      "sha256": "b8d27f5de5cd0185f520a37e3a8eeeaadab6c2921083dd805d2c3abce999b968"
+    },
+    "genesis/assets/urdf/3763/point_sample/sample-points-all-pts-nor-rgba-10000.ply": {
+      "bytes": 766577,
+      "sha256": "c857833f320cd7ab4af8b09f82f1deb7f45e88f4cb210a7c92c745622745d8f4"
+    },
+    "genesis/assets/urdf/3763/point_sample/sample-points-all-pts-nor-rgba-10000.txt": {
+      "bytes": 766336,
+      "sha256": "250b0c00f3daf9356dea28e5461ffa0fec88c1536e0d61dd1f848fc31a6ab5e9"
+    },
+    "genesis/assets/urdf/3763/result.json": {
+      "bytes": 335,
+      "sha256": "31b3c820340be7b3c4c379572fd98e6a00cccc302e01cd7b0c3c5d80f3c95eb5"
+    },
+    "genesis/assets/urdf/3763/result_after_merging.json": {
+      "bytes": 504,
+      "sha256": "b6b763262816035e54460d70563fc5c0a4d7a412704121e998f0f3eb22d97ad2"
+    },
+    "genesis/assets/urdf/3763/semantics.txt": {
+      "bytes": 52,
+      "sha256": "c0b1b7a5479ac4aad5ba08e64796390b1d10db30ee98e2dc25399b2df462f0c7"
+    },
+    "genesis/assets/urdf/3763/textured_objs/original-1.mtl": {
+      "bytes": 151,
+      "sha256": "d4aa95ed662df236969eb0e91a1b5092f50d18837bc7ee1a1dfc581ff4144070"
+    },
+    "genesis/assets/urdf/3763/textured_objs/original-1.obj": {
+      "bytes": 20123,
+      "sha256": "85a4cadac27e5b4b32c70dbe0e18d998f0a686e6803c42711c83b4200ee649e9"
+    },
+    "genesis/assets/urdf/3763/textured_objs/original-1_log.txt": {
+      "bytes": 5309,
+      "sha256": "9bda7832027a9aed24a52be969d8a90b6d36d4d34c3321408ec963bb1b07a39f"
+    },
+    "genesis/assets/urdf/3763/textured_objs/original-1_vhacd.obj": {
+      "bytes": 10693,
+      "sha256": "da2945ca1824f33f07451888f1cbfc802c110c3dfda8305ebeb7c62367360887"
+    },
+    "genesis/assets/urdf/3763/textured_objs/original-2.mtl": {
+      "bytes": 167,
+      "sha256": "ce631f9fdeb77d09ce6efe8a1458dbfd36a39949c8194d81cf975642e4764a50"
+    },
+    "genesis/assets/urdf/3763/textured_objs/original-2.obj": {
+      "bytes": 13194,
+      "sha256": "b528b351f87e5de81167b5dabce47372c737c352fccaaf86039597fb2ce34059"
+    },
+    "genesis/assets/urdf/3763/textured_objs/original-2_log.txt": {
+      "bytes": 4345,
+      "sha256": "50e8b60b16e011dcbdc8c6a72ef7f2847a5079e19b8d55d0a1b0ee3599f8b779"
+    },
+    "genesis/assets/urdf/3763/textured_objs/original-2_vhacd.obj": {
+      "bytes": 3350,
+      "sha256": "9199193eca25a80744ad77716cf91be25cb1db0c24ee2da08467990ed5bfa945"
+    },
+    "genesis/assets/urdf/3763/textured_objs/original-3.mtl": {
+      "bytes": 151,
+      "sha256": "d4aa95ed662df236969eb0e91a1b5092f50d18837bc7ee1a1dfc581ff4144070"
+    },
+    "genesis/assets/urdf/3763/textured_objs/original-3.obj": {
+      "bytes": 47248,
+      "sha256": "bbc6c669863e310c5fb98fd35521ae1414943cbaeb538cfc5824342b6aed35a5"
+    },
+    "genesis/assets/urdf/3763/textured_objs/original-3_log.txt": {
+      "bytes": 5305,
+      "sha256": "c0fb8caff2becbe62e85471de84c9fe11a39b4c3883a66bf9c137331914a3dad"
+    },
+    "genesis/assets/urdf/3763/textured_objs/original-3_vhacd.obj": {
+      "bytes": 10196,
+      "sha256": "2758188abce089416788932e1de0033d6e6bcc8f7a7d523d955cb3db41ff194e"
+    },
+    "genesis/assets/urdf/3763/tree_hier.html": {
+      "bytes": 838,
+      "sha256": "669ce34dbd96a36486aedd781437bd2302f699a90e85dcb6b3c8456473651834"
+    },
+    "genesis/assets/urdf/3763/tree_hier_after_merging.html": {
+      "bytes": 978,
+      "sha256": "3c61ca12783ba74a193a9a029341dbfc2d64ac5fe6e051905c17dcf44e85f4f6"
+    },
+    "genesis/assets/urdf/anymal_c/ANYmal_c_license.txt": {
+      "bytes": 1477,
+      "sha256": "de5f42e8397f2e1c2339f41b00d2e4e64d09ad8c5b9251be9388445ae7f6b41d"
+    },
+    "genesis/assets/urdf/anymal_c/meshes/base.dae": {
+      "bytes": 278817,
+      "sha256": "785bea9b33831f8c741fc0ca070162e73cbf560ea9b03c53abf8978be877fc48"
+    },
+    "genesis/assets/urdf/anymal_c/meshes/base.jpg": {
+      "bytes": 198456,
+      "sha256": "b2fd8e67a836ff57e17bb6c9cea8962641d40b2a6c6d534c15ebd36d07456d4b"
+    },
+    "genesis/assets/urdf/anymal_c/meshes/battery.dae": {
+      "bytes": 5333,
+      "sha256": "690077db5140751f38deb1a450ab7c1e92977fc517cd39347758b30da6ca0a84"
+    },
+    "genesis/assets/urdf/anymal_c/meshes/battery.jpg": {
+      "bytes": 113546,
+      "sha256": "dc2968cc934d7259539aa7cacf04d8dba05cce45335c7a17940a56fada1d33be"
+    },
+    "genesis/assets/urdf/anymal_c/meshes/bottom_shell.dae": {
+      "bytes": 1452045,
+      "sha256": "3a5cfba0c6f632bc3ea816d18a069aefad06698de3f9dea47cc54b6d445a75ac"
+    },
+    "genesis/assets/urdf/anymal_c/meshes/bottom_shell.jpg": {
+      "bytes": 169218,
+      "sha256": "03890114260bb60c4e074f64d863939ce8dcb6660c867f5847b45fdbef97c000"
+    },
+    "genesis/assets/urdf/anymal_c/meshes/depth_camera.dae": {
+      "bytes": 5425,
+      "sha256": "44876e510ee0c549a85be20ba68ad25dea57322a62983996527a659dbdbaba3c"
+    },
+    "genesis/assets/urdf/anymal_c/meshes/depth_camera.jpg": {
+      "bytes": 190120,
+      "sha256": "2d9567d3599fc3fcc2f83a2edbef1831835e816e67d6a91cedfe080e56341453"
+    },
+    "genesis/assets/urdf/anymal_c/meshes/drive.dae": {
+      "bytes": 27885,
+      "sha256": "7f8f2e34bed73d0b6ba5b3b0c60850ee2ee6a5e5aa29b8ce30839c1a9ab2b142"
+    },
+    "genesis/assets/urdf/anymal_c/meshes/drive.jpg": {
+      "bytes": 178021,
+      "sha256": "2ba492037a1aa86c965725aa184db19f6a4be2791ee204ca099c57ec25dde4d4"
+    },
+    "genesis/assets/urdf/anymal_c/meshes/face.dae": {
+      "bytes": 831503,
+      "sha256": "6230397a1618fadc72c7bd5320f5b934048a94259831a53a978ebd03859a046c"
+    },
+    "genesis/assets/urdf/anymal_c/meshes/face.jpg": {
+      "bytes": 301962,
+      "sha256": "2ba488643ad18a7332e773f4c68cfd2c9dcbb7ad5da10c49293ff469c4fea3e7"
+    },
+    "genesis/assets/urdf/anymal_c/meshes/foot.dae": {
+      "bytes": 118105,
+      "sha256": "145ac1bea2b3c92286cf396251970463f1d67b260b889b1ceaa5be30de0671d2"
+    },
+    "genesis/assets/urdf/anymal_c/meshes/foot.jpg": {
+      "bytes": 189653,
+      "sha256": "2ca199d5111e9d72214a026efcf2f4843eff121051f1b8bd660c837032143c3d"
+    },
+    "genesis/assets/urdf/anymal_c/meshes/handle.dae": {
+      "bytes": 22670,
+      "sha256": "0ae653321953c54b2d482b7f95e36b7fcf3d92fbadd7c40e02c1656d6e80916e"
+    },
+    "genesis/assets/urdf/anymal_c/meshes/handle.jpg": {
+      "bytes": 170512,
+      "sha256": "77f09127642cf642678d13bf73d3fef8fcacb08c3621eff94d8843801da461cb"
+    },
+    "genesis/assets/urdf/anymal_c/meshes/hatch.dae": {
+      "bytes": 9657,
+      "sha256": "00ecbf99896b05b191daa622e85a5cfaec98141d199705f61fbe6d61d6675245"
+    },
+    "genesis/assets/urdf/anymal_c/meshes/hatch.jpg": {
+      "bytes": 105331,
+      "sha256": "2c94f1942f88dde4041a0dcf7eb7d66c289b0017d37a23df3e3c80631ae7dc5e"
+    },
+    "genesis/assets/urdf/anymal_c/meshes/hip.jpg": {
+      "bytes": 232010,
+      "sha256": "fb7a307df788b2396d769ea2d24d066a83c689932679b78a48c4363b8b525e86"
+    },
+    "genesis/assets/urdf/anymal_c/meshes/hip_l.dae": {
+      "bytes": 36985,
+      "sha256": "88ac066c129be6807ccb700a28d5fcf1f9ec4a70c2967ff27dca480972be03d6"
+    },
+    "genesis/assets/urdf/anymal_c/meshes/hip_r.dae": {
+      "bytes": 37111,
+      "sha256": "e862980f2fe4e2de20f4085aede4449c3e58022a18e658828358e5ce821c8e07"
+    },
+    "genesis/assets/urdf/anymal_c/meshes/lidar.dae": {
+      "bytes": 36393,
+      "sha256": "633db35d619694d2dfa9f263cf76e1db3a8556c801baeb9298ead365d96947ae"
+    },
+    "genesis/assets/urdf/anymal_c/meshes/lidar.jpg": {
+      "bytes": 184577,
+      "sha256": "1a5ae29ab0bfbe1392a03a2713d6b35c0818fc14b51a3ec7ee52948e477348ab"
+    },
+    "genesis/assets/urdf/anymal_c/meshes/lidar_cage.dae": {
+      "bytes": 66614,
+      "sha256": "1d0f16f34f36ae844f4935256c0cbe382f532d3b370d4ca2db123b0f0ffb1ce1"
+    },
+    "genesis/assets/urdf/anymal_c/meshes/lidar_cage.jpg": {
+      "bytes": 282722,
+      "sha256": "59b58b6dfe7919e93a8a49307c7a731a2722e16a9e4f112801deab6385c07ace"
+    },
+    "genesis/assets/urdf/anymal_c/meshes/remote.dae": {
+      "bytes": 43323,
+      "sha256": "0a372ada65117f5f595b97df15fcb6a20d5ac05d101b5ac99335b5ffa228b03a"
+    },
+    "genesis/assets/urdf/anymal_c/meshes/remote.jpg": {
+      "bytes": 109971,
+      "sha256": "ac3fff39a244809b7cd2e61bc264a2500ae0730fd1ab0db2ed7931452cfaf284"
+    },
+    "genesis/assets/urdf/anymal_c/meshes/shank.jpg": {
+      "bytes": 168946,
+      "sha256": "1b5f30dcbfef846f23da1b2348cd6d2dd92a9bccc3a3e6a7d7c50e7802d8d7cf"
+    },
+    "genesis/assets/urdf/anymal_c/meshes/shank_l.dae": {
+      "bytes": 237042,
+      "sha256": "1c8787d9e055f1330fb7c7cb02a3b780cf4f16b9319c081ebe9cd8d86f5de875"
+    },
+    "genesis/assets/urdf/anymal_c/meshes/shank_r.dae": {
+      "bytes": 239262,
+      "sha256": "386f85f0c8572794dac06fdfa439a2f90d803d28263d10002e6417b0f947ffc4"
+    },
+    "genesis/assets/urdf/anymal_c/meshes/thigh.dae": {
+      "bytes": 265853,
+      "sha256": "f2046f66c75689322eef919828b07f02c1ace1838677f78e14e28f2b2343c446"
+    },
+    "genesis/assets/urdf/anymal_c/meshes/thigh.jpg": {
+      "bytes": 236107,
+      "sha256": "1fc8e0c0bda1028c6392ad72bb820f1e9744a8068497c4ada51286fc5823efb3"
+    },
+    "genesis/assets/urdf/anymal_c/meshes/top_shell.dae": {
+      "bytes": 1331969,
+      "sha256": "d53bc2412da380d7b3ddf11da617880b435e99388a0d19c8db07fdf0b2c756d7"
+    },
+    "genesis/assets/urdf/anymal_c/meshes/top_shell.jpg": {
+      "bytes": 218160,
+      "sha256": "3fa585c862a8f9eb3f18b3fcc23ad169869d333939fff57f0f1b12cb1c36bc6c"
+    },
+    "genesis/assets/urdf/anymal_c/meshes/wide_angle_camera.dae": {
+      "bytes": 20722,
+      "sha256": "de0ecd4ff062973990ae232e16f6965a92fb874614b02e982f111bdde8accfb0"
+    },
+    "genesis/assets/urdf/anymal_c/meshes/wide_angle_camera.jpg": {
+      "bytes": 155846,
+      "sha256": "f94a9e342de634ad96c82fd36f02c3f8365ea3fdbeb47d9333b88138cd16f2c1"
+    },
+    "genesis/assets/urdf/anymal_c/urdf/anymal_c.urdf": {
+      "bytes": 54450,
+      "sha256": "f94f7fee1dedfda4face86c864a1db255c0c198f5ce685ce3ba0395c50306186"
+    },
+    "genesis/assets/urdf/blue_box/assets/part_1.part": {
+      "bytes": 372,
+      "sha256": "f88616d658d655e0f8f449aab8588f65ed3fd05c545a1b0653d17eff7a0d0f09"
+    },
+    "genesis/assets/urdf/blue_box/assets/part_1.stl": {
+      "bytes": 13084,
+      "sha256": "5c88d3c0111980f247d00914f471dffa0ea12fc3b06c29f0ff09a28600aea146"
+    },
+    "genesis/assets/urdf/blue_box/model.urdf": {
+      "bytes": 901,
+      "sha256": "ad6a8d076fd6b78ac0a6fc9922cf7837ef9a8aaa11fa0766987ae1e4edc4ba7c"
+    },
+    "genesis/assets/urdf/drones/body.mtl": {
+      "bytes": 192,
+      "sha256": "ff8ad1126a85e34abc526feaf79585e5e89dbf056070d17e73ae8032f0201891"
+    },
+    "genesis/assets/urdf/drones/body.obj": {
+      "bytes": 602583,
+      "sha256": "7bc7c19e6b70da9cbc7ab51127a48ce058f59b622858dcf73d06c9cf21a3f3b1"
+    },
+    "genesis/assets/urdf/drones/body.png": {
+      "bytes": 94,
+      "sha256": "355efee3a14346c8ba48c92d3df544c3c92b8bd25609f128a5aad4dd5ea9bf01"
+    },
+    "genesis/assets/urdf/drones/cf2.dae": {
+      "bytes": 529734,
+      "sha256": "8db98d6393bbf672f01a8d3af6ff5ac42b9e85f6ee3e3e2d2c53801e823b3a35"
+    },
+    "genesis/assets/urdf/drones/cf2p.urdf": {
+      "bytes": 2830,
+      "sha256": "9c6acd425307103bb2f40e93afc5c951811eed77ee85a7baa246a265d845f2b9"
+    },
+    "genesis/assets/urdf/drones/cf2x.urdf": {
+      "bytes": 3496,
+      "sha256": "5923a231efe0f052c31f7b5b4d3599c3b3a7e95fa2b2772b023798a68ecafc05"
+    },
+    "genesis/assets/urdf/drones/propeller0.mtl": {
+      "bytes": 178,
+      "sha256": "a9e35ebf0c58b74bf09dcf37d4c161082c900ff1f4efff4f0053d1a4b2007466"
+    },
+    "genesis/assets/urdf/drones/propeller0.obj": {
+      "bytes": 84153,
+      "sha256": "9f9948fe0502151288972162639b9d559e6dea4fbf37b773653a5cbd862c8dd3"
+    },
+    "genesis/assets/urdf/drones/propeller1.mtl": {
+      "bytes": 178,
+      "sha256": "a9e35ebf0c58b74bf09dcf37d4c161082c900ff1f4efff4f0053d1a4b2007466"
+    },
+    "genesis/assets/urdf/drones/propeller1.obj": {
+      "bytes": 83782,
+      "sha256": "16c55cd2c2211a87d7a8bd91bfa0d1cda11b4d520be72af95f76725c39b5321c"
+    },
+    "genesis/assets/urdf/drones/propeller2.mtl": {
+      "bytes": 178,
+      "sha256": "a9e35ebf0c58b74bf09dcf37d4c161082c900ff1f4efff4f0053d1a4b2007466"
+    },
+    "genesis/assets/urdf/drones/propeller2.obj": {
+      "bytes": 83722,
+      "sha256": "a98155f3261b6005d6ad05c2bd40cacedab52f7943d08e0b0defe565d6a74711"
+    },
+    "genesis/assets/urdf/drones/propeller3.mtl": {
+      "bytes": 178,
+      "sha256": "a9e35ebf0c58b74bf09dcf37d4c161082c900ff1f4efff4f0053d1a4b2007466"
+    },
+    "genesis/assets/urdf/drones/propeller3.obj": {
+      "bytes": 83944,
+      "sha256": "6431001e24e788e243ac3a3a2c140cd37e164663dd9deae8e8d130685f87f8a8"
+    },
+    "genesis/assets/urdf/drones/racer.urdf": {
+      "bytes": 2565,
+      "sha256": "4ddcd3a8edd4a31654b3dde5d315490688545efdf79a40c434fdad3d4863d5c4"
+    },
+    "genesis/assets/urdf/go2/dae/base.dae": {
+      "bytes": 10727399,
+      "sha256": "e52bebbb5c7ff1f6aedee620c9b5b349f6e965360ecc63a9bb743eeff2d0be64"
+    },
+    "genesis/assets/urdf/go2/dae/calf.dae": {
+      "bytes": 1125517,
+      "sha256": "29872fa1a435b92bc2b395fdfa7f0aee26101db3c494681896bd4ef24ee7883c"
+    },
+    "genesis/assets/urdf/go2/dae/calf_mirror.dae": {
+      "bytes": 1125457,
+      "sha256": "79c66be7ed06760bd5001c067a1fb0ac517f639d8b1a5f89be471903b3f359e1"
+    },
+    "genesis/assets/urdf/go2/dae/foot.dae": {
+      "bytes": 506988,
+      "sha256": "ffbd95fd641866ce9bd277aa249b92dafc9148d70131fa2c52709a35ce5b710b"
+    },
+    "genesis/assets/urdf/go2/dae/hip.dae": {
+      "bytes": 4666421,
+      "sha256": "8735e10617afe252cef0844c1d139d15bc6d4c653660d742fea9fe05c2704d8f"
+    },
+    "genesis/assets/urdf/go2/dae/thigh.dae": {
+      "bytes": 3884136,
+      "sha256": "a622381ae308897ff143b8bbf02f075457c342b22984205040424a5a983246fa"
+    },
+    "genesis/assets/urdf/go2/dae/thigh_mirror.dae": {
+      "bytes": 3896575,
+      "sha256": "c7bae0b0565c2aa4b7cc15a538d795e9153e0f10c821cc18429e92693172bdc6"
+    },
+    "genesis/assets/urdf/go2/urdf/go2.urdf": {
+      "bytes": 24170,
+      "sha256": "4f306754e9b3d73930ac8362aa456eb8912f2e886665618e7eced9627c1704a4"
+    },
+    "genesis/assets/urdf/kuka_iiwa/kuka_with_gripper.sdf": {
+      "bytes": 22812,
+      "sha256": "85567a48112b80f780d2aba5aa15fa5dd45634ba11e48a4d08de4379bf4dc724"
+    },
+    "genesis/assets/urdf/kuka_iiwa/kuka_with_gripper2.sdf": {
+      "bytes": 24307,
+      "sha256": "833da65e6a54dd672e513344fc5484c4208805269fbf5683bac39b92ecd5f8a7"
+    },
+    "genesis/assets/urdf/kuka_iiwa/kuka_world.sdf": {
+      "bytes": 11555,
+      "sha256": "b3e3e115185bc0cc3879b757764ce86d99fa5c44ee1b24c96959d3a287421721"
+    },
+    "genesis/assets/urdf/kuka_iiwa/meshes/base_link.dae": {
+      "bytes": 4771104,
+      "sha256": "5bce2661b072f9402f4af89b40b107271054e3c7705e2f9f23ffaf286e4a3b7c"
+    },
+    "genesis/assets/urdf/kuka_iiwa/meshes/base_link_uv.png": {
+      "bytes": 442058,
+      "sha256": "c57d0a59236b441fa91f9e0489acb49960ae7a57603c33727c45cddb70258aac"
+    },
+    "genesis/assets/urdf/kuka_iiwa/meshes/finger_base_left.stl": {
+      "bytes": 10084,
+      "sha256": "015bee8184c908887770d7384999ba13977156c9643e987b0bf3ccda957163ac"
+    },
+    "genesis/assets/urdf/kuka_iiwa/meshes/finger_base_right.stl": {
+      "bytes": 10084,
+      "sha256": "3a105a557d28d55789908c1a72270fb303f4bdad02b89eb94f7448686213dce0"
+    },
+    "genesis/assets/urdf/kuka_iiwa/meshes/finger_tip_left.stl": {
+      "bytes": 6984,
+      "sha256": "35275ff1024ad05eb0c44e969979f01d90840470ccee5b71a1d6d9a4cae8d628"
+    },
+    "genesis/assets/urdf/kuka_iiwa/meshes/finger_tip_right.stl": {
+      "bytes": 6984,
+      "sha256": "61d8cebf4cd84c7698a84c183e7d8225a8181f94a925e25f07dfb0432161fca3"
+    },
+    "genesis/assets/urdf/kuka_iiwa/meshes/link_0.mtl": {
+      "bytes": 137,
+      "sha256": "6e35bcf7fe06b2a05c3c8e8456c4b14d41728cb454a2aa426833a2c504baf3aa"
+    },
+    "genesis/assets/urdf/kuka_iiwa/meshes/link_0.obj": {
+      "bytes": 185365,
+      "sha256": "e495e8fe803853bbb65938ffcff870d901f789362057973936fc8fd43d307050"
+    },
+    "genesis/assets/urdf/kuka_iiwa/meshes/link_0.stl": {
+      "bytes": 151984,
+      "sha256": "541e131185c398ba4562f94ddf988ec349cf50b78c07ddef0bce22b55f0292d3"
+    },
+    "genesis/assets/urdf/kuka_iiwa/meshes/link_1.mtl": {
+      "bytes": 137,
+      "sha256": "6e35bcf7fe06b2a05c3c8e8456c4b14d41728cb454a2aa426833a2c504baf3aa"
+    },
+    "genesis/assets/urdf/kuka_iiwa/meshes/link_1.obj": {
+      "bytes": 170199,
+      "sha256": "75c9b665dd044f61906c673c8d998a05b089b4ec33004789e2f0ede4fccee0ef"
+    },
+    "genesis/assets/urdf/kuka_iiwa/meshes/link_1.stl": {
+      "bytes": 138034,
+      "sha256": "9539f9491e1abf7c01e8abae5eaba878771e4a3ada41e76ebeb39cce922d2818"
+    },
+    "genesis/assets/urdf/kuka_iiwa/meshes/link_2.mtl": {
+      "bytes": 137,
+      "sha256": "6e35bcf7fe06b2a05c3c8e8456c4b14d41728cb454a2aa426833a2c504baf3aa"
+    },
+    "genesis/assets/urdf/kuka_iiwa/meshes/link_2.obj": {
+      "bytes": 86691,
+      "sha256": "faa936a81988397e0f13b5cfe8e9d567f2b11253d70509ea2686cf4c577ffb35"
+    },
+    "genesis/assets/urdf/kuka_iiwa/meshes/link_2.stl": {
+      "bytes": 72534,
+      "sha256": "75d61826aa89de769935eafca2da207d51f5b0e72dbd52758e46ba6835e9206e"
+    },
+    "genesis/assets/urdf/kuka_iiwa/meshes/link_3.mtl": {
+      "bytes": 137,
+      "sha256": "6e35bcf7fe06b2a05c3c8e8456c4b14d41728cb454a2aa426833a2c504baf3aa"
+    },
+    "genesis/assets/urdf/kuka_iiwa/meshes/link_3.obj": {
+      "bytes": 115751,
+      "sha256": "28cb1d299f91ca112cc922ed175746d93c69523cd2dbc0d8853b8d65d90706e5"
+    },
+    "genesis/assets/urdf/kuka_iiwa/meshes/link_3.stl": {
+      "bytes": 96984,
+      "sha256": "88aa914d0396e8ec0b744c98f71264062e5a3d8c5eedcd0f6c124c7c5ce2545b"
+    },
+    "genesis/assets/urdf/kuka_iiwa/meshes/link_4.mtl": {
+      "bytes": 137,
+      "sha256": "6e35bcf7fe06b2a05c3c8e8456c4b14d41728cb454a2aa426833a2c504baf3aa"
+    },
+    "genesis/assets/urdf/kuka_iiwa/meshes/link_4.obj": {
+      "bytes": 93414,
+      "sha256": "72d770418620ddaf689d3bd48936231560b92b952ae9761e03070bbe98c2146a"
+    },
+    "genesis/assets/urdf/kuka_iiwa/meshes/link_4.stl": {
+      "bytes": 77434,
+      "sha256": "505815a8ee3175103e748566ad3257e77abd9823055898147493d4d20946faf8"
+    },
+    "genesis/assets/urdf/kuka_iiwa/meshes/link_5.mtl": {
+      "bytes": 137,
+      "sha256": "6e35bcf7fe06b2a05c3c8e8456c4b14d41728cb454a2aa426833a2c504baf3aa"
+    },
+    "genesis/assets/urdf/kuka_iiwa/meshes/link_5.obj": {
+      "bytes": 76096,
+      "sha256": "18125b239be2b56a1733812717dbbbcf70f15121f21a3bb845a3bbb228d35bc8"
+    },
+    "genesis/assets/urdf/kuka_iiwa/meshes/link_5.stl": {
+      "bytes": 67984,
+      "sha256": "e26c3cbefa46e24ed02cc0dfe86bc7c89e53675623f8fee007d7860a48d2fa80"
+    },
+    "genesis/assets/urdf/kuka_iiwa/meshes/link_6.mtl": {
+      "bytes": 137,
+      "sha256": "6e35bcf7fe06b2a05c3c8e8456c4b14d41728cb454a2aa426833a2c504baf3aa"
+    },
+    "genesis/assets/urdf/kuka_iiwa/meshes/link_6.obj": {
+      "bytes": 68485,
+      "sha256": "fce98398a502844137c5d73e6526121932c5d5c554677582a459191a5495cbe8"
+    },
+    "genesis/assets/urdf/kuka_iiwa/meshes/link_6.stl": {
+      "bytes": 57934,
+      "sha256": "f29869219bdf92a0bac2004aaab5ec22e645fedfb0fc5d4776b663fab1b22f37"
+    },
+    "genesis/assets/urdf/kuka_iiwa/meshes/link_7.mtl": {
+      "bytes": 137,
+      "sha256": "6e35bcf7fe06b2a05c3c8e8456c4b14d41728cb454a2aa426833a2c504baf3aa"
+    },
+    "genesis/assets/urdf/kuka_iiwa/meshes/link_7.obj": {
+      "bytes": 92888,
+      "sha256": "8256c76e8703ab92a92289cdecf281c743d9054e0c50ad61202ce35fdf332d76"
+    },
+    "genesis/assets/urdf/kuka_iiwa/meshes/link_7.stl": {
+      "bytes": 75684,
+      "sha256": "13a2c25ba8a1ae6b6d5d1c13b6f58bb8ce76ce5b61403698ddc9281edc139645"
+    },
+    "genesis/assets/urdf/kuka_iiwa/model.sdf": {
+      "bytes": 13030,
+      "sha256": "7cd391d3c35e3a228602cb81eda90c476a566f3adac92e578c6022c0238d5168"
+    },
+    "genesis/assets/urdf/kuka_iiwa/model.urdf": {
+      "bytes": 11160,
+      "sha256": "5c13c5b4bb88b5265223e0ec9a7706cbf81e9bb21cc0e18534273755a041788c"
+    },
+    "genesis/assets/urdf/kuka_iiwa/model2.sdf": {
+      "bytes": 22832,
+      "sha256": "112867352326f629b544860144f4e9dff519b3948b2024adf7ea94544b28995e"
+    },
+    "genesis/assets/urdf/kuka_iiwa/model_for_sdf.urdf": {
+      "bytes": 11144,
+      "sha256": "bf9158fbd2e2c50b1509f8e16ca0eda5801ac50a135ef350492826af0d7357ce"
+    },
+    "genesis/assets/urdf/kuka_iiwa/model_free_base.urdf": {
+      "bytes": 11160,
+      "sha256": "ee2f3e48ee34de250b4aeaf6f287d35cfcbd3a97f12a18e244f43c677849e26c"
+    },
+    "genesis/assets/urdf/kuka_iiwa/model_mobile.urdf": {
+      "bytes": 12579,
+      "sha256": "e8af43068c28b064b3ddaf46d8005da30be63ba95cc03f48d05e8b22916d2fa4"
+    },
+    "genesis/assets/urdf/kuka_iiwa/model_vr_limits.urdf": {
+      "bytes": 11158,
+      "sha256": "355f5f2721711546cea0de8dd74d44172590a7cbf7f749fa61625bbab37c3eb5"
+    },
+    "genesis/assets/urdf/panda_bullet/LICENSE.txt": {
+      "bytes": 10172,
+      "sha256": "59899c6091b540582ed617e8eeaac4919dc985ccfc35459ee9752b699be5205b"
+    },
+    "genesis/assets/urdf/panda_bullet/hand.urdf": {
+      "bytes": 3519,
+      "sha256": "79d422b975a922567bc5e81b04c134bcd7921aac01126704b19476603aaaa312"
+    },
+    "genesis/assets/urdf/panda_bullet/meshes/collision/finger.obj": {
+      "bytes": 7603,
+      "sha256": "c05dee2e2770ac3d45a097cec4a9d758e279ebdb7dc550eb249571c4690a6476"
+    },
+    "genesis/assets/urdf/panda_bullet/meshes/collision/hand.obj": {
+      "bytes": 15247,
+      "sha256": "a216bedc742a736f2c6cab010c6014475fe5f7b5ed53e371509adf885df618a2"
+    },
+    "genesis/assets/urdf/panda_bullet/meshes/collision/link0.obj": {
+      "bytes": 14925,
+      "sha256": "d29233f03537b6ee92a6861d4139290960325c2bacf9a640ab7935a5539c653f"
+    },
+    "genesis/assets/urdf/panda_bullet/meshes/collision/link1.obj": {
+      "bytes": 22976,
+      "sha256": "0879335b20930eccccdc7d2565553895589f9125d4c8c0d462ad0f74f17e7472"
+    },
+    "genesis/assets/urdf/panda_bullet/meshes/collision/link2.obj": {
+      "bytes": 22688,
+      "sha256": "cfca62e5846d3ba6db8be3740fc2219454401f1048db11a78bd9ec8f30cdc128"
+    },
+    "genesis/assets/urdf/panda_bullet/meshes/collision/link3.obj": {
+      "bytes": 22870,
+      "sha256": "22235fb3676b5cb45a2f512065fab94fecf052a767cddfaed62cbb6d1efcf1f8"
+    },
+    "genesis/assets/urdf/panda_bullet/meshes/collision/link4.obj": {
+      "bytes": 68016,
+      "sha256": "64b5914ef159149f87b767ff0eae4db41b9c267aecdddf2816ff25726fa0e6f2"
+    },
+    "genesis/assets/urdf/panda_bullet/meshes/collision/link5.obj": {
+      "bytes": 67745,
+      "sha256": "ff8d4bb5ab506b8cf621f44b928be7714dff86b669a92909b8d4f71c5b01597e"
+    },
+    "genesis/assets/urdf/panda_bullet/meshes/collision/link6.mtl": {
+      "bytes": 3827,
+      "sha256": "569f88e12d5672c190e2aa14526fcc16b609c25bd5ade907ddb83106ac61e78c"
+    },
+    "genesis/assets/urdf/panda_bullet/meshes/collision/link6.obj": {
+      "bytes": 140218,
+      "sha256": "e1dc8bbca8690944e6331f5a108d49c363eeec179b56a9f913541a541e6a2cfc"
+    },
+    "genesis/assets/urdf/panda_bullet/meshes/collision/link7.obj": {
+      "bytes": 45132,
+      "sha256": "675a784e949b2b47894f1965016bd56b992b136bd90e1a62e832f49b4a55b240"
+    },
+    "genesis/assets/urdf/panda_bullet/meshes/visual/base_link.dae": {
+      "bytes": 4771104,
+      "sha256": "5bce2661b072f9402f4af89b40b107271054e3c7705e2f9f23ffaf286e4a3b7c"
+    },
+    "genesis/assets/urdf/panda_bullet/meshes/visual/base_link_uv.png": {
+      "bytes": 442058,
+      "sha256": "c57d0a59236b441fa91f9e0489acb49960ae7a57603c33727c45cddb70258aac"
+    },
+    "genesis/assets/urdf/panda_bullet/meshes/visual/colors.png": {
+      "bytes": 33337,
+      "sha256": "bc8c81d8e9723de374dd718a1ddcd91dfe6dfe1e371b18383f6d084a13fe525b"
+    },
+    "genesis/assets/urdf/panda_bullet/meshes/visual/finger.mtl": {
+      "bytes": 481,
+      "sha256": "525d16f9a1338ebc2f3c062b30e462a279356aa4fe242617d39e05fa6926c27b"
+    },
+    "genesis/assets/urdf/panda_bullet/meshes/visual/finger.obj": {
+      "bytes": 65359,
+      "sha256": "c6959401c281e6d5b4486f08072140b6fdb3461678face301ac448cec06322d3"
+    },
+    "genesis/assets/urdf/panda_bullet/meshes/visual/hand.mtl": {
+      "bytes": 1132,
+      "sha256": "da2fb08fb2efec231cfd38b710e657b3ef04d3d3cf18082d3d043080dd6c79df"
+    },
+    "genesis/assets/urdf/panda_bullet/meshes/visual/hand.obj": {
+      "bytes": 713204,
+      "sha256": "3c95c6f99024842a8b9e73629dacc30ac5ee459feb0dbcc16df765fd27620584"
+    },
+    "genesis/assets/urdf/panda_bullet/meshes/visual/link1.mtl": {
+      "bytes": 262,
+      "sha256": "8c6e1b7fe3a382b872c986cfb3601e79b701afb7b4bfc72dcd6abd4b31f9d0f5"
+    },
+    "genesis/assets/urdf/panda_bullet/meshes/visual/link1.obj": {
+      "bytes": 1070650,
+      "sha256": "e0ec1bec9432a46f797e912cd8165798e62ebfd85c0807dce142bd6b9a768cd7"
+    },
+    "genesis/assets/urdf/panda_bullet/meshes/visual/link2.mtl": {
+      "bytes": 261,
+      "sha256": "e7821edf4876534ddeb9cdc789453e6473e2f1b9d33747f036005788b83199da"
+    },
+    "genesis/assets/urdf/panda_bullet/meshes/visual/link2.obj": {
+      "bytes": 1084458,
+      "sha256": "a1a41ada6d6cb8c51a8d0d19db9cadea101493842a52db75529e7ba0d4592904"
+    },
+    "genesis/assets/urdf/panda_bullet/meshes/visual/link3.mtl": {
+      "bytes": 931,
+      "sha256": "c2648eae04bf57f48100234ada9400156b1867d0fc2dbda2606bb786d6cfec51"
+    },
+    "genesis/assets/urdf/panda_bullet/meshes/visual/link3.obj": {
+      "bytes": 1237175,
+      "sha256": "82f81c15c236a41918dade0241ce40e59c4a0ee7fb08985f3a934380a8f7f594"
+    },
+    "genesis/assets/urdf/panda_bullet/meshes/visual/link4.mtl": {
+      "bytes": 925,
+      "sha256": "aa5e228aca4026e34e69dc9eb80bed96cc7d81dae5595984c16b464de5ba5963"
+    },
+    "genesis/assets/urdf/panda_bullet/meshes/visual/link4.obj": {
+      "bytes": 1272305,
+      "sha256": "91f36ecba40ecce6c169ede6d152a6c8853ee886e2b145ef6c5865cc9d5516b8"
+    },
+    "genesis/assets/urdf/panda_bullet/meshes/visual/link5.mtl": {
+      "bytes": 676,
+      "sha256": "1d44e731edacef0b66d7813468107877d05a12893f363ce3a0985c8305f404f3"
+    },
+    "genesis/assets/urdf/panda_bullet/meshes/visual/link5.obj": {
+      "bytes": 1582192,
+      "sha256": "10d084e6f728af7d291403f0359373c121e87785b177e5c6df8a7e1e88077f11"
+    },
+    "genesis/assets/urdf/panda_bullet/meshes/visual/link6.mtl": {
+      "bytes": 3552,
+      "sha256": "78299752f3c28e87c19f5456e851423de647fbb065f8d88332c1f72ba5729b4c"
+    },
+    "genesis/assets/urdf/panda_bullet/meshes/visual/link6.obj": {
+      "bytes": 2236857,
+      "sha256": "7d6c29421e8066761c993a519474eb58f851885387cc2ad5a606f96eb428f059"
+    },
+    "genesis/assets/urdf/panda_bullet/meshes/visual/visualShapeBench.json_0.json": {
+      "bytes": 26999,
+      "sha256": "dbe7b814c30e6c71359a6b8861b2f8ce4b030672568a612e270a5825e476ad26"
+    },
+    "genesis/assets/urdf/panda_bullet/panda.urdf": {
+      "bytes": 11263,
+      "sha256": "9c27cf846302e26a1d3a44ccfd4dd2dbba89cccc9f17b96b6bd1f8bceedd1ff0"
+    },
+    "genesis/assets/urdf/panda_bullet/panda_nohand.urdf": {
+      "bytes": 7789,
+      "sha256": "8a78827252ceee4987fe7bffae8edb60d7ec64478785f7d1c0a4e33acb27f2f5"
+    },
+    "genesis/assets/urdf/panda_bullet/panda_slider_mobile.urdf": {
+      "bytes": 12752,
+      "sha256": "c180a0740f599e2d1bd62e7bc7c91df9e9676fa09b3b250c98df4385d134e60f"
+    },
+    "genesis/assets/urdf/panda_bullet/panda_suction.urdf": {
+      "bytes": 11255,
+      "sha256": "b556e331281ed02f8383261d72a804e2868ed25f379e4c4e1f865f76b05172a4"
+    },
+    "genesis/assets/urdf/plane/checker.png": {
+      "bytes": 1902,
+      "sha256": "d41a3c09dd7cd2f6b87e4dfdf479688c8e15f0e6adba52f0d598ad1f8396e6aa"
+    },
+    "genesis/assets/urdf/plane/checker_blue.png": {
+      "bytes": 6379,
+      "sha256": "266d8e7010b8d615c873c27dccb4eca37e79035bd24efdca0b54eeb74a9fa419"
+    },
+    "genesis/assets/urdf/plane/generate_checker.py": {
+      "bytes": 636,
+      "sha256": "b7e35ffc0c70070fcb623f82774f3598247a03656b8c69e43d40eabfdea22199"
+    },
+    "genesis/assets/urdf/plane/plane.mtl": {
+      "bytes": 247,
+      "sha256": "d8ba86fb24c51a25bc808a9cc997017d013c2ee7d758492b7f910097e4e24d57"
+    },
+    "genesis/assets/urdf/plane/plane.urdf": {
+      "bytes": 691,
+      "sha256": "f4a8ae65e8d61b852e5dc5df87776520ec8f71b717da7dc5e18a7bc4581d0807"
+    },
+    "genesis/assets/urdf/plane/plane100.obj": {
+      "bytes": 365,
+      "sha256": "0ef1366701af4d234af4f98789249ec6e9383914d9497c85d8113d9a445bf4da"
+    },
+    "genesis/assets/urdf/plane/plane100_light.obj": {
+      "bytes": 371,
+      "sha256": "9258c092ce81466f14576e8861dc2ecd535a8c439ea2f86d2b2b407831480ce0"
+    },
+    "genesis/assets/urdf/plane/plane_light.mtl": {
+      "bytes": 252,
+      "sha256": "6b6bce8cc80aeb3c4592a472ed324401996679d678231d5c04bbdd658842c702"
+    },
+    "genesis/assets/urdf/plane/plane_light.urdf": {
+      "bytes": 690,
+      "sha256": "79ffdbeee3b0448b97aaa3f9f866f3b42d03813124007460b014e9758a72d741"
+    },
+    "genesis/assets/urdf/shadow_hand/meshes/collision/finger_distal.stl": {
+      "bytes": 2484,
+      "sha256": "4fc765a62fa9fcc505cdb27050791369d8f486f8e399d714d75897f1175062a6"
+    },
+    "genesis/assets/urdf/shadow_hand/meshes/collision/finger_middle.stl": {
+      "bytes": 4784,
+      "sha256": "34f893231689a6b0dd0be43f092081e0ef08270f42facba966ae3da6e9572ee5"
+    },
+    "genesis/assets/urdf/shadow_hand/meshes/collision/finger_proximal.stl": {
+      "bytes": 10284,
+      "sha256": "4dca974282a205d55b4320e06d4069e869a6c50f27318f8f426ec1944bbc25bb"
+    },
+    "genesis/assets/urdf/shadow_hand/meshes/collision/forearm.stl": {
+      "bytes": 4384,
+      "sha256": "272126219f7491ceea0eeeaf0ecc365a7389946f5923c75e630540bc1711ded5"
+    },
+    "genesis/assets/urdf/shadow_hand/meshes/collision/knuckle.stl": {
+      "bytes": 1484,
+      "sha256": "a121a8fe071a2f8b6ad8bbbd8c36b5b1d926f7f46b755e1057ad5acc29d8a604"
+    },
+    "genesis/assets/urdf/shadow_hand/meshes/collision/metacarpal.stl": {
+      "bytes": 4584,
+      "sha256": "0a4e13c5a97025bd5cb9fc682a7cbac9af819c74e68885968e39e3ef48d43114"
+    },
+    "genesis/assets/urdf/shadow_hand/meshes/collision/palm.stl": {
+      "bytes": 10584,
+      "sha256": "580d7de16c17f9eee869440fbb39720b123b4fea5ac3684efe807886ac4757d6"
+    },
+    "genesis/assets/urdf/shadow_hand/meshes/collision/thumb_distal.stl": {
+      "bytes": 2184,
+      "sha256": "7f5057b43ba5c56bd5c163225fa9dd1241575a457b2b6c0f53486d71f58edd87"
+    },
+    "genesis/assets/urdf/shadow_hand/meshes/collision/thumb_middle.stl": {
+      "bytes": 7884,
+      "sha256": "098571fd4b74be2e76185f5d3ce3494d50500c3cdf1c27f09b35fef894e516e3"
+    },
+    "genesis/assets/urdf/shadow_hand/meshes/collision/thumb_proximal.stl": {
+      "bytes": 4184,
+      "sha256": "1b444981ded6cdd8ade081881703485e28bc8e68d49c119851c4de6e5c866187"
+    },
+    "genesis/assets/urdf/shadow_hand/meshes/collision/wrist.stl": {
+      "bytes": 8984,
+      "sha256": "b15d9819438e43b971545cbd1370186111338bb83b8e5678697498b1e9c682c0"
+    },
+    "genesis/assets/urdf/shadow_hand/meshes/visual/finger_distal.dae": {
+      "bytes": 25789,
+      "sha256": "ab38863e4d7697823683640e899a97c94a71b0ae36fe29f8f3f787ea1828ea9e"
+    },
+    "genesis/assets/urdf/shadow_hand/meshes/visual/finger_middle.dae": {
+      "bytes": 34530,
+      "sha256": "f0646f0afab6f3c7eae61c70f194a4158fc237a193dbaa6589b62265ace73f72"
+    },
+    "genesis/assets/urdf/shadow_hand/meshes/visual/finger_proximal.dae": {
+      "bytes": 79115,
+      "sha256": "2d3e0e35c8ce2643fa754708f66203c1f6899fd4924dc950908910249df6758c"
+    },
+    "genesis/assets/urdf/shadow_hand/meshes/visual/forearm.dae": {
+      "bytes": 144339,
+      "sha256": "fe05c9d44c765a489bed9d65104e081b87a2fe02eb2c63d83ba47157b77c3aac"
+    },
+    "genesis/assets/urdf/shadow_hand/meshes/visual/knuckle.dae": {
+      "bytes": 42714,
+      "sha256": "e5980b41a41ab60165ff9385bcb4084cd0ef7d03db3bf3c8ada3bb36a63950fc"
+    },
+    "genesis/assets/urdf/shadow_hand/meshes/visual/metacarpal.dae": {
+      "bytes": 101938,
+      "sha256": "9ab98bef07957a6719a2883e03473d89f4ad18fe019d79de807f80cad5126dd4"
+    },
+    "genesis/assets/urdf/shadow_hand/meshes/visual/palm.dae": {
+      "bytes": 519162,
+      "sha256": "21fe970e438114595563bfd95d01720d883c69c1d3188cfb0bf5e33c08587937"
+    },
+    "genesis/assets/urdf/shadow_hand/meshes/visual/thumb_distal.dae": {
+      "bytes": 11071,
+      "sha256": "0a2112c6157ef2ca6043a3669d0b184af87d3c2958babd65af0ec8c77fa58f5a"
+    },
+    "genesis/assets/urdf/shadow_hand/meshes/visual/thumb_middle.dae": {
+      "bytes": 94224,
+      "sha256": "b47d868a6cbeb8c8f0c935794ee81bfc4319d0c6d9cef7a69e12a348c4de0941"
+    },
+    "genesis/assets/urdf/shadow_hand/meshes/visual/thumb_proximal.dae": {
+      "bytes": 32349,
+      "sha256": "dc1d81ff2573007c450ed9b2f66e81687ce36ad2e623363eedf6c834d14bdb1e"
+    },
+    "genesis/assets/urdf/shadow_hand/meshes/visual/wrist.dae": {
+      "bytes": 134070,
+      "sha256": "203a1f58a9ffa1b371d3ac717bcf045f2e77606a4aa31095a1ca7cbfd2b1140d"
+    },
+    "genesis/assets/urdf/shadow_hand/shadow_hand.urdf": {
+      "bytes": 17750,
+      "sha256": "54319559f6428617242991ddb0968269550586f9f0fbe4acb9eab1848be3c0c4"
+    },
+    "genesis/assets/urdf/simple/two_cube_prismatic.urdf": {
+      "bytes": 1628,
+      "sha256": "281512c27cf298ce9a908b6568015704530dfdab093baf6190eb35e57fdc3ae3"
+    },
+    "genesis/assets/urdf/simple/two_cube_revolute.urdf": {
+      "bytes": 1596,
+      "sha256": "4f7d4d18b224483ef17d51d4a70faefdb0de0cbc252b15e273ed20a3d9bc1276"
+    },
+    "genesis/assets/urdf/simple/two_link_arm.urdf": {
+      "bytes": 2247,
+      "sha256": "a33854103e1f64782d5098bbacf9c55e0feb9476ac5c0c855fd6e1ef4b73cb35"
+    },
+    "genesis/assets/urdf/wheel/fancy_wheel.obj": {
+      "bytes": 118962,
+      "sha256": "5f124c0a379bef9512e638bb8bab31da10eca674cb78004c304d894b24b0de52"
+    },
+    "genesis/assets/urdf/wheel/fancy_wheel.urdf": {
+      "bytes": 1298,
+      "sha256": "482beeaa01ee63ab16f52992a5bafc41740c620f18985a8a5e68815218f853ee"
+    },
+    "genesis/assets/urdf/wheel/material.mtl": {
+      "bytes": 198,
+      "sha256": "0d90fe7d688a6da0b82b0f8053231a1c8986de34aa839f8113ed53a610c09227"
+    },
+    "genesis/assets/urdf/wheel/material_0.png": {
+      "bytes": 1031681,
+      "sha256": "278c8911b8117fc00ab8bab18bd66757dd41350c8a5fbd57d7514988790455c4"
+    },
+    "genesis/assets/urdf/wheel/wheel.obj": {
+      "bytes": 1664,
+      "sha256": "27d17cb49d30a8e22b6676136346f38008c96495143140bc096cd73cf2f3c78f"
+    },
+    "genesis/assets/urdf/wheel/wheel.urdf": {
+      "bytes": 1231,
+      "sha256": "fafd8ab121dea8fd635a5577d55530d90fd2deb5ee6167cab72fdecc1269d356"
+    },
+    "genesis/assets/xml/ant.xml": {
+      "bytes": 5807,
+      "sha256": "9b75970630919af483df1e1eef01d9b0c9115c36030a91a2b6fda3b68e28368a"
+    },
+    "genesis/assets/xml/ant_grasp_ball.xml": {
+      "bytes": 2213,
+      "sha256": "58044442847bb7fa410929e01ad849e9f442863ac0a117a7fb6c4431b3e60374"
+    },
+    "genesis/assets/xml/ant_grasp_body.xml": {
+      "bytes": 5925,
+      "sha256": "778561bd27ebed2764c5923d0c3b805c8cfc723b3f2375e3d3fb6c7644e8bf06"
+    },
+    "genesis/assets/xml/ant_grasp_ground.xml": {
+      "bytes": 6431,
+      "sha256": "bbec10968b07669e92eab93d032eda15f5579aaed30976518e025792060a8991"
+    },
+    "genesis/assets/xml/cable.xml": {
+      "bytes": 1440,
+      "sha256": "444a78da12806dfdf891698d2f33355bf463ecaab720dd6c887cf5389bc5151f"
+    },
+    "genesis/assets/xml/dominos.xml": {
+      "bytes": 2848,
+      "sha256": "819d62c26f2d34c27e9933707020653783571590955daf10c53954a9e2f3b021"
+    },
+    "genesis/assets/xml/four_bar_linkage.xml": {
+      "bytes": 2786,
+      "sha256": "f425e0f44e59458a55b720b2ca63b6009f8b788a4a1391bec8b33af36b1c4c45"
+    },
+    "genesis/assets/xml/four_bar_linkage_weld.xml": {
+      "bytes": 2389,
+      "sha256": "7922b23ef543b7e44c47f8e5abff027d04b22a2261437e03902c4b7c225a7927"
+    },
+    "genesis/assets/xml/franka_emika_panda/README.md": {
+      "bytes": 2309,
+      "sha256": "d5710c80899f4b6c8c89915b097a26f962c11fb35a692350f37aef8a534896aa"
+    },
+    "genesis/assets/xml/franka_emika_panda/assets/finger_0.obj": {
+      "bytes": 87872,
+      "sha256": "215098c0fcdf7192f6c503a37cf49e3efecf8a9e1320f02b17c5584d89cc5b2c"
+    },
+    "genesis/assets/xml/franka_emika_panda/assets/finger_1.obj": {
+      "bytes": 64651,
+      "sha256": "cf239e9aca26bba09dbbf1c544c47d87cfc9a2f0637c8bb786af750b6d4eca44"
+    },
+    "genesis/assets/xml/franka_emika_panda/assets/hand.stl": {
+      "bytes": 10084,
+      "sha256": "94493e94f30fe940f2c8ca2f155c3bbe67bbff406d3edf5e261670d2f0f6e2ed"
+    },
+    "genesis/assets/xml/franka_emika_panda/assets/hand_0.obj": {
+      "bytes": 9091,
+      "sha256": "b94aab901086f85df04c019b30f43bf9aa23a7ad0443ec80a8c14662a41cabd2"
+    },
+    "genesis/assets/xml/franka_emika_panda/assets/hand_1.obj": {
+      "bytes": 121863,
+      "sha256": "cd76f7494bb314406a1819c46eb826ee254894f87235714f604a470653d9badb"
+    },
+    "genesis/assets/xml/franka_emika_panda/assets/hand_2.obj": {
+      "bytes": 596001,
+      "sha256": "e0f44a71712afa5b98eb20355eff17763d3e2e19f459b2bef19abed3727e64b3"
+    },
+    "genesis/assets/xml/franka_emika_panda/assets/hand_3.obj": {
+      "bytes": 902145,
+      "sha256": "a431a06d99e88a1b322b3122a01424ee7704daeaad0bc343b90b9604f014ad0c"
+    },
+    "genesis/assets/xml/franka_emika_panda/assets/hand_4.obj": {
+      "bytes": 151988,
+      "sha256": "21f96ef6a8de082e41b1ea9834f1043de359e5d60305541bcb63539581f53bff"
+    },
+    "genesis/assets/xml/franka_emika_panda/assets/link0.stl": {
+      "bytes": 10084,
+      "sha256": "dfc6d94330de8ddb005b311bfdba9f3b8e1aa7c256b71592ee7ff32cb9a9a5aa"
+    },
+    "genesis/assets/xml/franka_emika_panda/assets/link0_0.obj": {
+      "bytes": 296497,
+      "sha256": "6b9f41a4c203540daaeb7a33cc3d0d6c6a32dc8bba187074eeaf97b3e36b3f9c"
+    },
+    "genesis/assets/xml/franka_emika_panda/assets/link0_1.obj": {
+      "bytes": 103978,
+      "sha256": "57673d2ee2a9db2e10c8986ae57c56a7c39c012b60fd26d7d8549553b664a5ed"
+    },
+    "genesis/assets/xml/franka_emika_panda/assets/link0_10.obj": {
+      "bytes": 343308,
+      "sha256": "c9198b9d8534d628d097b0f2b239bb30343353182df098ce0d9db6bc13326848"
+    },
+    "genesis/assets/xml/franka_emika_panda/assets/link0_11.obj": {
+      "bytes": 22295,
+      "sha256": "f0adec78d6677b7799d25121981270e8bfe119b5c18d08a91ee37a54ad75f65c"
+    },
+    "genesis/assets/xml/franka_emika_panda/assets/link0_2.obj": {
+      "bytes": 590892,
+      "sha256": "1ca435a2a87a9608a146a47955724d43dd7ce10fc3dd3018800aa98f8ba86e05"
+    },
+    "genesis/assets/xml/franka_emika_panda/assets/link0_3.obj": {
+      "bytes": 47588,
+      "sha256": "3e9c6334d2b3b47944af3458ee5f20519abc20fe7ee23063bb53405ccab28046"
+    },
+    "genesis/assets/xml/franka_emika_panda/assets/link0_4.obj": {
+      "bytes": 211200,
+      "sha256": "215d25789704936120f119c0bc1cc7f68516dd3f8f1df61457b71acac3873f26"
+    },
+    "genesis/assets/xml/franka_emika_panda/assets/link0_5.obj": {
+      "bytes": 17023,
+      "sha256": "9361b104e93743045107aa5b15fb1a0835ba9c1f355aae71f56403cf6a9c33f6"
+    },
+    "genesis/assets/xml/franka_emika_panda/assets/link0_7.obj": {
+      "bytes": 30699,
+      "sha256": "2dc0b8ebbbc80e4c065d71e195adbc384f673438641fac82b07b801b4d2837cb"
+    },
+    "genesis/assets/xml/franka_emika_panda/assets/link0_8.obj": {
+      "bytes": 3263194,
+      "sha256": "3b8c436999db5586b8eb47bed2b0aa7de6993868b2681b4c04246eeac42fdb7a"
+    },
+    "genesis/assets/xml/franka_emika_panda/assets/link0_9.obj": {
+      "bytes": 105629,
+      "sha256": "45178f97d2b5da6bce11f610212c4ef7d08c73db33a4fc38e1b7f66b93d023f5"
+    },
+    "genesis/assets/xml/franka_emika_panda/assets/link1.obj": {
+      "bytes": 3274995,
+      "sha256": "51091e776b16babdbe2f3849b5c041f921d1f11dd94ac19a0f1c81abf496fbae"
+    },
+    "genesis/assets/xml/franka_emika_panda/assets/link1.stl": {
+      "bytes": 15084,
+      "sha256": "e41a39a94108fcf56aacff603fc91ec80541f4c1af17b51a0de5617f5566e6d2"
+    },
+    "genesis/assets/xml/franka_emika_panda/assets/link2.obj": {
+      "bytes": 3295608,
+      "sha256": "5c9f8e715de52c3eb71b475de35993b3b96081e02abea9f28c414768877fc59b"
+    },
+    "genesis/assets/xml/franka_emika_panda/assets/link2.stl": {
+      "bytes": 15084,
+      "sha256": "370f7605a0fae3529db169ded50f52f171024aa792d4d773bc84197301f6a039"
+    },
+    "genesis/assets/xml/franka_emika_panda/assets/link3.stl": {
+      "bytes": 15084,
+      "sha256": "0a8d638b9349c6c0eefc4e888636ac4838c4b27170f18a51699321118af709c1"
+    },
+    "genesis/assets/xml/franka_emika_panda/assets/link3_0.obj": {
+      "bytes": 3046804,
+      "sha256": "ce2da87f51708e11b189249d41401065dabe89a06e251185a06cef4d5ff27178"
+    },
+    "genesis/assets/xml/franka_emika_panda/assets/link3_1.obj": {
+      "bytes": 65260,
+      "sha256": "2880b7753a7173f38fa87ee21da4dfc7fa7be46fbe07bac5aef9e128513cb118"
+    },
+    "genesis/assets/xml/franka_emika_panda/assets/link3_2.obj": {
+      "bytes": 83591,
+      "sha256": "670cff81ae84693769ca4ae658c154cf909d81167e7c8d22b70ea977f2504efa"
+    },
+    "genesis/assets/xml/franka_emika_panda/assets/link3_3.obj": {
+      "bytes": 457684,
+      "sha256": "30ede0c812efd0e0b767d134a4eae0b84e0fa407bb6325a5a555e0569b3a3ffd"
+    },
+    "genesis/assets/xml/franka_emika_panda/assets/link4.stl": {
+      "bytes": 15084,
+      "sha256": "0180ebb5772ec9840cb049750cffb29a9ddc90311752a16ea34757782ef9e48d"
+    },
+    "genesis/assets/xml/franka_emika_panda/assets/link4_0.obj": {
+      "bytes": 83486,
+      "sha256": "443bf6d178177cf347951ecf107ccd10ca444e605e375b67304579e5f948806f"
+    },
+    "genesis/assets/xml/franka_emika_panda/assets/link4_1.obj": {
+      "bytes": 3148001,
+      "sha256": "ca935ec7cc8b3f0e86aa079c76b0b3bf593b1e9830bab0fa7131ac51577c74f0"
+    },
+    "genesis/assets/xml/franka_emika_panda/assets/link4_2.obj": {
+      "bytes": 455522,
+      "sha256": "c89caf26d379c35bb9e191ee2d91d09ab29ecc792b48d8bc10b39e5b38222175"
+    },
+    "genesis/assets/xml/franka_emika_panda/assets/link4_3.obj": {
+      "bytes": 67497,
+      "sha256": "1495d17f45bdb230cf58b0beef9da4e8c9cfe76a3d2d38da89017efe5e093136"
+    },
+    "genesis/assets/xml/franka_emika_panda/assets/link5_0.obj": {
+      "bytes": 824158,
+      "sha256": "a3238b8f2af0f2eb66d9fe63dc5d41ac52d5d38507241b5ed10e3cb019ab3e71"
+    },
+    "genesis/assets/xml/franka_emika_panda/assets/link5_1.obj": {
+      "bytes": 63174,
+      "sha256": "9d994bbf83ec241e301b5197a6846da13f2a4a0582edb2c0f76962c5549649d6"
+    },
+    "genesis/assets/xml/franka_emika_panda/assets/link5_2.obj": {
+      "bytes": 3856621,
+      "sha256": "83b4ffe9f772cd7fe182e98640650eebc899aaf01842656574b0416c90dd40a4"
+    },
+    "genesis/assets/xml/franka_emika_panda/assets/link5_collision_0.obj": {
+      "bytes": 3861,
+      "sha256": "3e5aa75fb13f193555c3dfb999df91d81df25006a5c3af5338297d78137c129b"
+    },
+    "genesis/assets/xml/franka_emika_panda/assets/link5_collision_1.obj": {
+      "bytes": 2412,
+      "sha256": "87cd8f621071df010f774cbde789282b8463840dfe704f8bdfa2e29be0142e15"
+    },
+    "genesis/assets/xml/franka_emika_panda/assets/link5_collision_2.obj": {
+      "bytes": 3786,
+      "sha256": "823ab6c8f7b1d79e0844fa071d82a03499ff68e34fddb1ba3451032c22736040"
+    },
+    "genesis/assets/xml/franka_emika_panda/assets/link6.stl": {
+      "bytes": 10084,
+      "sha256": "20b768e99a0e0440b5754dcca108016434e57937cc356acd9c352ccd3cb27f77"
+    },
+    "genesis/assets/xml/franka_emika_panda/assets/link6_0.obj": {
+      "bytes": 157563,
+      "sha256": "0504c70ebf1b284ee8faae7dcb896b8830bc672a6552015dd5dbd121fa031fb9"
+    },
+    "genesis/assets/xml/franka_emika_panda/assets/link6_1.obj": {
+      "bytes": 27106,
+      "sha256": "45f7ca77695198b6d86ec2417ad4e42e6275044f0f96266699ee8e1057757ac1"
+    },
+    "genesis/assets/xml/franka_emika_panda/assets/link6_10.obj": {
+      "bytes": 368502,
+      "sha256": "365f26c21d10332cab8d8704645cb46930c30b3085956f2d097498c793f24db4"
+    },
+    "genesis/assets/xml/franka_emika_panda/assets/link6_11.obj": {
+      "bytes": 32653,
+      "sha256": "8ae61e08b3ad064f25bbf03b22e59cc15d65883b5a7ce92711aff29df2493901"
+    },
+    "genesis/assets/xml/franka_emika_panda/assets/link6_12.obj": {
+      "bytes": 3894,
+      "sha256": "f28d1bfd62b0244ffd19fb35fe9edefdf583d3c9167db944e87185d919e1d021"
+    },
+    "genesis/assets/xml/franka_emika_panda/assets/link6_13.obj": {
+      "bytes": 3798,
+      "sha256": "0a55fa92dccb261d07200e6565fca4c850fd17f0c1ecf38821c0b97d51796c7d"
+    },
+    "genesis/assets/xml/franka_emika_panda/assets/link6_14.obj": {
+      "bytes": 444469,
+      "sha256": "750ae3ee4781e62e3a045c662195247b03f6642b05aa93104f08258e5f6eba26"
+    },
+    "genesis/assets/xml/franka_emika_panda/assets/link6_15.obj": {
+      "bytes": 668552,
+      "sha256": "5999c1c2497a004a7c4bbe034cdf13744f839d85ae7a11b1bc386c48a3e642e6"
+    },
+    "genesis/assets/xml/franka_emika_panda/assets/link6_16.obj": {
+      "bytes": 3675358,
+      "sha256": "551d7a8b37c53e7a152d008b4e36992e5b5abe74a4be18b57ee6319c27def09f"
+    },
+    "genesis/assets/xml/franka_emika_panda/assets/link6_2.obj": {
+      "bytes": 9916,
+      "sha256": "e54eee4d8232947ee8af65afd5a067e09dac2da6e7e585cb1dccb65496457da0"
+    },
+    "genesis/assets/xml/franka_emika_panda/assets/link6_3.obj": {
+      "bytes": 11943,
+      "sha256": "d4f6a25ef32fa1fa4734146981994ee760232cb077c80fea6487d78a077c7f27"
+    },
+    "genesis/assets/xml/franka_emika_panda/assets/link6_4.obj": {
+      "bytes": 13846,
+      "sha256": "be353480fe71d46f7a96f0a3cbb7e112caaf8d88368826f321a36a253c8749b2"
+    },
+    "genesis/assets/xml/franka_emika_panda/assets/link6_5.obj": {
+      "bytes": 11841,
+      "sha256": "7c87664623c3e1a6cb330db273227a69626dc5e53b4caff1d4ee7911eb3340c6"
+    },
+    "genesis/assets/xml/franka_emika_panda/assets/link6_6.obj": {
+      "bytes": 12597,
+      "sha256": "8fbc031e0d07b795ebf99115c75223141caaba317cab569159f3d477a7821681"
+    },
+    "genesis/assets/xml/franka_emika_panda/assets/link6_7.obj": {
+      "bytes": 4382,
+      "sha256": "7dc5ebb799fe281aab27d6e84e7a4efa0a8e42da2369ec83de3ea3f206f62d73"
+    },
+    "genesis/assets/xml/franka_emika_panda/assets/link6_8.obj": {
+      "bytes": 9131,
+      "sha256": "e3f77381817a341030f9dcc4c4aa7c559f80411b453fd87eb0fefecca82151bf"
+    },
+    "genesis/assets/xml/franka_emika_panda/assets/link6_9.obj": {
+      "bytes": 17616,
+      "sha256": "25a56ea9b02a03b6cb5a81f31c54f54d0185e1a0b3937c37e4289d896e50215a"
+    },
+    "genesis/assets/xml/franka_emika_panda/assets/link7.stl": {
+      "bytes": 10084,
+      "sha256": "92ac6afcf7574c034d3170d8a68e95ac9048ab9d0dd5bbd8311b86e551b9ab1c"
+    },
+    "genesis/assets/xml/franka_emika_panda/assets/link7_0.obj": {
+      "bytes": 1362355,
+      "sha256": "04586b0bde011715cfc22072ac72fe0717eb4d4817bcf665987ce6cd88eb2b93"
+    },
+    "genesis/assets/xml/franka_emika_panda/assets/link7_1.obj": {
+      "bytes": 121358,
+      "sha256": "c3f72289f394c9d6749a4a327fb11f05b203c37c95032c92f28019b40ebe7e00"
+    },
+    "genesis/assets/xml/franka_emika_panda/assets/link7_2.obj": {
+      "bytes": 208907,
+      "sha256": "d2faecedb304d0989040d082410378dc949dbbda23bd18c05134f08aae984db5"
+    },
+    "genesis/assets/xml/franka_emika_panda/assets/link7_3.obj": {
+      "bytes": 123684,
+      "sha256": "b62d87c4d4bdb7b281ed341d347c39dad0e50bf36aed8ac11d050073701d5f70"
+    },
+    "genesis/assets/xml/franka_emika_panda/assets/link7_4.obj": {
+      "bytes": 85732,
+      "sha256": "cb78ccb61fd4ad6c7bff4c4d2e6cb41e1964a5a3e1a28e67c0c6202371cfc018"
+    },
+    "genesis/assets/xml/franka_emika_panda/assets/link7_5.obj": {
+      "bytes": 226402,
+      "sha256": "099071d3090b51471ba52f4f90814fd3089f4975d196e4d488117073d0bfe491"
+    },
+    "genesis/assets/xml/franka_emika_panda/assets/link7_6.obj": {
+      "bytes": 99900,
+      "sha256": "99469e2d95ab74ce0292f2f16954c87a8a7dc16652e62e970fe37c94330a81bb"
+    },
+    "genesis/assets/xml/franka_emika_panda/assets/link7_7.obj": {
+      "bytes": 792162,
+      "sha256": "426c3db8a19373f3dc73d4bec672e948121b2914c10e2e7b9c7ea80643a19e54"
+    },
+    "genesis/assets/xml/franka_emika_panda/hand.xml": {
+      "bytes": 4547,
+      "sha256": "d2a6539d0fd7c55c75c14f11c78f04505ee33f31d93e6112e3ad7120e5ee786a"
+    },
+    "genesis/assets/xml/franka_emika_panda/panda.png": {
+      "bytes": 2192427,
+      "sha256": "d6ad5fcfc60237f0f006cf22d6e0b70febb559f609d915cd4316e9f1ad383c2d"
+    },
+    "genesis/assets/xml/franka_emika_panda/panda.xml": {
+      "bytes": 14369,
+      "sha256": "e502e07fcef6219024be02dfb9cd65d5c194b4767adf381ca51f10172ff8a32d"
+    },
+    "genesis/assets/xml/franka_emika_panda/panda_free_base.xml": {
+      "bytes": 14489,
+      "sha256": "b67e287d8c599d927c83575f60325408cce3eaefe56e248a4340003435264294"
+    },
+    "genesis/assets/xml/franka_emika_panda/panda_no_tendon.xml": {
+      "bytes": 13938,
+      "sha256": "52dc5d6b056402a8e836ca6dcc09282e5ce21a98efc75a66fb420f67b7d8cc7f"
+    },
+    "genesis/assets/xml/franka_emika_panda/panda_nohand.xml": {
+      "bytes": 11177,
+      "sha256": "a3290b7290075baef3490a5f247af02997a4c287d7f358c3e083880732e3b3b8"
+    },
+    "genesis/assets/xml/franka_emika_panda/panda_non_overlap.xml": {
+      "bytes": 14372,
+      "sha256": "fc4ad3afddd79bca498d2ce709804440653b41e12730d337e283721a73375478"
+    },
+    "genesis/assets/xml/franka_emika_panda/scene.xml": {
+      "bytes": 865,
+      "sha256": "59b4ad053a3d354eb5dbbc10137b220ae10312478b95a8fa41f82fa5dd48908f"
+    },
+    "genesis/assets/xml/franka_emika_panda/scene_no_tendon.xml": {
+      "bytes": 875,
+      "sha256": "2b2dec130781485eb8570b4606eae9b40b10f65852d834d47fe212360f81c0dd"
+    },
+    "genesis/assets/xml/franka_sim/LICENSE": {
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    "genesis/assets/xml/franka_sim/README.md": {
+      "bytes": 426,
+      "sha256": "f3d7fb904d94729050b3c95ad82b44dab6e97af73b531bb46ca5e382c296b38a"
+    },
+    "genesis/assets/xml/franka_sim/assets/actuator0.xml": {
+      "bytes": 2005,
+      "sha256": "22b486b30711965ab4fbcc9aa177f25be5ae1025627ab44e2b2695b8a3dfac2f"
+    },
+    "genesis/assets/xml/franka_sim/assets/actuator0_0.xml": {
+      "bytes": 1509,
+      "sha256": "96e297764e8371e0b574f2543916aba8c883200886218eb3b24cb3d400856327"
+    },
+    "genesis/assets/xml/franka_sim/assets/actuator0_2.xml": {
+      "bytes": 1669,
+      "sha256": "fe6777345dbb97ab850eff2c1d6326fb18c097a1f545b65b6bf5d73a67843493"
+    },
+    "genesis/assets/xml/franka_sim/assets/actuator1.xml": {
+      "bytes": 2325,
+      "sha256": "fb94ccff31000a2f33c502a214cb1cc3374fe67e14b3187eee8c6fdf61fac825"
+    },
+    "genesis/assets/xml/franka_sim/assets/assets.xml": {
+      "bytes": 4995,
+      "sha256": "c49f7303140c89ac3fdd114977519248bdb47f8d8fb2c76d0aa68a1d360e2636"
+    },
+    "genesis/assets/xml/franka_sim/assets/assets_0.xml": {
+      "bytes": 4548,
+      "sha256": "8707be047d0fe0d98518582745bdc42c0ea0bec82c10183634793cfe794340e8"
+    },
+    "genesis/assets/xml/franka_sim/assets/assets_2.xml": {
+      "bytes": 4668,
+      "sha256": "dca1e33a9cb7a2182e5384fc4df1555bdc0b7c53b8d16cc637b9e46814585c19"
+    },
+    "genesis/assets/xml/franka_sim/assets/basic_scene.xml": {
+      "bytes": 1600,
+      "sha256": "815d019d231a5c2d1bf6c4675a058bb77c306c16bbc6ca5f85d7eafd92cf1f0e"
+    },
+    "genesis/assets/xml/franka_sim/assets/chain0.xml": {
+      "bytes": 10136,
+      "sha256": "756f5fea95b4643fefe2a4ae010fa7f6cd5772f5294c712a06d6038ea5b652c1"
+    },
+    "genesis/assets/xml/franka_sim/assets/chain0_nogripper.xml": {
+      "bytes": 4854,
+      "sha256": "b20b7c2f43ec1bc73e603b378d3c3db706f54cc7e0bb3226cde8b0a264541607"
+    },
+    "genesis/assets/xml/franka_sim/assets/chain0_overlay.xml": {
+      "bytes": 3721,
+      "sha256": "91ea9ffe486217e18fe459003f06384b867e9e75499e59824c20f948ff70ce5b"
+    },
+    "genesis/assets/xml/franka_sim/assets/chain1.xml": {
+      "bytes": 9651,
+      "sha256": "f46a95fb54a0a49ce97b1fe509ee11e86b164d7b53e24ebad69fbfa9c8ea6d0e"
+    },
+    "genesis/assets/xml/franka_sim/assets/gripper_actuator0.xml": {
+      "bytes": 1196,
+      "sha256": "6cc9e1ffd5c6ca5be2324c399a740ccc95fc7505cfb65477a0799873f4f647ae"
+    },
+    "genesis/assets/xml/franka_sim/assets/gripper_assets.xml": {
+      "bytes": 1618,
+      "sha256": "fab8029350126d08c7f706a993c56f001a7201eefe155a217a09523ae95c5f3d"
+    },
+    "genesis/assets/xml/franka_sim/assets/teleop_actuator.xml": {
+      "bytes": 1230,
+      "sha256": "60f5ac06f58aca435f43e663f4292677da19e4180137faa2c89487502e00c351"
+    },
+    "genesis/assets/xml/franka_sim/ball.xml": {
+      "bytes": 1516,
+      "sha256": "771bfb5898a2294552eaaeaddd6eec622111b8fc64d11b587e85a5e31dbee12b"
+    },
+    "genesis/assets/xml/franka_sim/bi-franka_panda.xml": {
+      "bytes": 2055,
+      "sha256": "f98e7836ca129267fcf890f4e27367d943b586ee9f426a08018a8285f4664b67"
+    },
+    "genesis/assets/xml/franka_sim/bi_franka.png": {
+      "bytes": 241571,
+      "sha256": "726a6c72f8fb5e5802c1a3d7ef8429c000e125b056708cfaaeab4f7b00995bba"
+    },
+    "genesis/assets/xml/franka_sim/franka.png": {
+      "bytes": 123990,
+      "sha256": "528c79e4e482a18a0c92b64300fe48bd472c8a213fd55bdae08523c10eea5bf3"
+    },
+    "genesis/assets/xml/franka_sim/franka_panda.xml": {
+      "bytes": 10407,
+      "sha256": "045bcdb1c4be4c69680048821437ffa51690e5d57e216005cda78a17323943a2"
+    },
+    "genesis/assets/xml/franka_sim/franka_panda_0.xml": {
+      "bytes": 2827,
+      "sha256": "7a662103952f24a1bec2ab860b53e98864d641494d2265b680067000e457f7f7"
+    },
+    "genesis/assets/xml/franka_sim/franka_panda_1.xml": {
+      "bytes": 2773,
+      "sha256": "346d53589b9e342bac5262a51a356d66533c5841183af3b20ee713239d1828c3"
+    },
+    "genesis/assets/xml/franka_sim/franka_panda_2.xml": {
+      "bytes": 3250,
+      "sha256": "bebc2fe93df6cb8ac4b97a47746261944446ed883667c062d0ca8de835967a7a"
+    },
+    "genesis/assets/xml/franka_sim/franka_panda_3.xml": {
+      "bytes": 3247,
+      "sha256": "c7a65ab18d1d4f649d271b51056ee32a38f61e517a4315f529c681bdf1fcf752"
+    },
+    "genesis/assets/xml/franka_sim/franka_panda_ball.xml": {
+      "bytes": 11100,
+      "sha256": "269c8940896433eb6be3da66fceb1a7ddba270814c31c2c56741a79e27717cfe"
+    },
+    "genesis/assets/xml/franka_sim/franka_panda_ball_.xml": {
+      "bytes": 11069,
+      "sha256": "78aa469e30a17d3fcb0d64b3e0828f98f7a47650e1c42fb8a0cf87400917ca7d"
+    },
+    "genesis/assets/xml/franka_sim/franka_panda_no_finger.xml": {
+      "bytes": 5381,
+      "sha256": "4d036fcc12d2b37341784e6d9615f05ed87ebe5aefdc5293b16ab03aa1c47bf7"
+    },
+    "genesis/assets/xml/franka_sim/franka_panda_teleop.xml": {
+      "bytes": 1799,
+      "sha256": "3923d7e29f231ffda3c5d35933d881a051301c79884bd31b05800fd30c0fb6a1"
+    },
+    "genesis/assets/xml/franka_sim/franka_panda_test_convex.xml": {
+      "bytes": 10786,
+      "sha256": "96ff780adcab39bcaa65ec1a5976175f926f55cb3c63e686e0e5fe831111a5b5"
+    },
+    "genesis/assets/xml/franka_sim/meshes/collision/finger.stl": {
+      "bytes": 1684,
+      "sha256": "2d07a740392f3b9b0816f65d64fff9927d3d57c897870fc4b6ff9c56fff3a0c8"
+    },
+    "genesis/assets/xml/franka_sim/meshes/collision/hand.stl": {
+      "bytes": 10084,
+      "sha256": "94493e94f30fe940f2c8ca2f155c3bbe67bbff406d3edf5e261670d2f0f6e2ed"
+    },
+    "genesis/assets/xml/franka_sim/meshes/collision/link0.stl": {
+      "bytes": 10084,
+      "sha256": "dfc6d94330de8ddb005b311bfdba9f3b8e1aa7c256b71592ee7ff32cb9a9a5aa"
+    },
+    "genesis/assets/xml/franka_sim/meshes/collision/link1.stl": {
+      "bytes": 15084,
+      "sha256": "e41a39a94108fcf56aacff603fc91ec80541f4c1af17b51a0de5617f5566e6d2"
+    },
+    "genesis/assets/xml/franka_sim/meshes/collision/link2.stl": {
+      "bytes": 15084,
+      "sha256": "370f7605a0fae3529db169ded50f52f171024aa792d4d773bc84197301f6a039"
+    },
+    "genesis/assets/xml/franka_sim/meshes/collision/link3.stl": {
+      "bytes": 15084,
+      "sha256": "0a8d638b9349c6c0eefc4e888636ac4838c4b27170f18a51699321118af709c1"
+    },
+    "genesis/assets/xml/franka_sim/meshes/collision/link4.stl": {
+      "bytes": 15084,
+      "sha256": "0180ebb5772ec9840cb049750cffb29a9ddc90311752a16ea34757782ef9e48d"
+    },
+    "genesis/assets/xml/franka_sim/meshes/collision/link5.stl": {
+      "bytes": 15084,
+      "sha256": "dd17e688c7870e722283525879643d53a74c0024d328b0e14b034b54c8b6c31a"
+    },
+    "genesis/assets/xml/franka_sim/meshes/collision/link6.stl": {
+      "bytes": 10084,
+      "sha256": "20b768e99a0e0440b5754dcca108016434e57937cc356acd9c352ccd3cb27f77"
+    },
+    "genesis/assets/xml/franka_sim/meshes/collision/link7.stl": {
+      "bytes": 10084,
+      "sha256": "92ac6afcf7574c034d3170d8a68e95ac9048ab9d0dd5bbd8311b86e551b9ab1c"
+    },
+    "genesis/assets/xml/franka_sim/meshes/visual/finger.stl": {
+      "bytes": 31284,
+      "sha256": "f36550380d0208f35279b2514db133bfdde5b9242ec35e8ed7970d1ffe985501"
+    },
+    "genesis/assets/xml/franka_sim/meshes/visual/hand.stl": {
+      "bytes": 353984,
+      "sha256": "2cebeea31d5cd743b669182a62e9deeaaf387ef2beacc9177aeaa19fcfb7de2c"
+    },
+    "genesis/assets/xml/franka_sim/meshes/visual/link0.stl": {
+      "bytes": 1043984,
+      "sha256": "f0704747b0341304244de7b80f5c357b4353461e533af4d33da0740ab35e11ea"
+    },
+    "genesis/assets/xml/franka_sim/meshes/visual/link1.stl": {
+      "bytes": 625884,
+      "sha256": "ead5671c2a8b55eef02e6b95e2f685b836a2e1565334f7a81163011e3a130020"
+    },
+    "genesis/assets/xml/franka_sim/meshes/visual/link2.stl": {
+      "bytes": 635884,
+      "sha256": "f6455febcb22ed165b462f337c73c9dc428aa82b4e46f35f860f5c860705d528"
+    },
+    "genesis/assets/xml/franka_sim/meshes/visual/link3.stl": {
+      "bytes": 731734,
+      "sha256": "603ae79bf0c3223485c1b169e45420f16d8ad054859bcbf31b2ac89a92c141bb"
+    },
+    "genesis/assets/xml/franka_sim/meshes/visual/link3_dark.stl": {
+      "bytes": 90434,
+      "sha256": "32cdb83781a291f18528465d12432c14056abe16a5eebb909ed28af7aa59c79c"
+    },
+    "genesis/assets/xml/franka_sim/meshes/visual/link4.stl": {
+      "bytes": 751084,
+      "sha256": "8973c953a7b5a7e74a64e2812ed5a7725205ecca78bcab65e856167f210435ae"
+    },
+    "genesis/assets/xml/franka_sim/meshes/visual/link4_dark.stl": {
+      "bytes": 89734,
+      "sha256": "3a8b5794357f94fe57bd6ee68dfb8fd7bf293ed45cc706aa0722813977a723c1"
+    },
+    "genesis/assets/xml/franka_sim/meshes/visual/link5.stl": {
+      "bytes": 916434,
+      "sha256": "73137c203d79e91a51cd57acde3fd009b810d9b647f71d95ef08ca6ce480ade9"
+    },
+    "genesis/assets/xml/franka_sim/meshes/visual/link5_dark.stl": {
+      "bytes": 175234,
+      "sha256": "671196fcd8dccb99f9fae0a81128414b9d1839839bbf0e2c407847f8b879a14b"
+    },
+    "genesis/assets/xml/franka_sim/meshes/visual/link6.stl": {
+      "bytes": 1081084,
+      "sha256": "7278c6bbc121f4f51fca15a1d59ceb8e031c085c20a087c61218763e49957a61"
+    },
+    "genesis/assets/xml/franka_sim/meshes/visual/link6_dark.stl": {
+      "bytes": 327534,
+      "sha256": "ac827c27389b89c86cfd1a277e892297fe30bc5c5c39f87a5168916b8d58fd50"
+    },
+    "genesis/assets/xml/franka_sim/meshes/visual/link7.stl": {
+      "bytes": 604184,
+      "sha256": "3fce4a10775f0089afde0bfc67b26b8c1f29d6138b64aaaaf2da85cc1a14a9be"
+    },
+    "genesis/assets/xml/franka_sim/meshes/visual/link7_dark.stl": {
+      "bytes": 358534,
+      "sha256": "765dafcf4c084f47e2c527f57a93d6d27fd55c1a6dc37ae807410f90a1726bc6"
+    },
+    "genesis/assets/xml/humanoid.xml": {
+      "bytes": 11287,
+      "sha256": "acc9167550bf20580717a551467e6e8d0d03d1916d24bbe4b734ce11afb99406"
+    },
+    "genesis/assets/xml/one_ball_joint.xml": {
+      "bytes": 690,
+      "sha256": "7a73e03eccf2ecf70e47a39745db8b91523f8e60bf333e5e7ded83322709bbf4"
+    },
+    "genesis/assets/xml/one_tet.xml": {
+      "bytes": 1882,
+      "sha256": "60750103e5a2be008cbb33bb26c59d2bc3302f09304a219b9e9b41212de0c640"
+    },
+    "genesis/assets/xml/rope_ball.xml": {
+      "bytes": 3005,
+      "sha256": "bbe3e1b275c92f6a46ac6850137f2b0357d5a8ceea3d89420bf74e097b8e6727"
+    },
+    "genesis/assets/xml/rope_hinge.xml": {
+      "bytes": 4157,
+      "sha256": "bde40bc8e0913d16e273141ae80b3e54deecafaf8c1e95e7a2a3b80f54430959"
+    },
+    "genesis/assets/xml/tet.obj": {
+      "bytes": 490,
+      "sha256": "d931097213b338dd86d5367ff292ff38b788fd3c12b645a30820281629efe02d"
+    },
+    "genesis/assets/xml/tet_ball.xml": {
+      "bytes": 1479,
+      "sha256": "804c77e7984a7d867cf05c72579e4c6bd406c5cca7fe519c3d94d34da14dc40b"
+    },
+    "genesis/assets/xml/tet_capsule.xml": {
+      "bytes": 1499,
+      "sha256": "5abb9340907244a85da69c0f02c831a72a2eee94700fcf64033be406ec55a031"
+    },
+    "genesis/assets/xml/tet_tet.xml": {
+      "bytes": 1617,
+      "sha256": "b5aeda22bfe9309527f6c55f015e785a5393e16f319e90ce4b3fc54aaf634dac"
+    },
+    "genesis/assets/xml/thin_box.xml": {
+      "bytes": 1877,
+      "sha256": "a360f9224a8b494dd5245e7cd2acf0b7a52dfcf8189ea7da9324cf27e34d420d"
+    },
+    "genesis/assets/xml/thin_box_mesh.xml": {
+      "bytes": 1871,
+      "sha256": "f3949c42b052c1a3f38138943303d472455b33b2f286965b46a738d3d8c0ab26"
+    },
+    "genesis/assets/xml/thin_cube.obj": {
+      "bytes": 985,
+      "sha256": "6fcd1b2ffeac04d08a9804b1c392aacd1160e12c4dc6ebe2356c2d9d97750f58"
+    },
+    "genesis/assets/xml/three_joint_link.xml": {
+      "bytes": 2998,
+      "sha256": "f353b21a9721b05a03a514b997de69a68c562851d601f8c646d67d367428f908"
+    },
+    "genesis/assets/xml/two_box.xml": {
+      "bytes": 2393,
+      "sha256": "975d17f94608e7324c1f9afb258870937f2d0e70bd5ff1fd243ea80449c8d940"
+    },
+    "genesis/assets/xml/two_skeleton.xml": {
+      "bytes": 5293,
+      "sha256": "f8b3ae50ff3fbd3980be4d3e8abba4de5f551047ab25bfa245d0ba1f00c120a3"
+    },
+    "genesis/assets/xml/universal_robots_ur5e/LICENSE": {
+      "bytes": 1470,
+      "sha256": "5ec71ccf66c8d03261448f2441a586765b97f2248c860a1ae19689fb1c45cee6"
+    },
+    "genesis/assets/xml/universal_robots_ur5e/README.md": {
+      "bytes": 1591,
+      "sha256": "dd5a3c510fe94586afa8751de04a5ca38a993dfc629b64d2077528a7a9270c33"
+    },
+    "genesis/assets/xml/universal_robots_ur5e/assets/base_0.obj": {
+      "bytes": 556543,
+      "sha256": "9a3b21f1524baef6af8a52d7af90b6e94b79f7e3c2b04a0f6581f74d22291b0b"
+    },
+    "genesis/assets/xml/universal_robots_ur5e/assets/base_1.obj": {
+      "bytes": 638415,
+      "sha256": "cf7d54691a2c1eeda280955ebd6bd83c2dbecfc46fb53c10198f05d107511b50"
+    },
+    "genesis/assets/xml/universal_robots_ur5e/assets/forearm_0.obj": {
+      "bytes": 1691648,
+      "sha256": "64c049a55149c2ab355594d52302b53d3e34da3677ceaa1917c427cde7743146"
+    },
+    "genesis/assets/xml/universal_robots_ur5e/assets/forearm_1.obj": {
+      "bytes": 76202,
+      "sha256": "a96fe203015cf532b193f414cd01268c7c36795e51a837dd33afd122334f81f2"
+    },
+    "genesis/assets/xml/universal_robots_ur5e/assets/forearm_2.obj": {
+      "bytes": 932534,
+      "sha256": "05b436505fc595aeab26675590c2b56b88a65b2d52d6352096fed9f07cb4c4ca"
+    },
+    "genesis/assets/xml/universal_robots_ur5e/assets/forearm_3.obj": {
+      "bytes": 1095775,
+      "sha256": "fa31af19cfad7a765b62e8a2d5931cb014b88de84195a7850b4e5ee902112e9a"
+    },
+    "genesis/assets/xml/universal_robots_ur5e/assets/shoulder_0.obj": {
+      "bytes": 2947794,
+      "sha256": "477387a7e7312782a6040484a3c2c2fcee33f40109f419076e31b6f6e1692c68"
+    },
+    "genesis/assets/xml/universal_robots_ur5e/assets/shoulder_1.obj": {
+      "bytes": 569646,
+      "sha256": "8537bba02804640ddf6e260f79fe66e895b3229ed3d44298a95e8e027eb5d435"
+    },
+    "genesis/assets/xml/universal_robots_ur5e/assets/shoulder_2.obj": {
+      "bytes": 2440344,
+      "sha256": "291714518416bb8f0bafbf123867db011ecbf5146a05245ca5893ee8c57d4e21"
+    },
+    "genesis/assets/xml/universal_robots_ur5e/assets/upperarm_0.obj": {
+      "bytes": 156252,
+      "sha256": "14143d4f1175a7dbacc8e2f2f98f1cac5a2b2e238cd46cd03654d31f2610eb53"
+    },
+    "genesis/assets/xml/universal_robots_ur5e/assets/upperarm_1.obj": {
+      "bytes": 1090164,
+      "sha256": "272899e927f4a32b7c25e34560ec70654c0346cc8ed1c616c0555f3f53b32d14"
+    },
+    "genesis/assets/xml/universal_robots_ur5e/assets/upperarm_2.obj": {
+      "bytes": 3677923,
+      "sha256": "86c05350d60eb0e7e28a81b544267478b7db997baba41cef19088ebbeffecfa1"
+    },
+    "genesis/assets/xml/universal_robots_ur5e/assets/upperarm_3.obj": {
+      "bytes": 5346165,
+      "sha256": "b257dab441e6fab64ea03b4b87029d8a96554ad1a513cce944d56acba0ad948a"
+    },
+    "genesis/assets/xml/universal_robots_ur5e/assets/wrist1_0.obj": {
+      "bytes": 278871,
+      "sha256": "7ef0c59b5c5d56a9902435c9a058b27d2a38c85fe2bae02d00a9284dd1f4d519"
+    },
+    "genesis/assets/xml/universal_robots_ur5e/assets/wrist1_1.obj": {
+      "bytes": 2470967,
+      "sha256": "ee6d5c562e6becef94109b0543329080d285d1aef521a01ed98e18a5bf1e8684"
+    },
+    "genesis/assets/xml/universal_robots_ur5e/assets/wrist1_2.obj": {
+      "bytes": 1657638,
+      "sha256": "88c66dc64f15391287147d50add37729a3f41dadd80b1f859cf2cb6d45daf32a"
+    },
+    "genesis/assets/xml/universal_robots_ur5e/assets/wrist2_0.obj": {
+      "bytes": 846741,
+      "sha256": "2ac2e2e39d8f7005bc3b3ab26cd61634be2e14930074615da5318b9ee7c569a8"
+    },
+    "genesis/assets/xml/universal_robots_ur5e/assets/wrist2_1.obj": {
+      "bytes": 2156900,
+      "sha256": "a721d06dc61d3b3a8ec58c035c9e3358ed30d6991a72e077d8abf3c3c203b633"
+    },
+    "genesis/assets/xml/universal_robots_ur5e/assets/wrist2_2.obj": {
+      "bytes": 2141392,
+      "sha256": "6df4335c8bd5e881fda2c224f770115ffe9ddd0cd321ebe3c0a4a310796f0987"
+    },
+    "genesis/assets/xml/universal_robots_ur5e/assets/wrist3.obj": {
+      "bytes": 211390,
+      "sha256": "0e51748f9c93bd66604360a5cf7e2e8a6e754550be64076333ff4fc19ec90c61"
+    },
+    "genesis/assets/xml/universal_robots_ur5e/scene.xml": {
+      "bytes": 911,
+      "sha256": "238f06511b0a36d60dcb0a0941dc626b083d6b15c16919ee67092deaf7ba54ff"
+    },
+    "genesis/assets/xml/universal_robots_ur5e/ur5e.png": {
+      "bytes": 1956670,
+      "sha256": "90310086f1187fcda94252ff68f8c4f8be97f65bec8f4eea449179b0979da795"
+    },
+    "genesis/assets/xml/universal_robots_ur5e/ur5e.xml": {
+      "bytes": 6400,
+      "sha256": "32548f742ec33334e7999dcf7a3f91f4e7cb59754672799b7d1c24002a547030"
+    },
+    "genesis/assets/xml/walker.xml": {
+      "bytes": 3385,
+      "sha256": "ed0a357f81f3a328d8a0f90b7284cfa03553124f2365463ac2339f396513b206"
+    },
+    "genesis/constants.py": {
+      "bytes": 7756,
+      "sha256": "1c4efd08674a0fb5037f4234e516afffe927bee5aa6330ad181fe2fb28b828f9"
+    },
+    "genesis/datatypes.py": {
+      "bytes": 5089,
+      "sha256": "08fdcb7bb834b602160f7cb5b6fe881f81cab961f2bb7b1968690de6c3d51eef"
+    },
+    "genesis/engine/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "genesis/engine/boundaries/__init__.py": {
+      "bytes": 26,
+      "sha256": "dfac97f936b81a417101068fe07bfcd6c92a039a859b3f2ff0332f0cf3f52fcb"
+    },
+    "genesis/engine/boundaries/boundaries.py": {
+      "bytes": 2018,
+      "sha256": "dad4cafc1c2092c40e762634218e55b8c4d9d31f32972dabae91d73b31dce18f"
+    },
+    "genesis/engine/bvh.py": {
+      "bytes": 25174,
+      "sha256": "1bed8ee1da37e5bb537b2076d24e8dd34a8c2ad4c82af117871c2d804c2780a5"
+    },
+    "genesis/engine/couplers/__init__.py": {
+      "bytes": 114,
+      "sha256": "4765ab0878bd930a795673a75894ee88a2e3d271116388eeaef5a8c806673e10"
+    },
+    "genesis/engine/couplers/ipc_coupler/__init__.py": {
+      "bytes": 58,
+      "sha256": "93afee61a24506c6031fe440c829794339b21f72f2e1ea5f4944d049e7213abf"
+    },
+    "genesis/engine/couplers/ipc_coupler/coupler.py": {
+      "bytes": 57301,
+      "sha256": "e663fd3f076c6efdadac32b7c8c8911277fe3ec41081db23a3f8c86c5ca661a3"
+    },
+    "genesis/engine/couplers/ipc_coupler/data.py": {
+      "bytes": 2392,
+      "sha256": "60ebd069627acde4f6f35aa0d7cfdf9d23f4868a07aecb7049a495892b617848"
+    },
+    "genesis/engine/couplers/ipc_coupler/utils.py": {
+      "bytes": 8472,
+      "sha256": "30c91008a1d7868583892d96b366f4d23c554f3f0cbb1741f09e9864dd3b46b5"
+    },
+    "genesis/engine/couplers/legacy_coupler.py": {
+      "bytes": 46473,
+      "sha256": "53ec19072dd2e177ab28278d029fa13f662ce5296b8d76cc463e5e21d5f702b2"
+    },
+    "genesis/engine/couplers/sap_coupler.py": {
+      "bytes": 184556,
+      "sha256": "bb49f98bba97e2abee1deae2cdd8476fb75625781900c55004cd90a859c9611b"
+    },
+    "genesis/engine/entities/__init__.py": {
+      "bytes": 474,
+      "sha256": "28c8f3e25a05635d49042f35896584b5081b08be4c4f26b88dae3d4286da8f21"
+    },
+    "genesis/engine/entities/base_entity.py": {
+      "bytes": 5742,
+      "sha256": "6f806e2eb684b39f936e3ef3e9c6d8c54d3e11427bbd918718f1d9e09acc9eb7"
+    },
+    "genesis/engine/entities/emitter.py": {
+      "bytes": 10619,
+      "sha256": "79dd45af6d57e3dc654b70e829e6cc2901181f145aeaa4a8537e9a7072296a9b"
+    },
+    "genesis/engine/entities/fem_entity.py": {
+      "bytes": 46127,
+      "sha256": "cec576ead4651f9fa3b9d2724b2e80b0d6cc7be7c6f8ef79fe702a0fbbf810d0"
+    },
+    "genesis/engine/entities/hybrid_entity.py": {
+      "bytes": 28372,
+      "sha256": "82ecce7e3458fd3605b05cf8e1e71de346f7e8d2835b4ef9301f1ac8764dec43"
+    },
+    "genesis/engine/entities/mpm_entity.py": {
+      "bytes": 27437,
+      "sha256": "da59d325d33d3d96263f9c1029061038e6827bf0b4f5d6ab7f9fc896f01d78f2"
+    },
+    "genesis/engine/entities/particle_entity.py": {
+      "bytes": 32060,
+      "sha256": "3bc1a2abfbde3699a3d4952fcf5c3731d3a4e9267abe43ec732c2cc20774d9b0"
+    },
+    "genesis/engine/entities/pbd_entity.py": {
+      "bytes": 27997,
+      "sha256": "4563a749ab7af99aa8f11a4e4e3e2ddcffcfb4c253f0fb1fdc952ece6917e77e"
+    },
+    "genesis/engine/entities/rigid_entity/__init__.py": {
+      "bytes": 253,
+      "sha256": "af3bdc683df56043cd16959364a25bbee32cf99b4bb34d70a36ee7f718157da9"
+    },
+    "genesis/engine/entities/rigid_entity/description.py": {
+      "bytes": 96584,
+      "sha256": "6f0fdbc5c1e746ad9993e09c7556412e73f751870fb2506c034455b6363d6640"
+    },
+    "genesis/engine/entities/rigid_entity/drone_entity.py": {
+      "bytes": 4234,
+      "sha256": "25ad539e0e3c4bfab967f7c1edf98ae3a8032bab5e84cf7008725634b16e49de"
+    },
+    "genesis/engine/entities/rigid_entity/inertial.py": {
+      "bytes": 10511,
+      "sha256": "87f6a8208d187e1cca28b35ffc8c4be4d3e6acd975d597a4f1fb569a2f5b5b94"
+    },
+    "genesis/engine/entities/rigid_entity/rigid_entity.py": {
+      "bytes": 168072,
+      "sha256": "5239123f45a943f284733d50bd83ff79fd9c4faabd6afb80554636d2a296c552"
+    },
+    "genesis/engine/entities/rigid_entity/rigid_equality.py": {
+      "bytes": 3482,
+      "sha256": "f2e0b29518841419fdcfa3a61f71bc9ec689768de171aafb9a1c9a3673f5c032"
+    },
+    "genesis/engine/entities/rigid_entity/rigid_geom.py": {
+      "bytes": 40850,
+      "sha256": "9380eef8300bec235be7241a6814e3c9fe43041eaed32c6d80c67ea8f9d0f244"
+    },
+    "genesis/engine/entities/rigid_entity/rigid_joint.py": {
+      "bytes": 14151,
+      "sha256": "e992bb29102f99832b795188e45fea6cc95be738a82863c57b88c580bea6f29c"
+    },
+    "genesis/engine/entities/rigid_entity/rigid_link.py": {
+      "bytes": 29566,
+      "sha256": "5a2e82c899a12879e13ed8946cd004437bc588f37dea2a5bcd366ce830f87f36"
+    },
+    "genesis/engine/entities/rigid_entity/terrain_entity.py": {
+      "bytes": 2966,
+      "sha256": "78e4e8632d1c753fad2c160d9dcf7c1014c2ea67bd6bb3174e753001cc4c6543"
+    },
+    "genesis/engine/entities/sf_entity.py": {
+      "bytes": 1208,
+      "sha256": "351232f7ccf807e1e810d09a85c5e1d57615dd1f4b5951b0a0f00d93873a4344"
+    },
+    "genesis/engine/entities/sph_entity.py": {
+      "bytes": 7447,
+      "sha256": "f19fb86ade0217c80370c5dc44873723b8005e7dee48eeb3a37b7e9df167794d"
+    },
+    "genesis/engine/entities/tool_entity/__init__.py": {
+      "bytes": 36,
+      "sha256": "8225d67d8f9f76e22938c532d1de4e4ea94255ea25341cbb28b195380c041f95"
+    },
+    "genesis/engine/entities/tool_entity/mesh.py": {
+      "bytes": 8844,
+      "sha256": "2fee126580796d28e4a1f5e1814ad73662526c6260e335ca10ac73b35a464611"
+    },
+    "genesis/engine/entities/tool_entity/tool_entity.py": {
+      "bytes": 19051,
+      "sha256": "e66a4a6f7818d4d7b726e17b63d15e1a2e496745a75296f4e855f3c4d6401af2"
+    },
+    "genesis/engine/force_fields.py": {
+      "bytes": 15310,
+      "sha256": "15e6b8ad239e561d1ff08555f366275411e9481353ec53072d2dbc0e34dc8635"
+    },
+    "genesis/engine/interactive_scene.py": {
+      "bytes": 14212,
+      "sha256": "21102fed451c995f9a0627f515c74314ab0cc90013ec88a7588a1c6747c68917"
+    },
+    "genesis/engine/materials/FEM/__init__.py": {
+      "bytes": 104,
+      "sha256": "cc1563eb613e705dc2c14fd3ff5839845e19ad7863d867df9e25d7612753a253"
+    },
+    "genesis/engine/materials/FEM/base.py": {
+      "bytes": 4424,
+      "sha256": "fd2a09efbdd0b70be9b1fa8c12502efd2016b6da95014e1adb015d7db3b33135"
+    },
+    "genesis/engine/materials/FEM/cloth.py": {
+      "bytes": 2395,
+      "sha256": "4e2e333e9f730bd90946723bc35a365b106beeb25fe3826d8d0fead39230adbd"
+    },
+    "genesis/engine/materials/FEM/elastic.py": {
+      "bytes": 9088,
+      "sha256": "4035dccd1c5e5be3959b9d02461469ba166c01d99e4f1e7d5bd741e257d1b288"
+    },
+    "genesis/engine/materials/FEM/muscle.py": {
+      "bytes": 1705,
+      "sha256": "829f9b344708a724b28f08b0687f7a0a229bf17d405d9dc141abe4038e794f98"
+    },
+    "genesis/engine/materials/MPM/__init__.py": {
+      "bytes": 194,
+      "sha256": "157a10e73a73e2b7017c96a8da07a1a8ab59fb20113cb74b9d4f8455991df104"
+    },
+    "genesis/engine/materials/MPM/base.py": {
+      "bytes": 3508,
+      "sha256": "9098959d12e5353842977c895e52473e2aaf0600cd7ac9c1c91743d468d9af89"
+    },
+    "genesis/engine/materials/MPM/elastic.py": {
+      "bytes": 1958,
+      "sha256": "de0f4f46a711a499561cdb26bfe6a9809b3e3fd8f24557827e5fe0970d56992d"
+    },
+    "genesis/engine/materials/MPM/elasto_plastic.py": {
+      "bytes": 2584,
+      "sha256": "4261a9937ecbfc4314dda4668a755a4b53a73cbbbe5d16b67ba92199b9caf551"
+    },
+    "genesis/engine/materials/MPM/liquid.py": {
+      "bytes": 1553,
+      "sha256": "f5b92dd8244abd94cf87a47d3402cc60498d76d146c9e6f68a1f489473d22db3"
+    },
+    "genesis/engine/materials/MPM/muscle.py": {
+      "bytes": 1580,
+      "sha256": "1908d216d1c51e2f9da6622c18f7581fe930e0c2e746f74b7361917c77dbfb15"
+    },
+    "genesis/engine/materials/MPM/sand.py": {
+      "bytes": 2835,
+      "sha256": "fc286b1d1f7731d7559cb60b042c282dad9d9c8249f05cf897a6117306a8ecf8"
+    },
+    "genesis/engine/materials/MPM/snow.py": {
+      "bytes": 2335,
+      "sha256": "2600fa1185a9b034cfd7a66c4fac2268cc4c1bd2dc1dd3a0ff1a5650351d5f51"
+    },
+    "genesis/engine/materials/PBD/__init__.py": {
+      "bytes": 135,
+      "sha256": "59776c5629959f3e9140167c4a0db5fd15f738d4a1229354edc28c7b6be926ae"
+    },
+    "genesis/engine/materials/PBD/base.py": {
+      "bytes": 196,
+      "sha256": "e8a0751662ac7c929d36bb6a4f47d1c05482bd26dca32982f595a5a891c328f4"
+    },
+    "genesis/engine/materials/PBD/cloth.py": {
+      "bytes": 1648,
+      "sha256": "bb2d7b7e53962d288cadd70c40357bb6c6a8a9b04249d7134021315d5de8d291"
+    },
+    "genesis/engine/materials/PBD/elastic.py": {
+      "bytes": 1573,
+      "sha256": "90e2fd1b3eb575548c85d45f5804ea543c643bbdf9f931476a166f5b64a1eb86"
+    },
+    "genesis/engine/materials/PBD/liquid.py": {
+      "bytes": 1229,
+      "sha256": "e4a03f953371cec2330e445a56e93337293ba07b6e354c91c1d9c39be33f2aed"
+    },
+    "genesis/engine/materials/PBD/particle.py": {
+      "bytes": 1153,
+      "sha256": "8ef5b01176b8bdfdc166052bfe28be1129be74525ff6c3a15a0e09dcbfce2c22"
+    },
+    "genesis/engine/materials/SF/__init__.py": {
+      "bytes": 48,
+      "sha256": "8ea6b4fbd159faaaa0a82cfd84a8bf8a27e58e415f8ff42b62da87ca41efb253"
+    },
+    "genesis/engine/materials/SF/base.py": {
+      "bytes": 61,
+      "sha256": "7e82b8e6915d8fe7a410871ad8393997a807e7c6cc93591763e7be62a5c70481"
+    },
+    "genesis/engine/materials/SF/smoke.py": {
+      "bytes": 226,
+      "sha256": "887f5ff252b30280c43c94782b6140097a39f6bdca36eaa11a0aa2cada975af5"
+    },
+    "genesis/engine/materials/SPH/__init__.py": {
+      "bytes": 50,
+      "sha256": "44820cab1ee4045857fd71cfe6ebc1d3a34fb0ef123cc0c7ce4016571ea3e43c"
+    },
+    "genesis/engine/materials/SPH/base.py": {
+      "bytes": 791,
+      "sha256": "b6b3b077b5085afe08be8eb125eb10d87ec880e196f55524863bd4aa9e10fec2"
+    },
+    "genesis/engine/materials/SPH/liquid.py": {
+      "bytes": 1034,
+      "sha256": "b836d7a50d00ea6f847f541744092cf08bcb8274a00535e3e57bcf32e1e20f5c"
+    },
+    "genesis/engine/materials/__init__.py": {
+      "bytes": 145,
+      "sha256": "e8d9bf411814e8822d86368b0520026618e1dab73a86aaaa639ba53df38a9d74"
+    },
+    "genesis/engine/materials/base.py": {
+      "bytes": 467,
+      "sha256": "a39371122c1b4ea227634c735e876e841b88b0538641635a53a4719459984a0c"
+    },
+    "genesis/engine/materials/hybrid.py": {
+      "bytes": 1867,
+      "sha256": "1e24190a7113e48dfb24798e1e0793e8acd5eb8343c1bbd0289b304585ad667a"
+    },
+    "genesis/engine/materials/kinematic.py": {
+      "bytes": 726,
+      "sha256": "6c4b10f54bc1a5525f5559954d22f3b960c87405d5de9b3c22436ecd73b16592"
+    },
+    "genesis/engine/materials/rigid.py": {
+      "bytes": 8227,
+      "sha256": "4fca3e9d505e03d4496b2b8c4ef5a88a4cb6797e65f94c65f7da46b95a131704"
+    },
+    "genesis/engine/materials/tool.py": {
+      "bytes": 848,
+      "sha256": "0d548bda5db3f6a3f8b734e2620f570a8d72d1cde8c0293a5a6172ba95d24d57"
+    },
+    "genesis/engine/mesh.py": {
+      "bytes": 29237,
+      "sha256": "6356e9d29064183109f6e65c7bf7b5debfe9abce617f36bf7e0e45166beaa85f"
+    },
+    "genesis/engine/scene.py": {
+      "bytes": 85071,
+      "sha256": "b8d39d0e2cb1e3f2ca200c2b57cb86534e397f6367f9813c26aecd0da4ae02ed"
+    },
+    "genesis/engine/sensors/__init__.py": {
+      "bytes": 272,
+      "sha256": "99e31eb1330531633989eb12e106ed4c342c9490fc11b2eb45cfeda5c6d74c02"
+    },
+    "genesis/engine/sensors/base_sensor.py": {
+      "bytes": 50642,
+      "sha256": "3968cd241daa13e92f1463b866389aa1c11cfbfe7a09fcdb4ae2efb7ebe9eb1d"
+    },
+    "genesis/engine/sensors/camera.py": {
+      "bytes": 33831,
+      "sha256": "4f4d92a9475e4729ebb80c3ff79ec8ff61e31c314539c2ceb599c740cbe4e489"
+    },
+    "genesis/engine/sensors/contact_force.py": {
+      "bytes": 16112,
+      "sha256": "ac54c69ea32051b9417cd12cc37f69965531a5fd1283df422437cf2fc70cb5dc"
+    },
+    "genesis/engine/sensors/depth_camera.py": {
+      "bytes": 1179,
+      "sha256": "e1eaf3f35567507960c23f26d1dbf3535b94f0805dfd2671c9d59ef009f06ddf"
+    },
+    "genesis/engine/sensors/imu.py": {
+      "bytes": 11971,
+      "sha256": "ca652fe4c5e668060682f54b19e14e1c60e5cb9d8d11ac18e868f2d6d154a7bc"
+    },
+    "genesis/engine/sensors/joint_torque.py": {
+      "bytes": 3234,
+      "sha256": "0afffc5ed15cf954ccb090ad3bf980de1eae6053e96a4e678b95b4807574c984"
+    },
+    "genesis/engine/sensors/kinematic_tactile.py": {
+      "bytes": 59272,
+      "sha256": "bd3b113faf7025642af535f636fbcc6f6c69479b4960d37ed4217e6933998d67"
+    },
+    "genesis/engine/sensors/point_cloud_tactile.py": {
+      "bytes": 114643,
+      "sha256": "5557908452fd1ba9c9740754839168ee1fefc6751a617bea36d2e168d1583e6f"
+    },
+    "genesis/engine/sensors/probe.py": {
+      "bytes": 26407,
+      "sha256": "1c0a326422bf16eb2340950e9a21dbf16c2b7a8a6d888c03aa4feb9b673c0321"
+    },
+    "genesis/engine/sensors/raycaster.py": {
+      "bytes": 42318,
+      "sha256": "9af185b875248dce93be94562a5ab02c3528cf22002ad061d2556a2ff1817b4b"
+    },
+    "genesis/engine/sensors/sensor_manager.py": {
+      "bytes": 28516,
+      "sha256": "27d0826cb8d6873a391b9a390f293f441aa1d30675abfd3045a76c793306cb32"
+    },
+    "genesis/engine/sensors/surface_distance_probe.py": {
+      "bytes": 22940,
+      "sha256": "4d006e90a52de0eaebe39b45737a46f0cc214ac1e831817c250ac04b704c8886"
+    },
+    "genesis/engine/sensors/tactile_shared.py": {
+      "bytes": 42245,
+      "sha256": "3d48e917cbc9d583845053e176048d6a7a3ce3f18cfb85e28088a964a8ee6202"
+    },
+    "genesis/engine/sensors/temperature.py": {
+      "bytes": 38683,
+      "sha256": "30774081fc6467c7f64e5b7821dcb18c3be3705b45ad221bf7fe49303e0563af"
+    },
+    "genesis/engine/simulator.py": {
+      "bytes": 26414,
+      "sha256": "9ebb036bcfc890dd386e8393dd9ff96eaaac9f34b56e8ea276c1842bc052fc53"
+    },
+    "genesis/engine/solvers/__init__.py": {
+      "bytes": 294,
+      "sha256": "f7705b22d6ff4000f51503fb30857bb02cd0eb80b86d2b17fdac31544de27170"
+    },
+    "genesis/engine/solvers/base_solver.py": {
+      "bytes": 19875,
+      "sha256": "70bda581b6ace161131c91c21f48b17095a291e54192b04dbf9f8cd0aad0fbfb"
+    },
+    "genesis/engine/solvers/fem_solver.py": {
+      "bytes": 66567,
+      "sha256": "e45074058e33765bd6ea719fde1fe9df33301736818b98a948cba1c82419d22e"
+    },
+    "genesis/engine/solvers/kinematic_solver.py": {
+      "bytes": 85900,
+      "sha256": "6926c911eeb9d910d4fee7c40e0fb63fd776f1c3129b1d3835067486310dee76"
+    },
+    "genesis/engine/solvers/mpm_solver.py": {
+      "bytes": 61232,
+      "sha256": "201e36bf3dea47197981abbfd21ceb7b8ef3fc54a8d852a81c9a62b4f36d6016"
+    },
+    "genesis/engine/solvers/pbd_solver.py": {
+      "bytes": 46798,
+      "sha256": "1cca66812186fd77f29ebdeb3adf72df01192bb14ea7f521da87c269b1a9b3f9"
+    },
+    "genesis/engine/solvers/rigid/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "genesis/engine/solvers/rigid/abd/__init__.py": {
+      "bytes": 360,
+      "sha256": "54a64f24959ab148714ebde751d600e976ace56efc8dd2770209d6889db9727e"
+    },
+    "genesis/engine/solvers/rigid/abd/accessor.py": {
+      "bytes": 54501,
+      "sha256": "b81eca2402e50cc464ace204937ed37bc3890a3d2da5bde6db9a8834cf40f44c"
+    },
+    "genesis/engine/solvers/rigid/abd/diff.py": {
+      "bytes": 14563,
+      "sha256": "8612aa00d63d06cf3ea5af3410373af93b011786f22359fc672819694ab32559"
+    },
+    "genesis/engine/solvers/rigid/abd/forward_dynamics.py": {
+      "bytes": 125075,
+      "sha256": "daedb872a9111fbc5ed6c873193496ee05c758097b8da621da7bb32eb75202aa"
+    },
+    "genesis/engine/solvers/rigid/abd/forward_kinematics.py": {
+      "bytes": 61168,
+      "sha256": "c0cbdbb8640a539aba07d1fefe8bc1fcc28ac6701760eb1507f92916e7cae27b"
+    },
+    "genesis/engine/solvers/rigid/abd/inverse_kinematics.py": {
+      "bytes": 35203,
+      "sha256": "6b4f31a22661e7081b53407e4f742fdfe15339b16c25294b676abeb09e0de0a2"
+    },
+    "genesis/engine/solvers/rigid/abd/manual_bw.py": {
+      "bytes": 29027,
+      "sha256": "d0edc183f221070bda1ff0ee0459dd41f317b6ac022d618dba6880effe193f33"
+    },
+    "genesis/engine/solvers/rigid/abd/misc.py": {
+      "bytes": 46299,
+      "sha256": "dc25724ad54eb29286bed66149bb081d9f10c821b534b1cbfa080bac8be565b1"
+    },
+    "genesis/engine/solvers/rigid/collider/__init__.py": {
+      "bytes": 798,
+      "sha256": "e24b0419713c0c56afad32f6bb4ea2347fb655bdba832762c3f17ea456d6a75d"
+    },
+    "genesis/engine/solvers/rigid/collider/box_contact.py": {
+      "bytes": 35219,
+      "sha256": "f48a71f25f7c8e9b0e350e5bf8111f75798734e17b9611ab79a7e03365010cbb"
+    },
+    "genesis/engine/solvers/rigid/collider/broadphase.py": {
+      "bytes": 21059,
+      "sha256": "68c6611a5cc760b964e42464aa1f7e538a0547f8f0322dbce807fd8e8333b2cf"
+    },
+    "genesis/engine/solvers/rigid/collider/capsule_contact.py": {
+      "bytes": 8435,
+      "sha256": "71b01482150cd2f9b623965e068b541cc45b30eee28778b53bf59decaff698a4"
+    },
+    "genesis/engine/solvers/rigid/collider/collider.py": {
+      "bytes": 68006,
+      "sha256": "4cec12a2d1298fd2e8d77fb2cb2cb7eb2fe873b2b21f9214d77894a77fed4a21"
+    },
+    "genesis/engine/solvers/rigid/collider/constants.py": {
+      "bytes": 2634,
+      "sha256": "2a84e64946d473efec416ad8e766ef05bab5a87e158ae3ad3a6624c719022ea7"
+    },
+    "genesis/engine/solvers/rigid/collider/contact.py": {
+      "bytes": 89507,
+      "sha256": "33699bb93bedf279006825d3ca4141c14e123014c2d7c39b947fc0f4895947c3"
+    },
+    "genesis/engine/solvers/rigid/collider/diff_gjk.py": {
+      "bytes": 39746,
+      "sha256": "3772173ed1cea7b632c5188f523026f8b52e095abc251b94a43554052ef327e5"
+    },
+    "genesis/engine/solvers/rigid/collider/epa.py": {
+      "bytes": 51212,
+      "sha256": "78985e8e76d55fc92b7c426c5f2c6b1fc38847e0b24049b5f7ad34f37e825744"
+    },
+    "genesis/engine/solvers/rigid/collider/gjk.py": {
+      "bytes": 72713,
+      "sha256": "dd1499ffc01779b8ead754de882b553dc6cbc53c313a4b45714754ede8d3cd31"
+    },
+    "genesis/engine/solvers/rigid/collider/gjk_support.py": {
+      "bytes": 5836,
+      "sha256": "30a71b5661e404e31f0ad2f86c93661217995c43efb3b4e45321c5b6586bfce2"
+    },
+    "genesis/engine/solvers/rigid/collider/gjk_utils.py": {
+      "bytes": 7317,
+      "sha256": "2977dd8a8875f81c2f8ab8074cb19a84f62590f2d0736458d7bad5e3ec9367ff"
+    },
+    "genesis/engine/solvers/rigid/collider/mpr.py": {
+      "bytes": 39580,
+      "sha256": "fde61c85538b455267ffa3067ffa343e403a044f17aca4dc6715ccc4539a631a"
+    },
+    "genesis/engine/solvers/rigid/collider/multi_contact.py": {
+      "bytes": 43470,
+      "sha256": "9e06d0e7e1202cd6501dc8cbe749a6b796bd2e26290cfd5c053d8b6bc9f2e6e0"
+    },
+    "genesis/engine/solvers/rigid/collider/narrowphase.py": {
+      "bytes": 199211,
+      "sha256": "1b7bf351b1c3e406bb058f387cd2b0830bb2cc21595a5e2d5e94bab686afd955"
+    },
+    "genesis/engine/solvers/rigid/collider/support_field.py": {
+      "bytes": 18816,
+      "sha256": "a4504b0e321c906c2dc19ea87ea96e33878b71c8b4cc94696144ff763b904813"
+    },
+    "genesis/engine/solvers/rigid/collider/utils.py": {
+      "bytes": 3600,
+      "sha256": "268d4859e6106c179cf8f6849d41504676c059f2fa96c8ed4e3830199a0d11b3"
+    },
+    "genesis/engine/solvers/rigid/constraint/__init__.py": {
+      "bytes": 303,
+      "sha256": "e63a2f381b17324bef72497f0ea835e62d8500254c474a9d7577e4d7d8a863f8"
+    },
+    "genesis/engine/solvers/rigid/constraint/backward.py": {
+      "bytes": 78482,
+      "sha256": "68cdfb662af27ee7771dd6e80db00aff15faa0043e58a5ffc04868703691108c"
+    },
+    "genesis/engine/solvers/rigid/constraint/island.py": {
+      "bytes": 53368,
+      "sha256": "94750dfc819612b8693b2e48c02cd564edbdbf679050081536d3d445b32306b7"
+    },
+    "genesis/engine/solvers/rigid/constraint/linesearch.py": {
+      "bytes": 78292,
+      "sha256": "e7a5b2460289ebc48173a26411a6c4cf9dcfc4db6b27f4684a7db47d797d71d1"
+    },
+    "genesis/engine/solvers/rigid/constraint/noslip.py": {
+      "bytes": 28885,
+      "sha256": "c5a910b31d655f53da06a8df281e6a94aca6adc349f9ee549853169347479ed1"
+    },
+    "genesis/engine/solvers/rigid/constraint/solver.py": {
+      "bytes": 308056,
+      "sha256": "2468c3297626882fa571aedd1f25dc020f63b07d371414724efa9241f9a86fc3"
+    },
+    "genesis/engine/solvers/rigid/constraint/solver_breakdown.py": {
+      "bytes": 19103,
+      "sha256": "40c34a9f383516ce831a999894ced7128d7ed430c2bb99bbcb556ccd55ce8f16"
+    },
+    "genesis/engine/solvers/rigid/rigid_solver.py": {
+      "bytes": 196997,
+      "sha256": "e003de0491abce8570ed477ffa283760836f488e4a0154ab31e398bc9b72aca3"
+    },
+    "genesis/engine/solvers/sf_solver.py": {
+      "bytes": 10519,
+      "sha256": "024b3c1c1f811c57177931512cc70e80f820157da60effaab8ed9ccc243cb63c"
+    },
+    "genesis/engine/solvers/sph_solver.py": {
+      "bytes": 39916,
+      "sha256": "8dd0715757da4cea313396b22dec82b13c130ee4656fd2c62983a8bce39fd3b1"
+    },
+    "genesis/engine/solvers/tool_solver.py": {
+      "bytes": 4225,
+      "sha256": "18ef3fe945fd7d16300fdad55bca8d6c3bd4ad255c74d3352c2185298b2b5de3"
+    },
+    "genesis/engine/states/__init__.py": {
+      "bytes": 44,
+      "sha256": "af5ef6588d88ecc03ffa0846235488964721cace0171920388114d3575979a6a"
+    },
+    "genesis/engine/states/cache.py": {
+      "bytes": 1583,
+      "sha256": "61e42427b83631e592101cd9c2ca882dd9343a9eb64a977dadf18e7ea141ff35"
+    },
+    "genesis/engine/states/entities.py": {
+      "bytes": 4854,
+      "sha256": "4033832b07b16c21e54c745c25993f2a582d31f3fccb04b5972594779002a48a"
+    },
+    "genesis/engine/states/solvers.py": {
+      "bytes": 9078,
+      "sha256": "0ee4c105a89137fc4bd895ca75318784fe4060e942c7994d702c144a087fb48f"
+    },
+    "genesis/ext/VolumeSampling": {
+      "bytes": 1842432,
+      "sha256": "e05124d4b83c755d11118432b3a6d8bf57aee36e4e9aba0baba28149d0a7b23a"
+    },
+    "genesis/ext/_trimesh_patch.py": {
+      "bytes": 35080,
+      "sha256": "9e54b10a02049259e8dcd99a1c798c5ec6df610056cc58c4405d803485d2d079"
+    },
+    "genesis/ext/isaacgym/terrain_utils.py": {
+      "bytes": 16659,
+      "sha256": "27683b34b70a58b189e98395ff32e3a31d82e082cb6f2a2587605a99938be67e"
+    },
+    "genesis/ext/pyrender/__init__.py": {
+      "bytes": 985,
+      "sha256": "c5a4f6e4ce1ac97bfcd48d739f6f2e3294fa139a7a3341dd2776e4600d2f3b11"
+    },
+    "genesis/ext/pyrender/camera.py": {
+      "bytes": 10884,
+      "sha256": "681ba95116285f031e5193f73bce2c0cae2364c2a1334d98e3e2e786fbb84bbe"
+    },
+    "genesis/ext/pyrender/constants.py": {
+      "bytes": 4970,
+      "sha256": "16f1f1c895ff62c0215504b770395e81a8c25356176f2b4a354e6d4329886e15"
+    },
+    "genesis/ext/pyrender/font.py": {
+      "bytes": 9284,
+      "sha256": "6c2196c282f4bde69c27b6b5bb37c7ad41e066ed5f4c3c6544af04bfd175eb84"
+    },
+    "genesis/ext/pyrender/fonts/OpenSans-Bold.ttf": {
+      "bytes": 224592,
+      "sha256": "5894a3649b213cf5b2d673b6e7a871815fd1d120fa68a463592f27db14eae323"
+    },
+    "genesis/ext/pyrender/fonts/OpenSans-BoldItalic.ttf": {
+      "bytes": 213292,
+      "sha256": "3ca680f2444cc9e50447d057c006464566e92f2e77b0b6e26491e5bd757ed4e7"
+    },
+    "genesis/ext/pyrender/fonts/OpenSans-ExtraBold.ttf": {
+      "bytes": 222584,
+      "sha256": "0fcbdb5cbeea00ae532352c7c94a7d288ebc911ba85f4d595012032dcab64ba8"
+    },
+    "genesis/ext/pyrender/fonts/OpenSans-ExtraBoldItalic.ttf": {
+      "bytes": 213420,
+      "sha256": "0eeca981116621a96a484ecc58fbfcdc78fda0065fd21fd13707b63bf8a9912c"
+    },
+    "genesis/ext/pyrender/fonts/OpenSans-Italic.ttf": {
+      "bytes": 212896,
+      "sha256": "a54dc8488f8193bf30c3820cf6f261f911f9d328d699e1a1b8042641554cec70"
+    },
+    "genesis/ext/pyrender/fonts/OpenSans-Light.ttf": {
+      "bytes": 222412,
+      "sha256": "cf5f5184c1441a1660aa52526328e9d5c2793e77b6d8d3a3ad654bdb07ab8424"
+    },
+    "genesis/ext/pyrender/fonts/OpenSans-LightItalic.ttf": {
+      "bytes": 213128,
+      "sha256": "4482d18b30c4534b5481d594b7c0bc7a9913a7c4c261985e452010a89ab755fc"
+    },
+    "genesis/ext/pyrender/fonts/OpenSans-Regular.ttf": {
+      "bytes": 217360,
+      "sha256": "e64e508b2aa2880f907e470c4550980ec4c0694d103a43f36150ac3f93189bee"
+    },
+    "genesis/ext/pyrender/fonts/OpenSans-Semibold.ttf": {
+      "bytes": 221328,
+      "sha256": "aa3b0ef53db12e3d45094030cac0e69d384e44cc5978643dd4390041cad546e2"
+    },
+    "genesis/ext/pyrender/fonts/OpenSans-SemiboldItalic.ttf": {
+      "bytes": 212820,
+      "sha256": "30536248e59274548d51245662f9deec7fb52946faba33aade28c41473bdd39b"
+    },
+    "genesis/ext/pyrender/fonts/SpaceMono-Regular.ttf": {
+      "bytes": 90904,
+      "sha256": "74ea804954f6f3e3ed4c748da603547ff2f88b03f614c7ad85231449d33c51be"
+    },
+    "genesis/ext/pyrender/fonts/UbuntuMono-Regular.ttf": {
+      "bytes": 189892,
+      "sha256": "3b83b9ca3a1186b4bf8fbcbc8078b360bdb78a77a859f8eeabc9b14fb165da9a"
+    },
+    "genesis/ext/pyrender/jit_render.py": {
+      "bytes": 71422,
+      "sha256": "3af1d3a8c1dc9bf2361135fc87c482e10d5c3777201db72eca92ea215eb99d3a"
+    },
+    "genesis/ext/pyrender/light.py": {
+      "bytes": 12923,
+      "sha256": "2e768dee6b346e9eec50d5e9ac2223cc8b748f28ed01c7aed89765c05f774de1"
+    },
+    "genesis/ext/pyrender/material.py": {
+      "bytes": 27448,
+      "sha256": "bd6582e007d9bef748371b3e5b06b29f384c928a8e850884857f136e99fa17b2"
+    },
+    "genesis/ext/pyrender/mesh.py": {
+      "bytes": 12247,
+      "sha256": "4c9c952e5279376c726ab9b83c6990bf0897b026b190eb547a109f4a6097e92b"
+    },
+    "genesis/ext/pyrender/node.py": {
+      "bytes": 7190,
+      "sha256": "d31f4c48036f8a5463454227afdcf5e21ba338ca60e4b05202115d40a7825bd7"
+    },
+    "genesis/ext/pyrender/numba_gl_wrapper.py": {
+      "bytes": 6375,
+      "sha256": "53c4c8901e50e0e43debdfd87022dbca3a5c1fe6c19e2c4f45826cfee7474ea2"
+    },
+    "genesis/ext/pyrender/offscreen.py": {
+      "bytes": 7787,
+      "sha256": "36fc9e7634b80a619b9e03664e7e6c32d80919072dd9d4c6712016c4e8d515f7"
+    },
+    "genesis/ext/pyrender/overlay/__init__.py": {
+      "bytes": 265,
+      "sha256": "da3ae4cf526949b2c9276aeb2f06feb98e57d7b2bf040688e2192782570d8ce4"
+    },
+    "genesis/ext/pyrender/overlay/plugin.py": {
+      "bytes": 62777,
+      "sha256": "221a6f4178278d0b072d746c65bb51d6e1f249c42cabaad9d86677146e814263"
+    },
+    "genesis/ext/pyrender/overlay/style.py": {
+      "bytes": 3000,
+      "sha256": "cfb92a1bcadc144893f216ac60a4e1a93b6e22e043a94207eb256e90c10bc156"
+    },
+    "genesis/ext/pyrender/overlay/types.py": {
+      "bytes": 3505,
+      "sha256": "788c9cf5347f3484920d302ade0063b91d3816ec6ad3f892d9d1ac39de782c03"
+    },
+    "genesis/ext/pyrender/platforms/__init__.py": {
+      "bytes": 123,
+      "sha256": "b72d242f3d4cb54b7ecac3981b311d97042d65513f7d23716d40f0845cf15425"
+    },
+    "genesis/ext/pyrender/platforms/base.py": {
+      "bytes": 1562,
+      "sha256": "b0e228cc0bf2f6aa8fc5a36b6c84356488c3caf6653872d57e1f915ba9ee9274"
+    },
+    "genesis/ext/pyrender/platforms/cgl.py": {
+      "bytes": 6002,
+      "sha256": "ac96a4027c747d5853fbcab832f47cc4bf1977a3fcc480b232cf3b2ebb9544c9"
+    },
+    "genesis/ext/pyrender/platforms/egl.py": {
+      "bytes": 11096,
+      "sha256": "fc700c48b3953cb49a7253424217240a550aa60f53e015dbbd0f2864890bef56"
+    },
+    "genesis/ext/pyrender/platforms/osmesa.py": {
+      "bytes": 3919,
+      "sha256": "1e9661a0db947d596608554296ead37ce108ea675ac65d834bf4f55f58be9e1b"
+    },
+    "genesis/ext/pyrender/platforms/pyglet_platform.py": {
+      "bytes": 3990,
+      "sha256": "24ccc17adedbdd3145a1feb811f5f19bcf61661a9f2435f63f901aa95dd995a0"
+    },
+    "genesis/ext/pyrender/primitive.py": {
+      "bytes": 20504,
+      "sha256": "832a9c0e9738bdd94208d16425b1d010188cca26a448c8770a6818189a86349d"
+    },
+    "genesis/ext/pyrender/renderer.py": {
+      "bytes": 42830,
+      "sha256": "ce061ae28d1426d6ceabcd67d5b28a25a1935721bce07826a40d6d66384685ad"
+    },
+    "genesis/ext/pyrender/sampler.py": {
+      "bytes": 2552,
+      "sha256": "a0c7296dccc8ecf4da4a3b74f8534a65bb174f24702b7c8f1bd527133cba0970"
+    },
+    "genesis/ext/pyrender/scene.py": {
+      "bytes": 23512,
+      "sha256": "6c03bf82731993cb0f47fec21243d6bd1ee2f15050e216001acf8bc45b5205f7"
+    },
+    "genesis/ext/pyrender/shader_program.py": {
+      "bytes": 9623,
+      "sha256": "966c3dded87a502fd3ecf693976cd2ebc4795962a11b28d265fb5c1e87824727"
+    },
+    "genesis/ext/pyrender/shaders/debug_quad.frag": {
+      "bytes": 668,
+      "sha256": "8b184f7be1b278cab4f6ae48e06bb89f63f1cc4d23a1dc5271b2e672e4bfa312"
+    },
+    "genesis/ext/pyrender/shaders/debug_quad.vert": {
+      "bytes": 509,
+      "sha256": "29a7eaeb4e83b2c2d3d72f49ea150cbb3f493c41f784ab3ccd8857b32033cf61"
+    },
+    "genesis/ext/pyrender/shaders/flat.frag": {
+      "bytes": 3184,
+      "sha256": "b55c740cf48f33b246e03988858b7ad34bf8fd8f3b8a1f830d98c0a7c2661eaf"
+    },
+    "genesis/ext/pyrender/shaders/flat.vert": {
+      "bytes": 1974,
+      "sha256": "e5c81244821672e62a2e4d8bbf7e8e0d6a8b32876d28ac2c90a02c8cdcc20fcb"
+    },
+    "genesis/ext/pyrender/shaders/mesh.frag": {
+      "bytes": 15405,
+      "sha256": "6b2126fb254554178a0074f5ac23dbad0bbadaaa346a2561a26e01a08791dfa8"
+    },
+    "genesis/ext/pyrender/shaders/mesh.vert": {
+      "bytes": 3525,
+      "sha256": "c7eb3838468b5f9b8ecb0419016f5fcdd0ea24305bbc5e5f8deb04e9d314d2bd"
+    },
+    "genesis/ext/pyrender/shaders/mesh_depth.frag": {
+      "bytes": 85,
+      "sha256": "f529c3b728db1b67dc1716f549c752e1e9b6c04623fc70d07365064a051fe3eb"
+    },
+    "genesis/ext/pyrender/shaders/mesh_depth.vert": {
+      "bytes": 467,
+      "sha256": "64136cd2f33f532f46458aa755d3bcb63adb947bc4ad5f5c8b920b6d16b045f6"
+    },
+    "genesis/ext/pyrender/shaders/mesh_double_sided.geom": {
+      "bytes": 1417,
+      "sha256": "553d7d4546700eafe43a1b075a7d11a94876e9fe93d2e7f697e766fff4a607e8"
+    },
+    "genesis/ext/pyrender/shaders/mesh_normal.frag": {
+      "bytes": 204,
+      "sha256": "f08c1170d5573dbab6532ec90a42eae6795a9e6b38ded775487b1a06260f3cd7"
+    },
+    "genesis/ext/pyrender/shaders/mesh_normal.vert": {
+      "bytes": 979,
+      "sha256": "24be70c4240fafdf5e6d6a9182c0b4edd9d2699885998409a2ed1587718ac721"
+    },
+    "genesis/ext/pyrender/shaders/mesh_normal_double_sided.geom": {
+      "bytes": 611,
+      "sha256": "ad52ccefd878d8a60b2e7f4cc05b91b1484b60c891affab87073628ce6b8552b"
+    },
+    "genesis/ext/pyrender/shaders/point_shadow.frag": {
+      "bytes": 153,
+      "sha256": "c511e02eed167070df177c72d8fe0bd2b6e6c97b657d7652055fee129b888964"
+    },
+    "genesis/ext/pyrender/shaders/point_shadow.geom": {
+      "bytes": 430,
+      "sha256": "aaf215c2bea90fa0cde97f6e7b5e308bf9cceba1d2a71b9ec305da5101557aab"
+    },
+    "genesis/ext/pyrender/shaders/point_shadow.vert": {
+      "bytes": 344,
+      "sha256": "6671a32ba4f982846fd071ad0fc56f9c88b2ea3c5c65f7af8624328dfe781115"
+    },
+    "genesis/ext/pyrender/shaders/segmentation.frag": {
+      "bytes": 280,
+      "sha256": "2eb8b70d654e05d822cb472049052b833c6e88fec56874d5cc28798f8ef7f29f"
+    },
+    "genesis/ext/pyrender/shaders/segmentation.vert": {
+      "bytes": 502,
+      "sha256": "09d5148190e8944a12ace9edee4bee8ac0c39d7e587d1466f3ca95405fbf5f83"
+    },
+    "genesis/ext/pyrender/shaders/segmentation_double_sided.geom": {
+      "bytes": 405,
+      "sha256": "d4bafdc87591c322154e05fedd721474578fccd2873c730518a0a2dd8b37ce86"
+    },
+    "genesis/ext/pyrender/shaders/text.frag": {
+      "bytes": 208,
+      "sha256": "46fb9206c6497bf954115b881acda7e639075e46c7abc813258c2247e4f9a6ac"
+    },
+    "genesis/ext/pyrender/shaders/text.vert": {
+      "bytes": 191,
+      "sha256": "76c061fdb6384e3e19af40484b1e88c291d4196a9418ec301001058b9430fbf1"
+    },
+    "genesis/ext/pyrender/shaders/vertex_normals.frag": {
+      "bytes": 116,
+      "sha256": "559a7fb0af3728b6c29303359f8716260af76fca0f19b87ea12c659c104f3228"
+    },
+    "genesis/ext/pyrender/shaders/vertex_normals.geom": {
+      "bytes": 1502,
+      "sha256": "284cd9693c4ef0ca709e98b6195db2cc8213960ce150a32ade7c84d8cd44a620"
+    },
+    "genesis/ext/pyrender/shaders/vertex_normals.vert": {
+      "bytes": 689,
+      "sha256": "fa9443960967c580522ecbfb24f6dbca2b064a39e40506910d7fc72c3558c7e3"
+    },
+    "genesis/ext/pyrender/shaders/vertex_normals_pc.geom": {
+      "bytes": 560,
+      "sha256": "0d0c2332ae62372d8a21091d771af68a9aad794a048e53e759c2151cc3b49ad2"
+    },
+    "genesis/ext/pyrender/texture.py": {
+      "bytes": 12028,
+      "sha256": "0da3ca5a127764ebd75aa60bb772fc9c3e0d5ff2848d9d90f56fb7fcad499a7b"
+    },
+    "genesis/ext/pyrender/trackball.py": {
+      "bytes": 8853,
+      "sha256": "70cb62f51a431e524d8ca8c7ca4c0b1012f89cf3da5f388eb3959bd041bd0510"
+    },
+    "genesis/ext/pyrender/utils.py": {
+      "bytes": 4449,
+      "sha256": "3ee95a310809c4c3794be9cce8ae05e1d32a83e088261ff9f659d1a7be8fa7a5"
+    },
+    "genesis/ext/pyrender/version.py": {
+      "bytes": 23,
+      "sha256": "1b5070e5211e4684a51d5c6614a7fa3c8a4adfc4874d84c58521469bd77c6103"
+    },
+    "genesis/ext/pyrender/viewer.py": {
+      "bytes": 65756,
+      "sha256": "94e3f38aba25826f856259a84a85e857cef93c3bf5f097ea25b6db04ed28274f"
+    },
+    "genesis/ext/urdfpy/__init__.py": {
+      "bytes": 983,
+      "sha256": "3dd129e5d5e9d0c708b1c8d251e1fb2bd1ab6b2220269fe4d4429caf6ca396d9"
+    },
+    "genesis/ext/urdfpy/urdf.py": {
+      "bytes": 132806,
+      "sha256": "a97c361d877f4a10df3fe1d66cbf2238a37e0b185837be62585c112f47d6fb7b"
+    },
+    "genesis/ext/urdfpy/utils.py": {
+      "bytes": 8979,
+      "sha256": "d85f12bcf55ac92da8aff42ca03162b6e2e26d27786d22fad5cae7d228be69db"
+    },
+    "genesis/ext/urdfpy/version.py": {
+      "bytes": 23,
+      "sha256": "8e6dc3b5687aee31c69ddb9d6c03e85077bfdc72850563770796e57cf8fabfd8"
+    },
+    "genesis/grad/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "genesis/grad/creation_ops.py": {
+      "bytes": 3530,
+      "sha256": "fca94b83d15dae38563d91d39da213084ca9733322448fc70d651216d73bf0a8"
+    },
+    "genesis/grad/tensor.py": {
+      "bytes": 4268,
+      "sha256": "a2a102c5afb5d27dca0e62c2687bb9b25483ee70e37be005c7ae942cb0be752b"
+    },
+    "genesis/logging/__init__.py": {
+      "bytes": 27,
+      "sha256": "899572b96127517a8797e198641465770a7b4fd250181cfeba4fcc367f2634bd"
+    },
+    "genesis/logging/logger.py": {
+      "bytes": 7266,
+      "sha256": "cff75865d1c92f41310a1b3ab17c07c791d74bf7d3d9d2dd6e0ad1d83bc2383b"
+    },
+    "genesis/logging/time_elapser.py": {
+      "bytes": 2209,
+      "sha256": "7d99fd1b6604bddcc606c756fed4fb194a590d7b8ebdd69ae1e44f8c18f7fa7b"
+    },
+    "genesis/options/__init__.py": {
+      "bytes": 843,
+      "sha256": "ece72d88ba60a2e29d1a46dbd927179e8aa6c23b494e8a32e062f304b8d356c1"
+    },
+    "genesis/options/misc.py": {
+      "bytes": 2122,
+      "sha256": "7c7fe4438de8eb219e2649054da120b3522ee95a3bed4b454aac2221b77f79ed"
+    },
+    "genesis/options/morphs.py": {
+      "bytes": 101450,
+      "sha256": "a9bd5c7a2ed6dbea62cdf3e2c4c2f71c250328b69bb089f05991f83f546340fa"
+    },
+    "genesis/options/options.py": {
+      "bytes": 7318,
+      "sha256": "5a6b1ca42aadf9aaa49e1fb013a1bc24aefa7923ba814e22ee2b9441bf3c08a6"
+    },
+    "genesis/options/profiling.py": {
+      "bytes": 717,
+      "sha256": "82cbc37ea688542664b863e56096fa235fa3f944eb1c9160089453f81c24831a"
+    },
+    "genesis/options/recorders.py": {
+      "bytes": 15052,
+      "sha256": "8b8a1dceb2545607fb0d67591d53b612b2d2721fae148e1274455a2f8b804cb8"
+    },
+    "genesis/options/renderers.py": {
+      "bytes": 5158,
+      "sha256": "0898d886e208a9889ccd3a6611834c118a474324efe76cba436b28dbe786431b"
+    },
+    "genesis/options/scene.py": {
+      "bytes": 3945,
+      "sha256": "135b4a2301a001d158b447cdc2f512951847a1aba90e82e3c771be5aa0772fb8"
+    },
+    "genesis/options/sensors/__init__.py": {
+      "bytes": 974,
+      "sha256": "b1487e5fa0e6da6f9c8e06690900b340ed9f38d99998b2665b1b26f47ae30cc7"
+    },
+    "genesis/options/sensors/camera.py": {
+      "bytes": 5519,
+      "sha256": "7cd4b59560a8d9b2edd7f310cc92bf0520ad1bd12cc3f5a00f51960b630576d4"
+    },
+    "genesis/options/sensors/options.py": {
+      "bytes": 30823,
+      "sha256": "e636667991a5220f5e070c95a8d967ac2ff4eed63896cffdd08181302e32de38"
+    },
+    "genesis/options/sensors/raycaster.py": {
+      "bytes": 10405,
+      "sha256": "13a609ebd1168e7ac894ccb49ab84a848c81eb3d001bdadce433e98e6cfaee52"
+    },
+    "genesis/options/sensors/tactile.py": {
+      "bytes": 30631,
+      "sha256": "518b521a3936a0659c5c300416addba70d668801bb7fea15926fd3d6e3c4b0a2"
+    },
+    "genesis/options/solvers.py": {
+      "bytes": 49979,
+      "sha256": "207f12b6ca35f5c9ce4347dc2a56210c0573d724124b2433b84768054bd574a4"
+    },
+    "genesis/options/surfaces.py": {
+      "bytes": 32628,
+      "sha256": "3ffb310e9c21a5d3808a355015f07e39e77084d166455a6ea344268cbcf75bfb"
+    },
+    "genesis/options/textures.py": {
+      "bytes": 15949,
+      "sha256": "949f8700332f6b14e30a0a56eda95954234d7e6dc5f374965960029819baae54"
+    },
+    "genesis/options/vis.py": {
+      "bytes": 11724,
+      "sha256": "538f161c75916ed92fa5f645613972323d9e6729aa0fce80a8267cd0eb367b32"
+    },
+    "genesis/recorders/__init__.py": {
+      "bytes": 203,
+      "sha256": "0da9ac4cbd730bf30ad0f0dd8f0b8ea506b6faf4ff9360da91643b34b3ab0115"
+    },
+    "genesis/recorders/base_recorder.py": {
+      "bytes": 11231,
+      "sha256": "f220fd19244c87b4b40d2f6aa0627af0c8c8954e9707ed37d48ac5aa38cf65fd"
+    },
+    "genesis/recorders/file_writers.py": {
+      "bytes": 6317,
+      "sha256": "c707e33c7247bcfd348823aa661e64f2d4cedb2ebab4417b7711f77572ba1ee7"
+    },
+    "genesis/recorders/plotters.py": {
+      "bytes": 36731,
+      "sha256": "7fa2b0eaef4d786f47fc4020e34b4c712596f4bf9e6e0334c7f9f712b12d5fd8"
+    },
+    "genesis/recorders/recorder_manager.py": {
+      "bytes": 5000,
+      "sha256": "10cca50cf6075cb7340975c045a77760e5e0699c56357b4a692ca3890b309cbe"
+    },
+    "genesis/recorders/trajectory.py": {
+      "bytes": 27188,
+      "sha256": "b47d6150ae71ab0b65825b3e222456669234b07e883b18da2074ab300386cce1"
+    },
+    "genesis/repr_base.py": {
+      "bytes": 4097,
+      "sha256": "6f624f7e3ac36a47fe2a99e874e4a2456a89f94a04cd6a331a7d4a57e13f7961"
+    },
+    "genesis/styles.py": {
+      "bytes": 5741,
+      "sha256": "4670ecba2703f1e167fad9c21aaa9c93510990cd130e63cf50863adcbb6cf807"
+    },
+    "genesis/typing.py": {
+      "bytes": 9999,
+      "sha256": "8f8cbf7cb17eaf2fb8e164aff3d6cbe65b6bbd19ffcedb9e1a149e268782448b"
+    },
+    "genesis/utils/__init__.py": {
+      "bytes": 20,
+      "sha256": "2d44be8c6ad7945e5e7427cb45a105548bfdfa4da3eb4f6d1df8cf7fa94149da"
+    },
+    "genesis/utils/array_class.py": {
+      "bytes": 156516,
+      "sha256": "6669963c94113c12d022f04afd07bc4f5ba4997c7377526e471f9c149a1fe39d"
+    },
+    "genesis/utils/collision.py": {
+      "bytes": 2876,
+      "sha256": "b9483d41644655af5cb1415eaa5de095f5b7a75b3da4f906a69428c00430656f"
+    },
+    "genesis/utils/deprecated_module_wrapper.py": {
+      "bytes": 1412,
+      "sha256": "5169f325a6fcd7e991b4392f926a6a980ee27310b2d8c78f6d26ed4906ace703"
+    },
+    "genesis/utils/element.py": {
+      "bytes": 1794,
+      "sha256": "771f3fad4b4221cd6526300f6b90a413d740cecf435c1edd86d891f339f10fd9"
+    },
+    "genesis/utils/emoji.py": {
+      "bytes": 278,
+      "sha256": "8bf89d552b883d9f4e85c6a2ba20b42f7289691bc02ad5423960e62688aeef45"
+    },
+    "genesis/utils/geom.py": {
+      "bytes": 94620,
+      "sha256": "33c18d215656013762ef40aaf2da10ca181cf91079241fb21b9203b0ab051dd6"
+    },
+    "genesis/utils/gltf.py": {
+      "bytes": 18536,
+      "sha256": "4bb7f47072141bb2ee2b6da0a9aba62daef13e83cccabe164f48a20d67dd2b1e"
+    },
+    "genesis/utils/hybrid.py": {
+      "bytes": 8884,
+      "sha256": "624a6d49f58985fefe499ccb3d64000d60c04f5e07abc92dd9f85cdeefddf325"
+    },
+    "genesis/utils/image_exporter.py": {
+      "bytes": 10387,
+      "sha256": "bf2c3ab65b5e9dc6f9a418b84ab799e890d73a1eefe82e41cff7b84569351168"
+    },
+    "genesis/utils/linalg.py": {
+      "bytes": 2854,
+      "sha256": "07f1d5183722f255c2dc3b928dccb553389f3b5a883ec9a1b45bd7026d517dc3"
+    },
+    "genesis/utils/mesh.py": {
+      "bytes": 66767,
+      "sha256": "43aa1942e827d2bf40beeba3a1a42ba1a20514771205fb0027cdebb3dbeb8eff"
+    },
+    "genesis/utils/misc.py": {
+      "bytes": 60798,
+      "sha256": "746cea4185cc86a7fb66242544adb2bee5330da41ea80a9829e625560416d71a"
+    },
+    "genesis/utils/mjcf.py": {
+      "bytes": 40573,
+      "sha256": "f6d4a068884251445e11ce2138f6ba2933de1bea4c5d6b39df66aba2ff00ea11"
+    },
+    "genesis/utils/particle.py": {
+      "bytes": 16310,
+      "sha256": "9119d66184ba0d26d95ead95a955e56a45ba52aaaed75a151b0f72b23d16ebc8"
+    },
+    "genesis/utils/path_planning.py": {
+      "bytes": 50225,
+      "sha256": "eb35f562e4ddf90e13fe4697710080e78c0fefa5e2d7c7f56240ec25a356ffef"
+    },
+    "genesis/utils/point_cloud.py": {
+      "bytes": 5506,
+      "sha256": "d2c60b1334c65676a8363cf75ffad1aad5146e90700ead57af8bbf8510b0b644"
+    },
+    "genesis/utils/raycast.py": {
+      "bytes": 1214,
+      "sha256": "6f5f604d02bdee6af4f976a273bc1340c21a5631268c17dc6ac6f76d2e47e592"
+    },
+    "genesis/utils/raycast_qd.py": {
+      "bytes": 40871,
+      "sha256": "18a3746a64b9cdb28cb5dd6bfa2529d7bd17f2b7118544ae28084d7c060478d3"
+    },
+    "genesis/utils/repr.py": {
+      "bytes": 1047,
+      "sha256": "2c5a0235ebc989c4d0842820d51e62245cfbdb03f39147b852bb1e684fc5b1cb"
+    },
+    "genesis/utils/ring_buffer.py": {
+      "bytes": 6072,
+      "sha256": "e8c1f9bde22632338787a32ae41cc2ff0b4edeb4286a9d57ec5b519fbdf3b146"
+    },
+    "genesis/utils/sdf.py": {
+      "bytes": 22856,
+      "sha256": "2fdb6fd047d2acb09ec0c8ecab720d0909d9a59b73af47be643a4985a3e08068"
+    },
+    "genesis/utils/serialization.py": {
+      "bytes": 33768,
+      "sha256": "5df19494256fb6613297babd6ea81f1c2a9cd802b74c8707576e115a3f1e10b7"
+    },
+    "genesis/utils/simt.py": {
+      "bytes": 4829,
+      "sha256": "41d127e5501d487d0de7054dd25067c749c729d83e392b6dba6a83aa2d2780c5"
+    },
+    "genesis/utils/terrain.py": {
+      "bytes": 20894,
+      "sha256": "3c3d43ee94e9f6f81b39b8605a22ca4668740a1b6263a24841448b8db911531b"
+    },
+    "genesis/utils/tools.py": {
+      "bytes": 11245,
+      "sha256": "e690ddb04c7969da1a73594d5fb132801dc21cc1a2231668b7d0a8953bae02e2"
+    },
+    "genesis/utils/uid.py": {
+      "bytes": 1163,
+      "sha256": "7465c1f52a16429f1ecf9455be5309e106feb3cba4782d0761df6520fc5fc58e"
+    },
+    "genesis/utils/urdf.py": {
+      "bytes": 27774,
+      "sha256": "704137e4d29f6b15b9a536306882960e700af46b2b7f20f16123042eaa2b9d40"
+    },
+    "genesis/utils/usd/UsdParserSpec.md": {
+      "bytes": 5957,
+      "sha256": "b95367479f9f68b7403b7897a3eb4025125245720be4191f13793b51a5cd6e31"
+    },
+    "genesis/utils/usd/__init__.py": {
+      "bytes": 2007,
+      "sha256": "bb0acd545cc98c347195c03f5e731edaac15d8358ac7bda7119041049639527c"
+    },
+    "genesis/utils/usd/usd_bake.py": {
+      "bytes": 5847,
+      "sha256": "dd650beeece689de68855afd8bbfcd5b27c1da5b3947b7e5c99486e02ee9d82b"
+    },
+    "genesis/utils/usd/usd_collision.py": {
+      "bytes": 6401,
+      "sha256": "7bbf05cb8bd5c3ddf5cf766eebd0e8cf694e465caee28bf348fdcf108b62604f"
+    },
+    "genesis/utils/usd/usd_context.py": {
+      "bytes": 25448,
+      "sha256": "f21d5f3955256a960a5a4a2bd47775193fe222b2ccfc789659a0fe32a49188cf"
+    },
+    "genesis/utils/usd/usd_geometry.py": {
+      "bytes": 21296,
+      "sha256": "4087f2d6957b374edfd99fd66ec7c20910cc6dd1a43b50bbcf7d6d640d639fd2"
+    },
+    "genesis/utils/usd/usd_material.py": {
+      "bytes": 7609,
+      "sha256": "d6dd9f980ddab13cb54e4fbeb5b4b6700f29ff3f702156f3dddde78c8c3b9e56"
+    },
+    "genesis/utils/usd/usd_rigid_entity.py": {
+      "bytes": 35132,
+      "sha256": "41a56006bc895ee91411f4057c37cd3efab5af977eb183de017942236576ca76"
+    },
+    "genesis/utils/usd/usd_stage.py": {
+      "bytes": 7968,
+      "sha256": "eb88091c45128e99fcc87b06fe724293eeec7cfed4c4208effad0789f2cae499"
+    },
+    "genesis/utils/usd/usd_utils.py": {
+      "bytes": 10138,
+      "sha256": "c911d48baf7f4754a33efa08d74839bdb459a1b36b88fe85158f5c962456a88a"
+    },
+    "genesis/utils/video_encoder.py": {
+      "bytes": 12115,
+      "sha256": "151eb73ff3685851859eeb856026379ddeb9049201cb2b626072c4b918fddc38"
+    },
+    "genesis/utils/warnings.py": {
+      "bytes": 189,
+      "sha256": "14f651f3abb3b9d485bf848a9f604829c4e605afd2921fc39fc9965254c88bce"
+    },
+    "genesis/utils/watertighten.py": {
+      "bytes": 62121,
+      "sha256": "5ba2822a5daeea33e13b39ce8d82dc33f6a25cac5a71635c86b0ea14d47313d3"
+    },
+    "genesis/version.py": {
+      "bytes": 22,
+      "sha256": "af1bd051649eea7bd2003908caece2ca2f08ae4ef4b360d94b1381f5cf1ca404"
+    },
+    "genesis/vis/__init__.py": {
+      "bytes": 35,
+      "sha256": "4d5e8f63fb8eab7e336a19be8cc846ac66b82c740b83e0b23bb7f2f7a4db0117"
+    },
+    "genesis/vis/batch_renderer.py": {
+      "bytes": 19740,
+      "sha256": "7a3da5caf6edd48baaee28086222f9160c203e7c5514718a7a92dc8746549b1b"
+    },
+    "genesis/vis/camera.py": {
+      "bytes": 45140,
+      "sha256": "b79c332298eb8a0f819f543f0d740251017f9280d5e203c46036d245772d1630"
+    },
+    "genesis/vis/keybindings.py": {
+      "bytes": 13657,
+      "sha256": "ac3a91ad5f9aefc71adba7069622ddc4db173d03cd145be0492e14d83b8d9803"
+    },
+    "genesis/vis/rasterizer.py": {
+      "bytes": 8034,
+      "sha256": "d010b927a8b7973c8e8210f429bf7e3896664760753a3eddb795801f042d5f9b"
+    },
+    "genesis/vis/rasterizer_context.py": {
+      "bytes": 61922,
+      "sha256": "fff7b8d9903ddc7efb5ca85a1eb20eb136f0775c32d5da1fc1078b6136914035"
+    },
+    "genesis/vis/raytracer.py": {
+      "bytes": 36882,
+      "sha256": "cc0831e31ca449ae232826e3a9087619f1e7241f41cd974a3fe55ab2382c9500"
+    },
+    "genesis/vis/viewer.py": {
+      "bytes": 21567,
+      "sha256": "e6915662848a9519deb37270d13c7b0fd7a1d64b953dbce5f4a203f6dbba5935"
+    },
+    "genesis/vis/viewer_plugins/__init__.py": {
+      "bytes": 158,
+      "sha256": "f3c73ff36b8938b782ca6fea1ca1c703536bd88638421a7e6eea93f16724b885"
+    },
+    "genesis/vis/viewer_plugins/base.py": {
+      "bytes": 1740,
+      "sha256": "cac0e9eb1f955f43fa8a87b6308ad4ed57d50382a9032fe8c5be98a60a215a05"
+    },
+    "genesis/vis/viewer_plugins/plugins/__init__.py": {
+      "bytes": 180,
+      "sha256": "b1a48ba7d5909ad99d304e7f1acc6de572d0331f571aa1b2af925a0bc45c98d0"
+    },
+    "genesis/vis/viewer_plugins/plugins/default_controls.py": {
+      "bytes": 6980,
+      "sha256": "34cefe5cc55a2e1e1569b20dd3ac007f854938310b129dab0e535a05ab1f49ac"
+    },
+    "genesis/vis/viewer_plugins/plugins/mouse_interaction.py": {
+      "bytes": 22833,
+      "sha256": "c35aa2eed8ab1af49ad96a2c4540e1687ccf7f7843523941709853f548bfbb4e"
+    },
+    "genesis/vis/viewer_plugins/raycast.py": {
+      "bytes": 12262,
+      "sha256": "120f7ad5b4ab777d1fd340e99fef2345ae70d30fbeb5c967a2f3e94481cc797a"
+    },
+    "genesis/vis/visualizer.py": {
+      "bytes": 11614,
+      "sha256": "f6200a69eba801540a120a54ad6ed01d1fc41b26221fbbe3f5e24058b0c27b0e"
+    },
+    "imgs/big_text.png": {
+      "bytes": 365204,
+      "sha256": "d766f8268e83a2359944443e496f2ca16fca6b1f6c823b745d26aaa5ce2c7de2"
+    },
+    "imgs/logo_with_text.png": {
+      "bytes": 158420,
+      "sha256": "8e668d4dc7796f8152b9c44892ca4ead209dc3ad715dc3cd78efa0af6d34b744"
+    },
+    "imgs/teaser.png": {
+      "bytes": 1888133,
+      "sha256": "a196297ad2ad0e939d1a232e172640f6267916a8b3030c1f3511804be9806c49"
+    },
+    "pyproject.toml": {
+      "bytes": 8653,
+      "sha256": "82e3768fe416ef79daadd5cdd3796eeb3560a395d6a98d3808519f62f8cb04fe"
+    },
+    "tests/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "tests/benchmarks/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "tests/benchmarks/test_rigid.py": {
+      "bytes": 43945,
+      "sha256": "a3e5c474277a4f966c9be98e0ec55bddc309ba2e351de284639585e292ebf89a"
+    },
+    "tests/conftest.py": {
+      "bytes": 41847,
+      "sha256": "7f6c233441b56b898a13057c547fcd5113ca27b8b4a0fe17d5a60f96a95a8f82"
+    },
+    "tests/core/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "tests/core/test_backend.py": {
+      "bytes": 5190,
+      "sha256": "42780bd4bd3e1b62611eb07d4135f2179a1af3bdb44a67da5f8e2af0564ac485"
+    },
+    "tests/core/test_bvh.py": {
+      "bytes": 4643,
+      "sha256": "1a4fce6a8ab517d11687f837a6afe1b3d3418975adcf62f6ee4e610fc0ba4db8"
+    },
+    "tests/core/test_misc.py": {
+      "bytes": 32400,
+      "sha256": "42c15dd20de55527ef1976194de76636abdd2c24dd8ac7218f5d823c36a5a777"
+    },
+    "tests/core/test_quadrants.py": {
+      "bytes": 14128,
+      "sha256": "d8e7f3a5cf0a743a355f57efff74d847f030be66510641011c0af7957b3cbe39"
+    },
+    "tests/core/test_recorders.py": {
+      "bytes": 15047,
+      "sha256": "00d7864c8bbcd2946f2b5ca950d54df46c55610b3367eae602d283422fa6b110"
+    },
+    "tests/core/test_surface.py": {
+      "bytes": 5155,
+      "sha256": "dde326584ab6f042ee682a26ca3392be74c23419007a949ae09568734546a16f"
+    },
+    "tests/core/test_utils.py": {
+      "bytes": 49792,
+      "sha256": "e564c587eb71aece6ba25752c74de535b98b5ebf457a4ec5b82fd04a55c385a6"
+    },
+    "tests/coupling/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "tests/coupling/test_hybrid.py": {
+      "bytes": 14916,
+      "sha256": "74fffde54c14cd1f2c532d49652ae230ab4264abb25c1b2dae3ccc725db60d4f"
+    },
+    "tests/coupling/test_sph_rigid.py": {
+      "bytes": 5667,
+      "sha256": "449f30bae3bc12ffb6f4db7a861d02333be3bf6b47f50b09f2982480821a1974"
+    },
+    "tests/deformable/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "tests/deformable/test_fem.py": {
+      "bytes": 26697,
+      "sha256": "03ec2af2442cb6c7facafdbc1c299187dd2d50d8d8bb5f0b28f1a0f78ae12c39"
+    },
+    "tests/deformable/test_muscle.py": {
+      "bytes": 3193,
+      "sha256": "95dd1ca307c965743255a08d6137205473a23fb5ed87e032bde4eb8f1e6ca978"
+    },
+    "tests/gpu_info.py": {
+      "bytes": 7929,
+      "sha256": "04bf866201cb176835db5b3b459ecb4f5070b035bd5ab71a91a9e4d5962e36d5"
+    },
+    "tests/grad/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "tests/grad/conftest.py": {
+      "bytes": 14647,
+      "sha256": "4306bbffdcaaac536ce737ac6f6b59c79d4c4eb69ba7ab9ec0dccffb85a50024"
+    },
+    "tests/grad/test_grad_tape.py": {
+      "bytes": 4844,
+      "sha256": "7bb7e0a50cf344be61d787b1d6d4359cb1cb2214a0cdd6b54b90d15cc01e9911"
+    },
+    "tests/grad/test_hybrid_push.py": {
+      "bytes": 2397,
+      "sha256": "f6fba6622407250c9576a9e13649a371d99e10855f9ff3e74bb9cd9ca1575b72"
+    },
+    "tests/grad/test_rigid_collision.py": {
+      "bytes": 22629,
+      "sha256": "81889f6f490a857ab379f3e6529e28dbd80248aa3bb02ebbec9a15d75a4c9420"
+    },
+    "tests/grad/test_rigid_constraints.py": {
+      "bytes": 9431,
+      "sha256": "dfe8b08f02894887629c6868b7c87d30edac27efad9224904e2953a9ff3ca6b0"
+    },
+    "tests/grad/test_rigid_dynamics.py": {
+      "bytes": 9631,
+      "sha256": "5b07cde7af83e14b1ee55f205e6979498e1c87658a8c469c250449e8e06f953e"
+    },
+    "tests/grad/test_rigid_optim.py": {
+      "bytes": 5520,
+      "sha256": "92cbd91ceb5a8b60315d33f61895ca490a07f4246a15ba1f33ff3fdf0229f273"
+    },
+    "tests/grad/utils.py": {
+      "bytes": 5439,
+      "sha256": "ee38570adc14bc2cfad769ab0a81cc97f9f2a694c342d1f5474ae255a2a18842"
+    },
+    "tests/integration/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "tests/integration/test_integration.py": {
+      "bytes": 10725,
+      "sha256": "810aeb4615ef2ec898bfa6677092bd3a789941fe8a30d6248e0f581a5fd9a64f"
+    },
+    "tests/ipc/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "tests/ipc/test_api.py": {
+      "bytes": 11520,
+      "sha256": "d15550bd47473c0de30586dfb53a554fe25f494c37da93aaba011183ed1de73a"
+    },
+    "tests/ipc/test_deformable.py": {
+      "bytes": 15814,
+      "sha256": "088e993d12f6d20a7f649662e77db2f80b47fa4f6b12ae54e1d1260f5da006e8"
+    },
+    "tests/ipc/test_rigid.py": {
+      "bytes": 31612,
+      "sha256": "5c2837878726db97f88eff865bfac1d025b4e3dcdf1a410753bdc3bcd6a9687c"
+    },
+    "tests/ipc/utils.py": {
+      "bytes": 2465,
+      "sha256": "4860ba478ecdb6058a7123861d39e31d112b31273fb5bd26bb21212fcb047eaf"
+    },
+    "tests/monitor_test_mem.py": {
+      "bytes": 4720,
+      "sha256": "25cd3a5482cc60f09b540b3055fbaf4883c7f28589495b0256651cf65baade39"
+    },
+    "tests/parsers/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "tests/parsers/conftest.py": {
+      "bytes": 78378,
+      "sha256": "42aff446bc25b41f484f499bdb7b6789322681859540e499828053ec64599c25"
+    },
+    "tests/parsers/test_mesh.py": {
+      "bytes": 37075,
+      "sha256": "45296ae317b74c5c465726161ff7e55c57ba27fa345ef17974aebb196e42d4f7"
+    },
+    "tests/parsers/test_usd.py": {
+      "bytes": 27513,
+      "sha256": "1308265a2da26e63f162fcd71e260f926536a513a41fd4e89621a26b03180233"
+    },
+    "tests/particles/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "tests/particles/test_mpm.py": {
+      "bytes": 6265,
+      "sha256": "41dd4bc32de5a213b162a7b5b8df831705db23ca68c237ca62599026f973d0b8"
+    },
+    "tests/particles/test_pbd.py": {
+      "bytes": 8675,
+      "sha256": "0ae405f9527143a96b7197e5928c267ad0d6147c9a0cc4199a90dcbb6a464eba"
+    },
+    "tests/particles/test_sf.py": {
+      "bytes": 3468,
+      "sha256": "05410a5e6fb632d7205206fd2783ac2d29c92789e7fcfc920ec2e6ec24b91d1f"
+    },
+    "tests/particles/test_sph.py": {
+      "bytes": 13335,
+      "sha256": "a5169d8fba9dcdcc177f35a943098c84e9f77c5898aba11d870fb5fba0b96fb6"
+    },
+    "tests/rendering/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "tests/rendering/conftest.py": {
+      "bytes": 3244,
+      "sha256": "cb5c096fa6e6211b18e9ee447c7fe024a2d357899f09acbdf17c0739bc13d8a5"
+    },
+    "tests/rendering/test_batch_render.py": {
+      "bytes": 2862,
+      "sha256": "7b668e507f0c816bb76ee88d501def30d2c3b140479ae6fc9b3085fdb7c1b699"
+    },
+    "tests/rendering/test_debug_draw.py": {
+      "bytes": 9631,
+      "sha256": "bf999fabfb0905c2044b62a59e6db65d778003329fff6b1b4bf82e1b44376748"
+    },
+    "tests/rendering/test_dynamic_meshes.py": {
+      "bytes": 16941,
+      "sha256": "771cfc3877a2be5296bcd8641ae00d83940e45c260a31fb80908f4f802376599"
+    },
+    "tests/rendering/test_imgui_overlay.py": {
+      "bytes": 19630,
+      "sha256": "7148a06096a139a0abfcbc01990354b28ded6d8088bae52e9ddd4095f6dec549"
+    },
+    "tests/rendering/test_interactive_viewer.py": {
+      "bytes": 31489,
+      "sha256": "4a13bce9dbc7a8eee5967042188803323e9de53fe22a21f9d695a35adc3fe15c"
+    },
+    "tests/rendering/test_offscreen.py": {
+      "bytes": 71884,
+      "sha256": "f25eee6681cde1c50ab45d5761a1cd3765dfd81662372dd901c37e2217690a9f"
+    },
+    "tests/rigid/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "tests/rigid/conftest.py": {
+      "bytes": 75323,
+      "sha256": "c3a084a914c203f81047cb391b0229c5b5fd800684a7ff4203b354a117fa4111"
+    },
+    "tests/rigid/test_api.py": {
+      "bytes": 67598,
+      "sha256": "da33704439f7d084c0c45c222c9c6034ce353ec01ee3975dbdd192e657811ab6"
+    },
+    "tests/rigid/test_asset_loading.py": {
+      "bytes": 96136,
+      "sha256": "2a1526e03e38b3af3ba3812a7cb5fcb8314a72d780cf4b9c7fd7245178ee46ca"
+    },
+    "tests/rigid/test_collision.py": {
+      "bytes": 60366,
+      "sha256": "f79a1f0c2e0f8846fd7ab167dfff16ad3d28cd07134938c90cd7573019ba52aa"
+    },
+    "tests/rigid/test_collision_nonconvex.py": {
+      "bytes": 43314,
+      "sha256": "673a1d53bbef3c08f4e64aeae0d813c15c79cdd1e6f1162c0e3bef6e44f7d0c1"
+    },
+    "tests/rigid/test_constraints.py": {
+      "bytes": 12554,
+      "sha256": "1a3cf33dd446ba8228dc080c95d9d24cf9d1ec2d7d988daaa836ece3bcf04a26"
+    },
+    "tests/rigid/test_control.py": {
+      "bytes": 12733,
+      "sha256": "4a2bcfb9c61962c21fc8bf86fe0171dd70dc2cdaa5c89b4b274d6f766c732da3"
+    },
+    "tests/rigid/test_dynamics.py": {
+      "bytes": 52595,
+      "sha256": "69495d019a80fcbaf584e3fa8da6ce8b08700f081197b63c7e4058bd9556c42f"
+    },
+    "tests/rigid/test_friction.py": {
+      "bytes": 55196,
+      "sha256": "9a1fa3891a2dc042dd9354423b16d260bbd998707bb2bd76a14fea6d89c58860"
+    },
+    "tests/rigid/test_heterogeneous.py": {
+      "bytes": 22842,
+      "sha256": "04692634e761e499d63e714651e37599f0b50a2cffc42cf8f139eeb77c4a876c"
+    },
+    "tests/rigid/test_islands.py": {
+      "bytes": 45886,
+      "sha256": "55d98919b1bd09e740dadb9536347291e017593727d497d16544d4a53f4177a6"
+    },
+    "tests/rigid/test_kinematics.py": {
+      "bytes": 41390,
+      "sha256": "9422ce34a509bd297bf35865a8153ded6e1cbebce07ad46f56c0d15aeb883680"
+    },
+    "tests/rigid/test_mujoco_parity.py": {
+      "bytes": 20965,
+      "sha256": "bfec779f61c68ddae4f30c91e33ae2f725033a939652f67bf5c9a073ba18d9aa"
+    },
+    "tests/rigid/test_narrowphase.py": {
+      "bytes": 50801,
+      "sha256": "990b66bbb130979a5e822ca47f5437441f278cf5e002bb53c5caace3a007a643"
+    },
+    "tests/rigid/test_serialization.py": {
+      "bytes": 42100,
+      "sha256": "fff8d5ba753e1f74aca528a55f61a74391c8e130f524088f7772bd97d5766432"
+    },
+    "tests/rigid/test_sparse.py": {
+      "bytes": 3749,
+      "sha256": "b171e7d297bbd8e2bb5b401365f88d0893baa541aaa8b42628f93a648e51cad3"
+    },
+    "tests/rigid/test_terrain.py": {
+      "bytes": 15546,
+      "sha256": "fb024a17785bd9501a42cbe006bb60a051ae8e4f78a2ff5f7d3abe229892c3d0"
+    },
+    "tests/sensors/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "tests/sensors/conftest.py": {
+      "bytes": 924,
+      "sha256": "0ed83fdaaac9a9324ad8fa124d8637b8796fcf57f70cb4230a3231c0d8dfd1ef"
+    },
+    "tests/sensors/test_api.py": {
+      "bytes": 32700,
+      "sha256": "944684b098514e9fdd9404cc46cb0ec315dacea6e6310ef9dcd085996ef9ad4e"
+    },
+    "tests/sensors/test_camera.py": {
+      "bytes": 22759,
+      "sha256": "7394257e3f73a4a6c3f2a8b5d8373a812887ca54441c57931da84f236b1baeed"
+    },
+    "tests/sensors/test_contact.py": {
+      "bytes": 8645,
+      "sha256": "3144d72c1f55c486ff277eec1f740681745a9f17f6c67e70a1c084a6b36eefce"
+    },
+    "tests/sensors/test_imu.py": {
+      "bytes": 9399,
+      "sha256": "74469236fd222a9951b4322c641d62ddc6f1678f1aaec191c6b312b234e830c7"
+    },
+    "tests/sensors/test_joint_torque.py": {
+      "bytes": 7120,
+      "sha256": "3e3ebcd78d2ffa11a44e5355c9aa741f5d865e5f09dc50a1335ca18bd8fb7fdd"
+    },
+    "tests/sensors/test_raycaster.py": {
+      "bytes": 41562,
+      "sha256": "7343f4324cfe8ec443ed2029eb59e220f5ab3d6e7307c4998ad5736254765bfc"
+    },
+    "tests/sensors/test_tactile.py": {
+      "bytes": 71965,
+      "sha256": "4ac0fb80cf2b372f3bf9e92027877d95403a5ff9708725c8f74deaf256c52157"
+    },
+    "tests/sensors/test_temperature.py": {
+      "bytes": 6417,
+      "sha256": "0aedc95f464265769fa8ee425a2867eeef778b6887de3e70be5d309ed0e8c52d"
+    },
+    "tests/test_examples.py": {
+      "bytes": 3407,
+      "sha256": "778e640c61a932c82049203c5a2c0c55a7ba51456f99e2fa6ced1cce2af6d24e"
+    },
+    "tests/upload_benchmarks_table_to_wandb.py": {
+      "bytes": 4776,
+      "sha256": "aa56682638607c5a97fa39759f7f9ad73cfaedf58e449d60730fb53330a7b488"
+    },
+    "tests/utils/assertions.py": {
+      "bytes": 5019,
+      "sha256": "6e38c8ae0c8c999c11bbeada79d016e6b8a17204c94c246af66647b0b0496d6d"
+    },
+    "tests/utils/assets.py": {
+      "bytes": 6003,
+      "sha256": "b16a0b9143664fb5099c0335024cb59caa3e657cab2db86b31a818a580e16eeb"
+    },
+    "tests/utils/collision.py": {
+      "bytes": 24256,
+      "sha256": "9eb9e765db04c44d9d284d3faa846218b49dfef3e3bf955e7150a18cbdedb4c0"
+    },
+    "tests/utils/mesh_pairs_viewer.html": {
+      "bytes": 10100,
+      "sha256": "53a585a39a236caa5ced0bbc4181c69822d7532ca575f8528827fcb8837edd01"
+    },
+    "tests/utils/misc.py": {
+      "bytes": 474,
+      "sha256": "30b007976660f1c822bc08d36a681ebce1753aa310612e848d0b8a7e7fd2ce22"
+    },
+    "tests/utils/mujoco_parity.py": {
+      "bytes": 46853,
+      "sha256": "fa4b4650ee73302cc2a39085c01a499c2f57f9eee3586b287c2aed574e2ce5e9"
+    },
+    "tests/utils/simulators.py": {
+      "bytes": 7580,
+      "sha256": "a350f3a20a0faa1cd7427a62c6cdc7f8cb12f79ed35581bf6fcf580a5a35c0ea"
+    }
+  },
+  "scope": "Tracked regular files from the unmodified engine commit. Nested optional renderer/doc submodules were uninitialized in the validated environment."
+}

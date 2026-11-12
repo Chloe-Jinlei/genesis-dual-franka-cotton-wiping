@@ -1,0 +1,1957 @@
+{
+  "scope": "Independent CPU-only control-order and original-material-corner audit of all four grasps, plus actual native-pose pad geometry at production completion and after the extra hold. Does not certify mass, material response, force closure, or continuous triangle collision.",
+  "created_utc": "2026-11-12T20:21:46.570271+00:00",
+  "segments": [
+    {
+      "run": "run_01",
+      "from_s": 0.0,
+      "through_s": 38.7
+    },
+    {
+      "run": "run_02",
+      "from_s": 38.7,
+      "through_s": 91.05
+    }
+  ],
+  "excluded_run_01_after_s": 38.7,
+  "fresh_uninterrupted_run": false,
+  "original_arrival_sdf_threshold_m": 0.0008,
+  "original_pad_distance_threshold_m": 0.00105,
+  "binding_rule": "At least two qualifying original-corner pad-support particles on each finger, connectivity and selected-point gates; one representative per finger may be hand-bound.",
+  "fresh_pre_lift_rule": "Production both_fingers_contact means at least one cloth particle near each pad. It is distinct from the binding-time >=2 support test.",
+  "extra_end_support_rule": "Repeat >=2 original-corner nodes per finger at the original pad-distance threshold as an additional end-state proximity diagnostic. This is not a re-run of every binding-time topology/strain constraint or an original production end condition.",
+  "grasps": [
+    {
+      "grasp": "initial_dry",
+      "source_run": "run_01",
+      "times_s": {
+        "open_descent_start": 3.2,
+        "ready_native_arrival": 5.55,
+        "immediate_closure_guard": 5.55,
+        "feedback_closure_start": 5.55,
+        "both_strict_gates_confirmed": 6.8500000000000005,
+        "fresh_pre_lift_support": null,
+        "main_lift_start": 7.05
+      },
+      "descent_trace_records_including_events": 1182,
+      "hands": {
+        "left": {
+          "descent_command_range_per_finger_m": [
+            [
+              0.01,
+              0.01
+            ],
+            [
+              0.01,
+              0.01
+            ]
+          ],
+          "descent_actual_finger_range_m": [
+            [
+              0.009999944091116856,
+              0.010009165236397053
+            ],
+            [
+              0.009999935779987397,
+              0.01000873403945078
+            ]
+          ],
+          "first_decreasing_command_time_s": 5.5520000000000005,
+          "tcp_target_error_m": 5.993277030366117e-05,
+          "native_any_finger_contact": true,
+          "native_contact_threshold_m": 0.0008,
+          "native_fingers": {
+            "left_finger": {
+              "contact": true,
+              "minimum_sdf_distance_m": 0.000741658828225875,
+              "strict_shell_contact_count": 1
+            },
+            "right_finger": {
+              "contact": false,
+              "minimum_sdf_distance_m": 0.0018397954365657505,
+              "strict_shell_contact_count": 0
+            }
+          },
+          "native_force_measured": false,
+          "original_material_corner_node_count": 111,
+          "binding_support_count_per_finger": [
+            4,
+            2
+          ],
+          "bound_indices": [
+            5133,
+            5323
+          ],
+          "fixed_pair_extension": 0.0,
+          "largest_bound_reference_distance_from_original_corner_m": 0.008070423397579976
+        },
+        "right": {
+          "descent_command_range_per_finger_m": [
+            [
+              0.01,
+              0.01
+            ],
+            [
+              0.01,
+              0.01
+            ]
+          ],
+          "descent_actual_finger_range_m": [
+            [
+              0.009999937243690485,
+              0.010009967853728553
+            ],
+            [
+              0.009999923107735972,
+              0.010010439184098512
+            ]
+          ],
+          "first_decreasing_command_time_s": 5.5520000000000005,
+          "tcp_target_error_m": 5.760115224073412e-05,
+          "native_any_finger_contact": true,
+          "native_contact_threshold_m": 0.0008,
+          "native_fingers": {
+            "left_finger": {
+              "contact": false,
+              "minimum_sdf_distance_m": 0.0017799732023308064,
+              "strict_shell_contact_count": 0
+            },
+            "right_finger": {
+              "contact": true,
+              "minimum_sdf_distance_m": 0.0007403423248027814,
+              "strict_shell_contact_count": 4
+            }
+          },
+          "native_force_measured": false,
+          "original_material_corner_node_count": 111,
+          "binding_support_count_per_finger": [
+            2,
+            4
+          ],
+          "bound_indices": [
+            471,
+            661
+          ],
+          "fixed_pair_extension": 0.0,
+          "largest_bound_reference_distance_from_original_corner_m": 0.00807042339758
+        }
+      },
+      "checks": {
+        "event_order_descent_ready_immediate_recheck_closure_confirm_main_lift": true,
+        "no_physics_step_between_ready_recheck_and_closure": true,
+        "both_reports_ready": true,
+        "main_lift_after_confirmation": true,
+        "main_lift_event_has_trace_record": true,
+        "left_open_descent_never_decreases": true,
+        "left_closing_command_starts_after_contact": true,
+        "left_actual_native_contact_and_tcp_arrived": true,
+        "left_native_query_original_material_patch": true,
+        "left_original_bilateral_binding_gate_passed": true,
+        "left_bound_and_candidate_ids_in_original_corner": true,
+        "left_attached_at_main_lift": true,
+        "right_open_descent_never_decreases": true,
+        "right_closing_command_starts_after_contact": true,
+        "right_actual_native_contact_and_tcp_arrived": true,
+        "right_native_query_original_material_patch": true,
+        "right_original_bilateral_binding_gate_passed": true,
+        "right_bound_and_candidate_ids_in_original_corner": true,
+        "right_attached_at_main_lift": true
+      },
+      "passed": true
+    },
+    {
+      "grasp": "reposition_1",
+      "source_run": "run_01",
+      "times_s": {
+        "open_descent_start": 27.7,
+        "ready_native_arrival": 28.85,
+        "immediate_closure_guard": 28.85,
+        "feedback_closure_start": 28.85,
+        "both_strict_gates_confirmed": 30.150000000000002,
+        "fresh_pre_lift_support": 30.35,
+        "main_lift_start": 30.35
+      },
+      "descent_trace_records_including_events": 584,
+      "hands": {
+        "left": {
+          "descent_command_range_per_finger_m": [
+            [
+              0.01,
+              0.01
+            ],
+            [
+              0.01,
+              0.01
+            ]
+          ],
+          "descent_actual_finger_range_m": [
+            [
+              0.009999995754605263,
+              0.010006492553050616
+            ],
+            [
+              0.009999995955408434,
+              0.010006199676067778
+            ]
+          ],
+          "first_decreasing_command_time_s": 28.852,
+          "tcp_target_error_m": 3.711941917399679e-05,
+          "native_any_finger_contact": true,
+          "native_contact_threshold_m": 0.0008,
+          "native_fingers": {
+            "left_finger": {
+              "contact": true,
+              "minimum_sdf_distance_m": 0.0007447312662862914,
+              "strict_shell_contact_count": 5
+            },
+            "right_finger": {
+              "contact": false,
+              "minimum_sdf_distance_m": 0.007295144718490333,
+              "strict_shell_contact_count": 0
+            }
+          },
+          "native_force_measured": false,
+          "original_material_corner_node_count": 111,
+          "binding_support_count_per_finger": [
+            2,
+            2
+          ],
+          "bound_indices": [
+            5133,
+            5322
+          ],
+          "fixed_pair_extension": 0.0,
+          "largest_bound_reference_distance_from_original_corner_m": 0.008070423397579976
+        },
+        "right": {
+          "descent_command_range_per_finger_m": [
+            [
+              0.01,
+              0.01
+            ],
+            [
+              0.01,
+              0.01
+            ]
+          ],
+          "descent_actual_finger_range_m": [
+            [
+              0.009999990667784406,
+              0.010000011600034867
+            ],
+            [
+              0.009999988927211344,
+              0.010000009332269652
+            ]
+          ],
+          "first_decreasing_command_time_s": 28.852,
+          "tcp_target_error_m": 4.735299310431039e-05,
+          "native_any_finger_contact": true,
+          "native_contact_threshold_m": 0.0008,
+          "native_fingers": {
+            "left_finger": {
+              "contact": false,
+              "minimum_sdf_distance_m": 0.007724486447507471,
+              "strict_shell_contact_count": 0
+            },
+            "right_finger": {
+              "contact": true,
+              "minimum_sdf_distance_m": 0.0007426356063563547,
+              "strict_shell_contact_count": 8
+            }
+          },
+          "native_force_measured": false,
+          "original_material_corner_node_count": 111,
+          "binding_support_count_per_finger": [
+            2,
+            4
+          ],
+          "bound_indices": [
+            377,
+            567
+          ],
+          "fixed_pair_extension": 0.0,
+          "largest_bound_reference_distance_from_original_corner_m": 0.006429792866494316
+        }
+      },
+      "checks": {
+        "event_order_descent_ready_immediate_recheck_closure_confirm_main_lift": true,
+        "no_physics_step_between_ready_recheck_and_closure": true,
+        "both_reports_ready": true,
+        "main_lift_after_confirmation": true,
+        "main_lift_event_has_trace_record": true,
+        "left_open_descent_never_decreases": true,
+        "left_closing_command_starts_after_contact": true,
+        "left_actual_native_contact_and_tcp_arrived": true,
+        "left_native_query_original_material_patch": true,
+        "left_original_bilateral_binding_gate_passed": true,
+        "left_bound_and_candidate_ids_in_original_corner": true,
+        "left_attached_at_main_lift": true,
+        "right_open_descent_never_decreases": true,
+        "right_closing_command_starts_after_contact": true,
+        "right_actual_native_contact_and_tcp_arrived": true,
+        "right_native_query_original_material_patch": true,
+        "right_original_bilateral_binding_gate_passed": true,
+        "right_bound_and_candidate_ids_in_original_corner": true,
+        "right_attached_at_main_lift": true,
+        "fresh_pre_lift_bilateral_support": true
+      },
+      "passed": true
+    },
+    {
+      "grasp": "reposition_2",
+      "source_run": "run_02",
+      "times_s": {
+        "open_descent_start": 47.050000000000004,
+        "ready_native_arrival": 48.2,
+        "immediate_closure_guard": 48.2,
+        "feedback_closure_start": 48.2,
+        "both_strict_gates_confirmed": 49.9,
+        "fresh_pre_lift_support": 50.1,
+        "main_lift_start": 50.1
+      },
+      "descent_trace_records_including_events": 585,
+      "hands": {
+        "left": {
+          "descent_command_range_per_finger_m": [
+            [
+              0.01,
+              0.01
+            ],
+            [
+              0.01,
+              0.01
+            ]
+          ],
+          "descent_actual_finger_range_m": [
+            [
+              0.00999996017930697,
+              0.010008660893721894
+            ],
+            [
+              0.009999959088616981,
+              0.010008270154076137
+            ]
+          ],
+          "first_decreasing_command_time_s": 48.202,
+          "tcp_target_error_m": 3.810222685614691e-05,
+          "native_any_finger_contact": true,
+          "native_contact_threshold_m": 0.0008,
+          "native_fingers": {
+            "left_finger": {
+              "contact": true,
+              "minimum_sdf_distance_m": 0.0007525992802495325,
+              "strict_shell_contact_count": 0
+            },
+            "right_finger": {
+              "contact": false,
+              "minimum_sdf_distance_m": 0.0018104500995509494,
+              "strict_shell_contact_count": 0
+            }
+          },
+          "native_force_measured": false,
+          "original_material_corner_node_count": 111,
+          "binding_support_count_per_finger": [
+            3,
+            3
+          ],
+          "bound_indices": [
+            5230,
+            5324
+          ],
+          "fixed_pair_extension": 0.0,
+          "largest_bound_reference_distance_from_original_corner_m": 0.006996248105300996
+        },
+        "right": {
+          "descent_command_range_per_finger_m": [
+            [
+              0.009999999999999998,
+              0.01
+            ],
+            [
+              0.009999999999999998,
+              0.01
+            ]
+          ],
+          "descent_actual_finger_range_m": [
+            [
+              0.009999949409883515,
+              0.010000051913488643
+            ],
+            [
+              0.00999994808808554,
+              0.010000050591690351
+            ]
+          ],
+          "first_decreasing_command_time_s": 48.202,
+          "tcp_target_error_m": 5.83324923072897e-05,
+          "native_any_finger_contact": true,
+          "native_contact_threshold_m": 0.0008,
+          "native_fingers": {
+            "left_finger": {
+              "contact": false,
+              "minimum_sdf_distance_m": 0.005900682318463501,
+              "strict_shell_contact_count": 0
+            },
+            "right_finger": {
+              "contact": true,
+              "minimum_sdf_distance_m": 0.0007384461766632876,
+              "strict_shell_contact_count": 4
+            }
+          },
+          "native_force_measured": false,
+          "original_material_corner_node_count": 111,
+          "binding_support_count_per_finger": [
+            2,
+            4
+          ],
+          "bound_indices": [
+            471,
+            661
+          ],
+          "fixed_pair_extension": 0.0,
+          "largest_bound_reference_distance_from_original_corner_m": 0.00807042339758
+        }
+      },
+      "checks": {
+        "event_order_descent_ready_immediate_recheck_closure_confirm_main_lift": true,
+        "no_physics_step_between_ready_recheck_and_closure": true,
+        "both_reports_ready": true,
+        "main_lift_after_confirmation": true,
+        "main_lift_event_has_trace_record": true,
+        "left_open_descent_never_decreases": true,
+        "left_closing_command_starts_after_contact": true,
+        "left_actual_native_contact_and_tcp_arrived": true,
+        "left_native_query_original_material_patch": true,
+        "left_original_bilateral_binding_gate_passed": true,
+        "left_bound_and_candidate_ids_in_original_corner": true,
+        "left_attached_at_main_lift": true,
+        "right_open_descent_never_decreases": true,
+        "right_closing_command_starts_after_contact": true,
+        "right_actual_native_contact_and_tcp_arrived": true,
+        "right_native_query_original_material_patch": true,
+        "right_original_bilateral_binding_gate_passed": true,
+        "right_bound_and_candidate_ids_in_original_corner": true,
+        "right_attached_at_main_lift": true,
+        "fresh_pre_lift_bilateral_support": true
+      },
+      "passed": true
+    },
+    {
+      "grasp": "final_wet",
+      "source_run": "run_02",
+      "times_s": {
+        "open_descent_start": 79.10000000000001,
+        "ready_native_arrival": 80.25,
+        "immediate_closure_guard": 80.25,
+        "feedback_closure_start": 80.25,
+        "both_strict_gates_confirmed": 82.15,
+        "fresh_pre_lift_support": 82.35000000000001,
+        "main_lift_start": 82.35000000000001
+      },
+      "hands": {
+        "left": {
+          "descent_command_range_per_finger_m": [
+            [
+              0.01,
+              0.01
+            ],
+            [
+              0.01,
+              0.01
+            ]
+          ],
+          "descent_actual_range_per_finger_m": [
+            [
+              0.009999968765188213,
+              0.010010612378029747
+            ],
+            [
+              0.009999966986416031,
+              0.010010133475277497
+            ]
+          ],
+          "tcp_target_error_m": 3.4420407570910526e-05,
+          "native_contact_threshold_m": 0.0008,
+          "native_any_finger_contact": true,
+          "native_fingers": {
+            "left_finger": {
+              "contact": true,
+              "minimum_sdf_distance_m": 0.0007466947523654292,
+              "strict_shell_contact_count": 2
+            },
+            "right_finger": {
+              "contact": false,
+              "minimum_sdf_distance_m": 0.0017959276534184163,
+              "strict_shell_contact_count": 0
+            }
+          },
+          "binding_time_s": 82.15,
+          "binding_support_counts": [
+            2,
+            4
+          ],
+          "bound_indices": [
+            5227,
+            5323
+          ],
+          "fixed_pair_extension": 0.0,
+          "pre_lift_support_counts": {
+            "left_finger": 17,
+            "right_finger": 20
+          },
+          "original_corner_radius_m": 0.022,
+          "maximum_bound_reference_corner_distance_m": 0.006429792866494283,
+          "force_closure_validated": false,
+          "grasp_load_transferred_to_arm": false
+        },
+        "right": {
+          "descent_command_range_per_finger_m": [
+            [
+              0.01,
+              0.01
+            ],
+            [
+              0.01,
+              0.01
+            ]
+          ],
+          "descent_actual_range_per_finger_m": [
+            [
+              0.009999955753607351,
+              0.010011789410765656
+            ],
+            [
+              0.009999954647977247,
+              0.010012347137200669
+            ]
+          ],
+          "tcp_target_error_m": 4.591707627780439e-05,
+          "native_contact_threshold_m": 0.0008,
+          "native_any_finger_contact": true,
+          "native_fingers": {
+            "left_finger": {
+              "contact": false,
+              "minimum_sdf_distance_m": 0.0018023655690399209,
+              "strict_shell_contact_count": 0
+            },
+            "right_finger": {
+              "contact": true,
+              "minimum_sdf_distance_m": 0.0007468100827393064,
+              "strict_shell_contact_count": 4
+            }
+          },
+          "binding_time_s": 82.15,
+          "binding_support_counts": [
+            2,
+            2
+          ],
+          "bound_indices": [
+            471,
+            567
+          ],
+          "fixed_pair_extension": 0.0,
+          "pre_lift_support_counts": {
+            "left_finger": 18,
+            "right_finger": 17
+          },
+          "original_corner_radius_m": 0.022,
+          "maximum_bound_reference_corner_distance_m": 0.006429792866494305,
+          "force_closure_validated": false,
+          "grasp_load_transferred_to_arm": false
+        }
+      },
+      "checks": {
+        "ordered_descent_arrival_immediate_guard_closure_confirm_support_main_lift": true,
+        "no_physics_step_between_arrival_guard_closure": true,
+        "arrival_and_immediate_guard_ready": true,
+        "main_lift_has_controller_trace": true,
+        "left_descent_never_reduces_command": true,
+        "left_visible_10mm_opening_kept": true,
+        "left_native_full_finger_contact_and_tcp_arrival": true,
+        "left_native_query_exact_original_corner": true,
+        "left_original_bilateral_binding_gate": true,
+        "left_bound_and_candidates_in_original_corner": true,
+        "left_fresh_pre_lift_bilateral_support": true,
+        "left_attached_at_main_lift": true,
+        "right_descent_never_reduces_command": true,
+        "right_visible_10mm_opening_kept": true,
+        "right_native_full_finger_contact_and_tcp_arrival": true,
+        "right_native_query_exact_original_corner": true,
+        "right_original_bilateral_binding_gate": true,
+        "right_bound_and_candidates_in_original_corner": true,
+        "right_fresh_pre_lift_bilateral_support": true,
+        "right_attached_at_main_lift": true
+      },
+      "passed": true
+    }
+  ],
+  "outer_step_coverage": {
+    "dt_s": 0.002,
+    "expected_frames": 45525,
+    "step_records": 45525,
+    "unique_frames": 45525,
+    "missing_frames": [],
+    "duplicate_count": 0
+  },
+  "all_four_main_lifts_actual_pad_monitor": {
+    "initial_dry": {
+      "start_time_s": 7.05,
+      "end_time_s": 9.25,
+      "sample_count": 24,
+      "hands": {
+        "left": {
+          "left_finger": {
+            "first_sample_time_count_cornercount": [
+              7.05,
+              12,
+              12
+            ],
+            "last_sample_time_count_cornercount": [
+              9.25,
+              4,
+              4
+            ],
+            "minimum_count": 4,
+            "minimum_original_corner_count": 4,
+            "zero_contact_samples": [],
+            "below_two_original_corner_samples": []
+          },
+          "right_finger": {
+            "first_sample_time_count_cornercount": [
+              7.05,
+              20,
+              20
+            ],
+            "last_sample_time_count_cornercount": [
+              9.25,
+              4,
+              4
+            ],
+            "minimum_count": 4,
+            "minimum_original_corner_count": 4,
+            "zero_contact_samples": [],
+            "below_two_original_corner_samples": []
+          }
+        },
+        "right": {
+          "left_finger": {
+            "first_sample_time_count_cornercount": [
+              7.05,
+              18,
+              18
+            ],
+            "last_sample_time_count_cornercount": [
+              9.25,
+              4,
+              4
+            ],
+            "minimum_count": 4,
+            "minimum_original_corner_count": 4,
+            "zero_contact_samples": [],
+            "below_two_original_corner_samples": []
+          },
+          "right_finger": {
+            "first_sample_time_count_cornercount": [
+              7.05,
+              12,
+              12
+            ],
+            "last_sample_time_count_cornercount": [
+              9.25,
+              4,
+              4
+            ],
+            "minimum_count": 4,
+            "minimum_original_corner_count": 4,
+            "zero_contact_samples": [],
+            "below_two_original_corner_samples": []
+          }
+        }
+      },
+      "sampled_bilateral_support_present_through_lift": true,
+      "additional_two_nodes_per_finger_through_lift_passed": true
+    },
+    "reposition_1": {
+      "start_time_s": 30.35,
+      "end_time_s": 32.55,
+      "sample_count": 25,
+      "hands": {
+        "left": {
+          "left_finger": {
+            "first_sample_time_count_cornercount": [
+              30.35,
+              13,
+              13
+            ],
+            "last_sample_time_count_cornercount": [
+              32.55,
+              3,
+              3
+            ],
+            "minimum_count": 2,
+            "minimum_original_corner_count": 2,
+            "zero_contact_samples": [],
+            "below_two_original_corner_samples": []
+          },
+          "right_finger": {
+            "first_sample_time_count_cornercount": [
+              30.35,
+              19,
+              19
+            ],
+            "last_sample_time_count_cornercount": [
+              32.55,
+              1,
+              1
+            ],
+            "minimum_count": 1,
+            "minimum_original_corner_count": 1,
+            "zero_contact_samples": [],
+            "below_two_original_corner_samples": [
+              [
+                31.0,
+                1,
+                1
+              ],
+              [
+                31.1,
+                1,
+                1
+              ],
+              [
+                31.2,
+                1,
+                1
+              ],
+              [
+                31.3,
+                1,
+                1
+              ],
+              [
+                31.400000000000002,
+                1,
+                1
+              ],
+              [
+                31.5,
+                1,
+                1
+              ],
+              [
+                31.6,
+                1,
+                1
+              ],
+              [
+                31.7,
+                1,
+                1
+              ],
+              [
+                31.8,
+                1,
+                1
+              ],
+              [
+                31.900000000000002,
+                1,
+                1
+              ],
+              [
+                32.0,
+                1,
+                1
+              ],
+              [
+                32.1,
+                1,
+                1
+              ],
+              [
+                32.2,
+                1,
+                1
+              ],
+              [
+                32.3,
+                1,
+                1
+              ],
+              [
+                32.4,
+                1,
+                1
+              ],
+              [
+                32.5,
+                1,
+                1
+              ],
+              [
+                32.55,
+                1,
+                1
+              ]
+            ]
+          }
+        },
+        "right": {
+          "left_finger": {
+            "first_sample_time_count_cornercount": [
+              30.35,
+              15,
+              15
+            ],
+            "last_sample_time_count_cornercount": [
+              32.55,
+              3,
+              3
+            ],
+            "minimum_count": 3,
+            "minimum_original_corner_count": 3,
+            "zero_contact_samples": [],
+            "below_two_original_corner_samples": []
+          },
+          "right_finger": {
+            "first_sample_time_count_cornercount": [
+              30.35,
+              10,
+              10
+            ],
+            "last_sample_time_count_cornercount": [
+              32.55,
+              3,
+              3
+            ],
+            "minimum_count": 3,
+            "minimum_original_corner_count": 3,
+            "zero_contact_samples": [],
+            "below_two_original_corner_samples": []
+          }
+        }
+      },
+      "sampled_bilateral_support_present_through_lift": true,
+      "additional_two_nodes_per_finger_through_lift_passed": false
+    },
+    "reposition_2": {
+      "start_time_s": 50.1,
+      "end_time_s": 52.300000000000004,
+      "sample_count": 26,
+      "hands": {
+        "left": {
+          "left_finger": {
+            "first_sample_time_count_cornercount": [
+              50.1,
+              16,
+              16
+            ],
+            "last_sample_time_count_cornercount": [
+              52.300000000000004,
+              4,
+              4
+            ],
+            "minimum_count": 3,
+            "minimum_original_corner_count": 3,
+            "zero_contact_samples": [],
+            "below_two_original_corner_samples": []
+          },
+          "right_finger": {
+            "first_sample_time_count_cornercount": [
+              50.1,
+              18,
+              18
+            ],
+            "last_sample_time_count_cornercount": [
+              52.300000000000004,
+              3,
+              3
+            ],
+            "minimum_count": 2,
+            "minimum_original_corner_count": 2,
+            "zero_contact_samples": [],
+            "below_two_original_corner_samples": []
+          }
+        },
+        "right": {
+          "left_finger": {
+            "first_sample_time_count_cornercount": [
+              50.1,
+              20,
+              20
+            ],
+            "last_sample_time_count_cornercount": [
+              52.300000000000004,
+              3,
+              3
+            ],
+            "minimum_count": 3,
+            "minimum_original_corner_count": 3,
+            "zero_contact_samples": [],
+            "below_two_original_corner_samples": []
+          },
+          "right_finger": {
+            "first_sample_time_count_cornercount": [
+              50.1,
+              12,
+              12
+            ],
+            "last_sample_time_count_cornercount": [
+              52.300000000000004,
+              3,
+              3
+            ],
+            "minimum_count": 3,
+            "minimum_original_corner_count": 3,
+            "zero_contact_samples": [],
+            "below_two_original_corner_samples": []
+          }
+        }
+      },
+      "sampled_bilateral_support_present_through_lift": true,
+      "additional_two_nodes_per_finger_through_lift_passed": true
+    },
+    "final_wet": {
+      "start_time_s": 82.35000000000001,
+      "end_time_s": 87.05,
+      "sample_count": 52,
+      "hands": {
+        "left": {
+          "left_finger": {
+            "first_sample_time_count_cornercount": [
+              82.35000000000001,
+              17,
+              17
+            ],
+            "last_sample_time_count_cornercount": [
+              87.05,
+              2,
+              2
+            ],
+            "minimum_count": 2,
+            "minimum_original_corner_count": 2,
+            "zero_contact_samples": [],
+            "below_two_original_corner_samples": []
+          },
+          "right_finger": {
+            "first_sample_time_count_cornercount": [
+              82.35000000000001,
+              20,
+              20
+            ],
+            "last_sample_time_count_cornercount": [
+              87.05,
+              5,
+              5
+            ],
+            "minimum_count": 3,
+            "minimum_original_corner_count": 3,
+            "zero_contact_samples": [],
+            "below_two_original_corner_samples": []
+          }
+        },
+        "right": {
+          "left_finger": {
+            "first_sample_time_count_cornercount": [
+              82.35000000000001,
+              18,
+              18
+            ],
+            "last_sample_time_count_cornercount": [
+              87.05,
+              7,
+              7
+            ],
+            "minimum_count": 7,
+            "minimum_original_corner_count": 7,
+            "zero_contact_samples": [],
+            "below_two_original_corner_samples": []
+          },
+          "right_finger": {
+            "first_sample_time_count_cornercount": [
+              82.35000000000001,
+              17,
+              17
+            ],
+            "last_sample_time_count_cornercount": [
+              87.05,
+              2,
+              2
+            ],
+            "minimum_count": 2,
+            "minimum_original_corner_count": 2,
+            "zero_contact_samples": [],
+            "below_two_original_corner_samples": []
+          }
+        }
+      },
+      "sampled_bilateral_support_present_through_lift": true,
+      "additional_two_nodes_per_finger_through_lift_passed": true
+    }
+  },
+  "all_command_decrease_audit": {
+    "count": 3000,
+    "authorized_closure_intervals_s": [
+      [
+        5.55,
+        6.8500000000000005
+      ],
+      [
+        28.85,
+        30.150000000000002
+      ],
+      [
+        48.2,
+        49.9
+      ],
+      [
+        80.25,
+        82.15
+      ]
+    ],
+    "unexpected_decreases": [],
+    "numerical_command_tolerance_m": 1e-12
+  },
+  "saved_native_support_states": {
+    "production_complete": {
+      "time_s": 87.05,
+      "hands": {
+        "left": {
+          "bound_indices": [
+            5227,
+            5323
+          ],
+          "actual_finger_positions_m": [
+            0.000956577159010489,
+            0.0009565462128439547
+          ],
+          "central_pad_gap_m": 0.004913123371854443,
+          "anchor_position_error_max_m": 0.0,
+          "native_owner_indices": [
+            15,
+            15
+          ],
+          "fingers": {
+            "left_finger": {
+              "actual_link_index": 16,
+              "position_m": [
+                -0.1945948335010616,
+                0.11754462909569456,
+                1.064500010136914
+              ],
+              "quaternion_wxyz": [
+                3.708816264765124e-09,
+                0.9997666739480927,
+                0.021600871805737266,
+                1.1727674762638068e-08
+              ],
+              "contact_count_at_original_distance_threshold": 2,
+              "original_corner_contact_count": 2,
+              "contact_indices": [
+                5226,
+                5227
+              ],
+              "own_bound_representatives": [
+                5227
+              ],
+              "own_bound_pad_distance_m": [
+                0.0009471125637932155
+              ],
+              "own_bound_shell_clearance_m": [
+                0.0001971125637932155
+              ],
+              "nearest_nodes": [
+                {
+                  "id": 5226,
+                  "pad_distance_m": 0.000889721155998109,
+                  "excess_over_original_threshold_m": -0.00016027884400189097
+                },
+                {
+                  "id": 5227,
+                  "pad_distance_m": 0.0009471125637932155,
+                  "excess_over_original_threshold_m": -0.00010288743620678442
+                },
+                {
+                  "id": 5133,
+                  "pad_distance_m": 0.0010981164572381533,
+                  "excess_over_original_threshold_m": 4.811645723815333e-05
+                },
+                {
+                  "id": 5134,
+                  "pad_distance_m": 0.0011368067613875153,
+                  "excess_over_original_threshold_m": 8.680676138751535e-05
+                },
+                {
+                  "id": 5229,
+                  "pad_distance_m": 0.0011478655438906206,
+                  "excess_over_original_threshold_m": 9.786554389062062e-05
+                }
+              ]
+            },
+            "right_finger": {
+              "actual_link_index": 17,
+              "position_m": [
+                -0.19467746448200945,
+                0.11945596714976123,
+                1.064500010121757
+              ],
+              "quaternion_wxyz": [
+                -1.1727674762638068e-08,
+                0.021600871805737266,
+                -0.9997666739480927,
+                3.708816264765124e-09
+              ],
+              "contact_count_at_original_distance_threshold": 5,
+              "original_corner_contact_count": 5,
+              "contact_indices": [
+                5320,
+                5321,
+                5322,
+                5323,
+                5416
+              ],
+              "own_bound_representatives": [
+                5323
+              ],
+              "own_bound_pad_distance_m": [
+                0.0009688033770116875
+              ],
+              "own_bound_shell_clearance_m": [
+                0.00021880337701168744
+              ],
+              "nearest_nodes": [
+                {
+                  "id": 5321,
+                  "pad_distance_m": 0.0007237460561674179,
+                  "excess_over_original_threshold_m": -0.00032625394383258206
+                },
+                {
+                  "id": 5322,
+                  "pad_distance_m": 0.0007264407914123304,
+                  "excess_over_original_threshold_m": -0.00032355920858766955
+                },
+                {
+                  "id": 5320,
+                  "pad_distance_m": 0.0008940726058052099,
+                  "excess_over_original_threshold_m": -0.00015592739419479002
+                },
+                {
+                  "id": 5323,
+                  "pad_distance_m": 0.0009688033770116875,
+                  "excess_over_original_threshold_m": -8.119662298831248e-05
+                },
+                {
+                  "id": 5416,
+                  "pad_distance_m": 0.0010224655348097383,
+                  "excess_over_original_threshold_m": -2.7534465190261594e-05
+                }
+              ]
+            }
+          }
+        },
+        "right": {
+          "bound_indices": [
+            471,
+            567
+          ],
+          "actual_finger_positions_m": [
+            0.0009543347681673376,
+            0.0009542988085349744
+          ],
+          "central_pad_gap_m": 0.004908633576702312,
+          "anchor_position_error_max_m": 1.3877787807814457e-17,
+          "native_owner_indices": [
+            27,
+            27
+          ],
+          "fingers": {
+            "left_finger": {
+              "actual_link_index": 28,
+              "position_m": [
+                0.07207297427072468,
+                -0.031075298885666246,
+                1.0645015108460858
+              ],
+              "quaternion_wxyz": [
+                -9.314840175807879e-07,
+                -0.9997666564375998,
+                -0.02160168216822704,
+                1.4892251965954622e-06
+              ],
+              "contact_count_at_original_distance_threshold": 7,
+              "original_corner_contact_count": 7,
+              "contact_indices": [
+                376,
+                377,
+                378,
+                470,
+                471,
+                472,
+                473
+              ],
+              "own_bound_representatives": [
+                471
+              ],
+              "own_bound_pad_distance_m": [
+                0.0009148673809978147
+              ],
+              "own_bound_shell_clearance_m": [
+                0.00016486738099781464
+              ],
+              "nearest_nodes": [
+                {
+                  "id": 472,
+                  "pad_distance_m": 0.0007434217085726991,
+                  "excess_over_original_threshold_m": -0.00030657829142730086
+                },
+                {
+                  "id": 377,
+                  "pad_distance_m": 0.000749999999999959,
+                  "excess_over_original_threshold_m": -0.0003000000000000409
+                },
+                {
+                  "id": 473,
+                  "pad_distance_m": 0.0007881016685380186,
+                  "excess_over_original_threshold_m": -0.00026189833146198133
+                },
+                {
+                  "id": 378,
+                  "pad_distance_m": 0.0008093259596708936,
+                  "excess_over_original_threshold_m": -0.00024067404032910634
+                },
+                {
+                  "id": 470,
+                  "pad_distance_m": 0.0008647748942041287,
+                  "excess_over_original_threshold_m": -0.0001852251057958712
+                }
+              ]
+            },
+            "right_finger": {
+              "actual_link_index": 29,
+              "position_m": [
+                0.07199053412028855,
+                -0.029168446570540674,
+                1.0645015074139927
+              ],
+              "quaternion_wxyz": [
+                -1.4892251965954622e-06,
+                -0.02160168216822704,
+                0.9997666564375998,
+                -9.314840175807879e-07
+              ],
+              "contact_count_at_original_distance_threshold": 2,
+              "original_corner_contact_count": 2,
+              "contact_indices": [
+                565,
+                567
+              ],
+              "own_bound_representatives": [
+                567
+              ],
+              "own_bound_pad_distance_m": [
+                0.0009435122873637292
+              ],
+              "own_bound_shell_clearance_m": [
+                0.00019351228736372923
+              ],
+              "nearest_nodes": [
+                {
+                  "id": 565,
+                  "pad_distance_m": 0.0009030992313142734,
+                  "excess_over_original_threshold_m": -0.00014690076868572655
+                },
+                {
+                  "id": 567,
+                  "pad_distance_m": 0.0009435122873637292,
+                  "excess_over_original_threshold_m": -0.00010648771263627069
+                },
+                {
+                  "id": 564,
+                  "pad_distance_m": 0.0010837004537079002,
+                  "excess_over_original_threshold_m": 3.370045370790025e-05
+                },
+                {
+                  "id": 568,
+                  "pad_distance_m": 0.001106525461865615,
+                  "excess_over_original_threshold_m": 5.652546186561496e-05
+                },
+                {
+                  "id": 566,
+                  "pad_distance_m": 0.0013825254421139185,
+                  "excess_over_original_threshold_m": 0.0003325254421139186
+                }
+              ]
+            }
+          }
+        }
+      },
+      "checks": {
+        "left_same_bound_ids_as_gate": true,
+        "left_original_material_corner_retained": true,
+        "left_native_owners_equal_hand": true,
+        "left_hand_local_anchor_error_under_1nm": true,
+        "left_left_finger_at_least_one_actual_pad_contact": true,
+        "left_left_finger_own_bound_representative_on_pad": true,
+        "left_left_finger_additional_two_node_support": true,
+        "left_right_finger_at_least_one_actual_pad_contact": true,
+        "left_right_finger_own_bound_representative_on_pad": true,
+        "left_right_finger_additional_two_node_support": true,
+        "right_same_bound_ids_as_gate": true,
+        "right_original_material_corner_retained": true,
+        "right_native_owners_equal_hand": true,
+        "right_hand_local_anchor_error_under_1nm": true,
+        "right_left_finger_at_least_one_actual_pad_contact": true,
+        "right_left_finger_own_bound_representative_on_pad": true,
+        "right_left_finger_additional_two_node_support": true,
+        "right_right_finger_at_least_one_actual_pad_contact": true,
+        "right_right_finger_own_bound_representative_on_pad": true,
+        "right_right_finger_additional_two_node_support": true
+      },
+      "all_primary_support_checks_passed": true,
+      "additional_two_nodes_per_finger_passed": true
+    },
+    "after_extra_hold": {
+      "time_s": 91.05,
+      "hands": {
+        "left": {
+          "bound_indices": [
+            5227,
+            5323
+          ],
+          "actual_finger_positions_m": [
+            0.000956575869092094,
+            0.0009565446089342932
+          ],
+          "central_pad_gap_m": 0.0049131204780263876,
+          "anchor_position_error_max_m": 0.0,
+          "native_owner_indices": [
+            15,
+            15
+          ],
+          "fingers": {
+            "left_finger": {
+              "actual_link_index": 16,
+              "position_m": [
+                -0.19459483001656216,
+                0.11754462484339226,
+                1.0645000181639288
+              ],
+              "quaternion_wxyz": [
+                7.288395371172101e-09,
+                0.999766674044539,
+                0.021600867341853135,
+                2.2313271230762188e-08
+              ],
+              "contact_count_at_original_distance_threshold": 2,
+              "original_corner_contact_count": 2,
+              "contact_indices": [
+                5226,
+                5227
+              ],
+              "own_bound_representatives": [
+                5227
+              ],
+              "own_bound_pad_distance_m": [
+                0.0009471125637930671
+              ],
+              "own_bound_shell_clearance_m": [
+                0.00019711256379306707
+              ],
+              "nearest_nodes": [
+                {
+                  "id": 5226,
+                  "pad_distance_m": 0.0008947920857964751,
+                  "excess_over_original_threshold_m": -0.00015520791420352482
+                },
+                {
+                  "id": 5227,
+                  "pad_distance_m": 0.0009471125637930671,
+                  "excess_over_original_threshold_m": -0.00010288743620693284
+                },
+                {
+                  "id": 5133,
+                  "pad_distance_m": 0.0011132473149940703,
+                  "excess_over_original_threshold_m": 6.324731499407032e-05
+                },
+                {
+                  "id": 5229,
+                  "pad_distance_m": 0.0011484689726063172,
+                  "excess_over_original_threshold_m": 9.846897260631731e-05
+                },
+                {
+                  "id": 5134,
+                  "pad_distance_m": 0.0011487214175613615,
+                  "excess_over_original_threshold_m": 9.872141756136154e-05
+                }
+              ]
+            },
+            "right_finger": {
+              "actual_link_index": 17,
+              "position_m": [
+                -0.19467746085545284,
+                0.11945596000706925,
+                1.0645000181342041
+              ],
+              "quaternion_wxyz": [
+                -2.2313271230762185e-08,
+                0.021600867341853132,
+                -0.9997666740445388,
+                7.2883953711721e-09
+              ],
+              "contact_count_at_original_distance_threshold": 5,
+              "original_corner_contact_count": 5,
+              "contact_indices": [
+                5320,
+                5321,
+                5322,
+                5323,
+                5416
+              ],
+              "own_bound_representatives": [
+                5323
+              ],
+              "own_bound_pad_distance_m": [
+                0.0009688022564258561
+              ],
+              "own_bound_shell_clearance_m": [
+                0.00021880225642585606
+              ],
+              "nearest_nodes": [
+                {
+                  "id": 5321,
+                  "pad_distance_m": 0.0007249824858687427,
+                  "excess_over_original_threshold_m": -0.00032501751413125724
+                },
+                {
+                  "id": 5322,
+                  "pad_distance_m": 0.0007267405660824679,
+                  "excess_over_original_threshold_m": -0.000323259433917532
+                },
+                {
+                  "id": 5320,
+                  "pad_distance_m": 0.0009005111223638227,
+                  "excess_over_original_threshold_m": -0.0001494888776361772
+                },
+                {
+                  "id": 5323,
+                  "pad_distance_m": 0.0009688022564258561,
+                  "excess_over_original_threshold_m": -8.119774357414386e-05
+                },
+                {
+                  "id": 5416,
+                  "pad_distance_m": 0.00101710303851716,
+                  "excess_over_original_threshold_m": -3.289696148283988e-05
+                }
+              ]
+            }
+          }
+        },
+        "right": {
+          "bound_indices": [
+            471,
+            567
+          ],
+          "actual_finger_positions_m": [
+            0.0009543330585129893,
+            0.0009542974258463789
+          ],
+          "central_pad_gap_m": 0.004908630484359368,
+          "anchor_position_error_max_m": 6.938893903907228e-18,
+          "native_owner_indices": [
+            27,
+            27
+          ],
+          "fingers": {
+            "left_finger": {
+              "actual_link_index": 28,
+              "position_m": [
+                0.07207296912638558,
+                -0.03107529243661485,
+                1.0645015111834264
+              ],
+              "quaternion_wxyz": [
+                -9.319430300004796e-07,
+                -0.999766656545272,
+                -0.021601677184668988,
+                1.493110943672185e-06
+              ],
+              "contact_count_at_original_distance_threshold": 7,
+              "original_corner_contact_count": 7,
+              "contact_indices": [
+                376,
+                377,
+                378,
+                470,
+                471,
+                472,
+                473
+              ],
+              "own_bound_representatives": [
+                471
+              ],
+              "own_bound_pad_distance_m": [
+                0.0009148661460708213
+              ],
+              "own_bound_shell_clearance_m": [
+                0.0001648661460708213
+              ],
+              "nearest_nodes": [
+                {
+                  "id": 472,
+                  "pad_distance_m": 0.0007430525111032547,
+                  "excess_over_original_threshold_m": -0.00030694748889674526
+                },
+                {
+                  "id": 377,
+                  "pad_distance_m": 0.0007500000000002019,
+                  "excess_over_original_threshold_m": -0.00029999999999979804
+                },
+                {
+                  "id": 473,
+                  "pad_distance_m": 0.0007826890751293876,
+                  "excess_over_original_threshold_m": -0.0002673109248706124
+                },
+                {
+                  "id": 378,
+                  "pad_distance_m": 0.0008055786854041886,
+                  "excess_over_original_threshold_m": -0.0002444213145958113
+                },
+                {
+                  "id": 470,
+                  "pad_distance_m": 0.0008750167864388743,
+                  "excess_over_original_threshold_m": -0.00017498321356112568
+                }
+              ]
+            },
+            "right_finger": {
+              "actual_link_index": 29,
+              "position_m": [
+                0.07199052912852812,
+                -0.029168443210124368,
+                1.0645015077499076
+              ],
+              "quaternion_wxyz": [
+                -1.4931109436721845e-06,
+                -0.021601677184668985,
+                0.9997666565452717,
+                -9.319430300004794e-07
+              ],
+              "contact_count_at_original_distance_threshold": 2,
+              "original_corner_contact_count": 2,
+              "contact_indices": [
+                565,
+                567
+              ],
+              "own_bound_representatives": [
+                567
+              ],
+              "own_bound_pad_distance_m": [
+                0.0009435122873638388
+              ],
+              "own_bound_shell_clearance_m": [
+                0.00019351228736383874
+              ],
+              "nearest_nodes": [
+                {
+                  "id": 565,
+                  "pad_distance_m": 0.000910789748246532,
+                  "excess_over_original_threshold_m": -0.00013921025175346797
+                },
+                {
+                  "id": 567,
+                  "pad_distance_m": 0.0009435122873638388,
+                  "excess_over_original_threshold_m": -0.00010648771263616118
+                },
+                {
+                  "id": 568,
+                  "pad_distance_m": 0.0010999066609396991,
+                  "excess_over_original_threshold_m": 4.990666093969919e-05
+                },
+                {
+                  "id": 564,
+                  "pad_distance_m": 0.0011003356517192238,
+                  "excess_over_original_threshold_m": 5.033565171922382e-05
+                },
+                {
+                  "id": 566,
+                  "pad_distance_m": 0.001382774860118489,
+                  "excess_over_original_threshold_m": 0.0003327748601184891
+                }
+              ]
+            }
+          }
+        }
+      },
+      "checks": {
+        "left_same_bound_ids_as_gate": true,
+        "left_original_material_corner_retained": true,
+        "left_native_owners_equal_hand": true,
+        "left_hand_local_anchor_error_under_1nm": true,
+        "left_left_finger_at_least_one_actual_pad_contact": true,
+        "left_left_finger_own_bound_representative_on_pad": true,
+        "left_left_finger_additional_two_node_support": true,
+        "left_right_finger_at_least_one_actual_pad_contact": true,
+        "left_right_finger_own_bound_representative_on_pad": true,
+        "left_right_finger_additional_two_node_support": true,
+        "right_same_bound_ids_as_gate": true,
+        "right_original_material_corner_retained": true,
+        "right_native_owners_equal_hand": true,
+        "right_hand_local_anchor_error_under_1nm": true,
+        "right_left_finger_at_least_one_actual_pad_contact": true,
+        "right_left_finger_own_bound_representative_on_pad": true,
+        "right_left_finger_additional_two_node_support": true,
+        "right_right_finger_at_least_one_actual_pad_contact": true,
+        "right_right_finger_own_bound_representative_on_pad": true,
+        "right_right_finger_additional_two_node_support": true
+      },
+      "all_primary_support_checks_passed": true,
+      "additional_two_nodes_per_finger_passed": true
+    }
+  },
+  "sampled_post_lift_support_history": {
+    "left": {
+      "left_finger": {
+        "sample_count": 93,
+        "minimum_count": 2,
+        "first_sample": [
+          82.35000000000001,
+          17
+        ],
+        "last_sample": [
+          91.05,
+          2
+        ],
+        "samples_with_zero_contacts": [],
+        "samples_below_two_contacts": []
+      },
+      "right_finger": {
+        "sample_count": 93,
+        "minimum_count": 3,
+        "first_sample": [
+          82.35000000000001,
+          20
+        ],
+        "last_sample": [
+          91.05,
+          5
+        ],
+        "samples_with_zero_contacts": [],
+        "samples_below_two_contacts": []
+      }
+    },
+    "right": {
+      "left_finger": {
+        "sample_count": 93,
+        "minimum_count": 7,
+        "first_sample": [
+          82.35000000000001,
+          18
+        ],
+        "last_sample": [
+          91.05,
+          7
+        ],
+        "samples_with_zero_contacts": [],
+        "samples_below_two_contacts": []
+      },
+      "right_finger": {
+        "sample_count": 93,
+        "minimum_count": 2,
+        "first_sample": [
+          82.35000000000001,
+          17
+        ],
+        "last_sample": [
+          91.05,
+          2
+        ],
+        "samples_with_zero_contacts": [],
+        "samples_below_two_contacts": []
+      }
+    }
+  },
+  "support_trace_sample_spacing_s": 0.1,
+  "sampled_support_note": "Additional controller-event samples exist; no continuous/substep support assertion is inferred between samples.",
+  "prefix_content_verification": {
+    "run_01/contact_trace.csv": true,
+    "run_01/probe_events.json": true,
+    "run_01/events.json": true,
+    "run_01/config_used.json": true,
+    "run_01/source_manifest.json": true,
+    "run_02/contact_trace.csv": true,
+    "run_02/probe_events.json": true,
+    "run_02/events.json": true,
+    "run_02/config_used.json": true,
+    "run_02/source_manifest.json": true
+  },
+  "archive_manifest_verification": {
+    "run_01": {
+      "check_coupling_integration.py": true,
+      "check_robot_profile.py": true,
+      "check_robot_wipe_path.py": true,
+      "cloth_layout.py": true,
+      "cloth_liquid_coupling.py": true,
+      "cloth_metrics.py": true,
+      "cotton_bending.py": true,
+      "cotton_bending_damping.py": true,
+      "cotton_contact.py": true,
+      "cotton_deformation_damping.py": true,
+      "cotton_material.py": true,
+      "cotton_membrane.py": true,
+      "cotton_mesh.py": true,
+      "cotton_velocity_update.py": true,
+      "cotton_wicking.py": true,
+      "generate_assets.py": true,
+      "grasp_approach_contact.py": true,
+      "label_contact_first_video.py": true,
+      "material_validation.py": true,
+      "numerical_resolution.py": true,
+      "probe_contact_first.py": true,
+      "probe_corner_pick.py": true,
+      "probe_cotton_hang.py": true,
+      "probe_pbd_velocity_resolution.py": true,
+      "probe_pdf_bending_stability.py": true,
+      "probe_pdf_rest.py": true,
+      "probe_robot_geometry.py": true,
+      "probe_robot_settle.py": true,
+      "probe_wet_precision.py": true,
+      "review_contact_first.py": true,
+      "review_contact_first_motion.py": true,
+      "robot_checkpoint.py": true,
+      "robot_geometry.py": true,
+      "robot_grasp.py": true,
+      "robot_wipe.py": true,
+      "run_complete_contact_first.py": true,
+      "scene.py": true,
+      "task_outcome.py": true,
+      "wet_visual.py": true,
+      "wiping_demo.py": true
+    },
+    "run_02": {
+      "check_coupling_integration.py": true,
+      "check_robot_profile.py": true,
+      "check_robot_wipe_path.py": true,
+      "cloth_layout.py": true,
+      "cloth_liquid_coupling.py": true,
+      "cloth_metrics.py": true,
+      "cotton_bending.py": true,
+      "cotton_bending_damping.py": true,
+      "cotton_contact.py": true,
+      "cotton_deformation_damping.py": true,
+      "cotton_material.py": true,
+      "cotton_membrane.py": true,
+      "cotton_mesh.py": true,
+      "cotton_velocity_update.py": true,
+      "cotton_wicking.py": true,
+      "generate_assets.py": true,
+      "grasp_approach_contact.py": true,
+      "label_contact_first_video.py": true,
+      "material_validation.py": true,
+      "numerical_resolution.py": true,
+      "probe_contact_first.py": true,
+      "probe_corner_pick.py": true,
+      "probe_cotton_hang.py": true,
+      "probe_pbd_velocity_resolution.py": true,
+      "probe_pdf_bending_stability.py": true,
+      "probe_pdf_rest.py": true,
+      "probe_robot_geometry.py": true,
+      "probe_robot_settle.py": true,
+      "probe_wet_precision.py": true,
+      "review_contact_first.py": true,
+      "review_contact_first_motion.py": true,
+      "robot_checkpoint.py": true,
+      "robot_geometry.py": true,
+      "robot_grasp.py": true,
+      "robot_wipe.py": true,
+      "run_complete_contact_first.py": true,
+      "scene.py": true,
+      "task_outcome.py": true,
+      "wet_visual.py": true,
+      "wiping_demo.py": true
+    }
+  },
+  "checks": {
+    "completed_extra_hold": true,
+    "no_runtime_failure": true,
+    "no_cleanup_or_report_errors": true,
+    "interim_prefix_content_unchanged": true,
+    "archived_sources_match_manifest": true,
+    "panda_xml_matches_run_manifest": true,
+    "every_outer_step_covered_once": true,
+    "four_grasp_sequences_passed": true,
+    "all_four_main_lifts_have_sampled_bilateral_support": true,
+    "no_finger_command_reductions_outside_post_contact_closure_windows": true,
+    "production_and_extra_hold_primary_support_passed": true
+  },
+  "sequence_and_primary_support_passed": true,
+  "additional_final_two_nodes_per_finger_passed": true,
+  "additional_all_lifts_two_nodes_per_finger_passed": false,
+  "failed_checks_preserved": [
+    "reposition_1:additional_two_nodes_per_finger_through_lift"
+  ],
+  "original_production_result": {
+    "passed": false,
+    "task_passed": true,
+    "strict_material_passed": false,
+    "failure": null,
+    "failed_original_checks_without_reclassification": {
+      "dry_and_wet_lift_warp_extension_within_limit_and_residual": false,
+      "dry_and_wet_lift_weft_extension_within_limit_and_residual": false
+    }
+  },
+  "limitations": [
+    "Native arrival is a geometric full-finger SDF measurement, not measured contact force.",
+    "Pad support is particle-sphere proximity to authored pad boxes, not a force-closure or cloth-to-arm load-transfer validation.",
+    "Bound particle identities may change between grasps within the same original 22 mm material corner; they remain unchanged during each lift.",
+    "The final 4 s observation is an additional hold after production completion, not a new production acceptance threshold."
+  ],
+  "sources": {
+    "run_01": {
+      "contact_trace.csv": {
+        "path": "/home/chloe/Desktop/genesis-local/soy_cloth_scene/output/contact_first_full/run_01/contact_trace.csv",
+        "bytes": 8383761,
+        "sha256": "3b51251efbfd05f4f9957daea17aa08ec1636693194f19515e78649879bab593",
+        "selected_content_sha256": "44cb6e378bde3ebca284741c97600478280b1b4c05b05b5c069a47c2814b0811",
+        "selected_time_range_s": [
+          0.0,
+          38.7
+        ]
+      },
+      "probe_events.json": {
+        "path": "/home/chloe/Desktop/genesis-local/soy_cloth_scene/output/contact_first_full/run_01/probe_events.json",
+        "bytes": 1294609,
+        "sha256": "84d39c1efd3312d467029e858bd358c2258c3ea2066f31950ab43376d7706850",
+        "selected_content_sha256": "5d4b68834a82ae857ade17272eb614ac0d43cc437240070f5537cb96ad866622",
+        "selected_time_range_s": [
+          0.0,
+          38.7
+        ]
+      },
+      "events.json": {
+        "path": "/home/chloe/Desktop/genesis-local/soy_cloth_scene/output/contact_first_full/run_01/events.json",
+        "bytes": 1294609,
+        "sha256": "84d39c1efd3312d467029e858bd358c2258c3ea2066f31950ab43376d7706850",
+        "selected_content_sha256": "5d4b68834a82ae857ade17272eb614ac0d43cc437240070f5537cb96ad866622",
+        "selected_time_range_s": [
+          0.0,
+          38.7
+        ]
+      },
+      "config_used.json": {
+        "path": "/home/chloe/Desktop/genesis-local/soy_cloth_scene/output/contact_first_full/run_01/config_used.json",
+        "bytes": 5532,
+        "sha256": "b68b90539ed075997d9d1f312758058ed26c8f57ba2c66ff2da21009bd127d0e",
+        "selected_content_sha256": "b4c4a2b0c1b04b253a280e9232e595e778f08cdd890ea6ce8b788f5b05f3a801",
+        "selected_time_range_s": null
+      },
+      "source_manifest.json": {
+        "path": "/home/chloe/Desktop/genesis-local/soy_cloth_scene/output/contact_first_full/run_01/source_manifest.json",
+        "bytes": 4919,
+        "sha256": "63ef69e92b63599804e8a969e66d91e70e7979106f561da4a2f764395006d6da",
+        "selected_content_sha256": "60d3441c843311d7cf1f5f81982b56536cc6d9635c49eb030795473bfc73706e",
+        "selected_time_range_s": null
+      },
+      "pad_support_trace.jsonl": {
+        "path": "/home/chloe/Desktop/genesis-local/soy_cloth_scene/output/contact_first_full/run_01/pad_support_trace.jsonl",
+        "bytes": 701802,
+        "sha256": "4b2427c0f7532c4467d840887bf6e54185d1a4e0af7737683566cac1c0f8992e",
+        "selected_content_sha256": "72b39cfec709a35ae1bb00e3a847ef17bbf4dcb65469efd21432204099cf830c",
+        "selected_time_range_s": [
+          0.0,
+          38.7
+        ]
+      }
+    },
+    "run_02": {
+      "contact_trace.csv": {
+        "path": "/home/chloe/Desktop/genesis-local/soy_cloth_scene/output/contact_first_full/run_02/contact_trace.csv",
+        "bytes": 10720303,
+        "sha256": "615e5a2f72d55ba5136ad631ba58fd9728872117a9ad8f1fd717535daa25e2e5",
+        "selected_content_sha256": "5ab96f125c3a6a70fb77458f72bd0672a687977631cb540dc92eb9b40f6841bf",
+        "selected_time_range_s": [
+          38.7,
+          91.05
+        ]
+      },
+      "probe_events.json": {
+        "path": "/home/chloe/Desktop/genesis-local/soy_cloth_scene/output/contact_first_full/run_02/probe_events.json",
+        "bytes": 1715583,
+        "sha256": "3b76262a795623f236d247735fc15d6ae2c708069698892c93f7940caed76221",
+        "selected_content_sha256": "0fa65c91b5d29c44dce8f96e5af6eba49f24ce9a1966300493030a17fa7c1312",
+        "selected_time_range_s": [
+          38.7,
+          91.05
+        ]
+      },
+      "events.json": {
+        "path": "/home/chloe/Desktop/genesis-local/soy_cloth_scene/output/contact_first_full/run_02/events.json",
+        "bytes": 3009687,
+        "sha256": "03ce2c766af49eaf126bbc733e0794f51ee9e09bf531ce4d84cf91de77e8d0e5",
+        "selected_content_sha256": "6754f377f760e21420c15c404fa82add08ab03b770ac1419b053893e38c98ae5",
+        "selected_time_range_s": [
+          38.7,
+          91.05
+        ]
+      },
+      "config_used.json": {
+        "path": "/home/chloe/Desktop/genesis-local/soy_cloth_scene/output/contact_first_full/run_02/config_used.json",
+        "bytes": 5532,
+        "sha256": "b68b90539ed075997d9d1f312758058ed26c8f57ba2c66ff2da21009bd127d0e",
+        "selected_content_sha256": "b4c4a2b0c1b04b253a280e9232e595e778f08cdd890ea6ce8b788f5b05f3a801",
+        "selected_time_range_s": null
+      },
+      "source_manifest.json": {
+        "path": "/home/chloe/Desktop/genesis-local/soy_cloth_scene/output/contact_first_full/run_02/source_manifest.json",
+        "bytes": 5100,
+        "sha256": "96fa80e0688f8d47659df927eba078025520175e278e9e8a723cd897ab552895",
+        "selected_content_sha256": "ebb7f94a1f4826c4bde6d895c61693f20688abfa86b8d1e46f4662c52b551331",
+        "selected_time_range_s": null
+      },
+      "pad_support_trace.jsonl": {
+        "path": "/home/chloe/Desktop/genesis-local/soy_cloth_scene/output/contact_first_full/run_02/pad_support_trace.jsonl",
+        "bytes": 802662,
+        "sha256": "0d9fa41c1da232fcf6e0449e90774c261051a53d8370f9a53790ff8d17905f98",
+        "selected_content_sha256": "0a667ef17e563d29e5c152d60e8c783ec3c0fa02a8312efc4e7613bd34b72845",
+        "selected_time_range_s": [
+          38.7,
+          91.05
+        ]
+      },
+      "after_wet_lift.pkl": {
+        "path": "/home/chloe/Desktop/genesis-local/soy_cloth_scene/output/contact_first_full/run_02/after_wet_lift.pkl",
+        "sha256": "5b3ed10b54ac1f0dc81f5157795a5f050ec1b2dcfae934f3f4712ef1ae71168c",
+        "bytes": 26885565
+      },
+      "after_complete_hold.pkl": {
+        "path": "/home/chloe/Desktop/genesis-local/soy_cloth_scene/output/contact_first_full/run_02/after_complete_hold.pkl",
+        "sha256": "f5cd2b64abadf824884fef7f563750364cf1a78bee38cf2f3d3aa1b982f7c732",
+        "bytes": 26954348
+      },
+      "robot_wipe_validation.json": {
+        "path": "/home/chloe/Desktop/genesis-local/soy_cloth_scene/output/contact_first_full/run_02/robot_wipe_validation.json",
+        "sha256": "eae02b3d7cb9f3fe3959bb7047d56153004fb367ff41c90c47101d3675bf8faa",
+        "bytes": 312587
+      },
+      "full_run_summary.json": {
+        "path": "/home/chloe/Desktop/genesis-local/soy_cloth_scene/output/contact_first_full/run_02/full_run_summary.json",
+        "sha256": "b5aeaeab413f7669e619e15b952925ee896241710e09493cc22485174232cabb",
+        "bytes": 1233
+      },
+      "final_state.npz": {
+        "path": "/home/chloe/Desktop/genesis-local/soy_cloth_scene/output/contact_first_full/run_02/final_state.npz",
+        "sha256": "6a088a5318512fbfa1f469eeef67e7757e68bcf1750115331bb7c1c2b3c4addf",
+        "bytes": 214357
+      }
+    }
+  },
+  "initial_reference": {
+    "path": "/home/chloe/Desktop/genesis-local/soy_cloth_scene/output/contact_first_full/run_01/01_initial_cloth.npz",
+    "sha256": "e3eded3c86001816806d65708a85f9aecea41d636bbcccd13aadd3c9ab58fdda"
+  },
+  "interim_audit": {
+    "path": "/home/chloe/Desktop/genesis-local/soy_cloth_scene/output/contact_first_full/three_grasps_interim_review.json",
+    "sha256": "5c4decb6744bc10e4b172ef55da847021180cd2d6f43617e15f07ac30e5db690"
+  },
+  "program_sha256": "952f2a6210ecb12f2a4676a1982e31bca017f89bb56f23ce3e3a110a528118d3"
+}

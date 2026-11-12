@@ -1,0 +1,170 @@
+{
+  "created_utc": "2026-11-12T20:27:10.570669+00:00",
+  "scope": "Current contact-first controller from fresh dry initial scene through full wiping, complete absorption, final wet lift and extra 4 s hold; interrupted by user and resumed from identical 38.7 s native checkpoint.",
+  "fresh_initial_scene": true,
+  "single_uninterrupted_execution": false,
+  "checkpoint_time_s": 38.7,
+  "discarded_interrupted_branch_video_frames": 38,
+  "configuration_sha256": "b68b90539ed075997d9d1f312758058ed26c8f57ba2c66ff2da21009bd127d0e",
+  "production_task_completed": true,
+  "production_end_time_s": 87.05,
+  "extra_hold_s": 4.0,
+  "final_physical_time_s": 91.05,
+  "task_passed": true,
+  "original_all_checks_passed": false,
+  "original_checks_passed_count": 17,
+  "original_checks_total": 19,
+  "strict_material_passed": false,
+  "four_grasp_sequences_passed": true,
+  "no_early_closure": true,
+  "additional_final_two_nodes_per_finger_passed": true,
+  "terminal_support_counts_left_then_right": [
+    2,
+    5,
+    7,
+    2
+  ],
+  "additional_all_lifts_two_nodes_per_finger_passed": false,
+  "preserved_failures": [
+    "Strict wet-cloth warp and weft peak extension checks exceed unchanged 2.2% phase thresholds.",
+    "Sampled local maximum edge extension reaches 100.587766% at 66.5 s during cycle 5 outward wiping; same-sample P99 is 0.284693%.",
+    "During first reposition lift, one pad has only one supported node in 17 samples; production minimum one remains satisfied, extra continuous two-node diagnostic fails."
+  ],
+  "results": {
+    "press_cycles": 6,
+    "initial_liquid_g": 10.482560000000001,
+    "absorbed_liquid_g": 10.482560000000001,
+    "active_liquid_particles": 0,
+    "median_carried_liquid_rise_m": 0.23261938386516345,
+    "minimum_final_cloth_height_m": 0.8718733715110831,
+    "max_tcp_tracking_error_m": 0.00043052808057017516
+  },
+  "independent_liquid_audit": {
+    "native_particle_mass_source": "/home/chloe/Desktop/genesis-local/soy_cloth_scene/output/contact_first_full/run_01/after_dry_lift.pkl",
+    "particle_count": 1489,
+    "active_count": 0,
+    "bound_position_count": 1489,
+    "vertex_reservoir_mass_kg": 0.010482560000000005,
+    "capacity_kg": 0.05443200000000001,
+    "maximum_saturation": 0.8226772355293804,
+    "minimum_vertex_reservoir_kg": 0.0,
+    "capacity_excess_max_kg": -1.1409022122535114e-06,
+    "expected_dry_mass_from_reference_area_kg": 0.009072,
+    "final_native_mass_directly_exported": true,
+    "final_parcel_barycentric_ledger_directly_exported": true,
+    "initial_mass_kg": 0.010482560000000002,
+    "active_mass_kg": 0.0,
+    "inactive_particle_mass_kg": 0.010482560000000002,
+    "liquid_mass_balance_error_kg": 3.469446951953614e-18,
+    "dry_native_mass_kg": 0.009072000000000002,
+    "expected_final_native_wet_mass_kg": 0.019554560000000006,
+    "reported_final_native_wet_mass_kg": 0.019554560000000006,
+    "reported_final_native_total_minus_expected_kg": 0.0,
+    "final_native_vertex_loading_max_error_kg": 8.470329472543003e-22,
+    "final_direct_native_wet_mass_kg": 0.019554560000000006
+  },
+  "hold_observation": {
+    "lowest_point_peak_to_peak_mm": 0.577758,
+    "successive_one_second_peak_to_peak_mm": [
+      0.577758,
+      0.292056,
+      0.148304,
+      0.077211
+    ],
+    "full_node_motion_acceptance_asserted": false
+  },
+  "video": {
+    "path": "/home/chloe/Desktop/genesis-local/soy_cloth_scene/output/contact_first_full/continuation_review/cotton_contact_first_full_cn.mp4",
+    "duration_s": 91.02310231023102,
+    "frames": 1379,
+    "sha256": "990f4b6d4c14a892b76dd8e0713aeef6f5cb3c843f1f47e4d875a08ebfd43535",
+    "seam": {
+      "checkpoint_time_s": 38.7,
+      "left_last_global_step": 19338,
+      "right_first_global_step": 19371,
+      "step_difference": 33,
+      "no_repeated_or_missing_recorded_frame": true
+    }
+  },
+  "validation_scope": "Full native execution plus independent saved-state, parcel mass, contact sequence, provenance and video reviews. Existing 196/196 CPU regression was not rerun because production physics/control did not change in this continuation.",
+  "artifacts": {
+    "output/contact_first_full/run_02/full_run_summary.json": {
+      "path": "/home/chloe/Desktop/genesis-local/soy_cloth_scene/output/contact_first_full/run_02/full_run_summary.json",
+      "sha256": "b5aeaeab413f7669e619e15b952925ee896241710e09493cc22485174232cabb"
+    },
+    "output/contact_first_full/run_02/robot_wipe_validation.json": {
+      "path": "/home/chloe/Desktop/genesis-local/soy_cloth_scene/output/contact_first_full/run_02/robot_wipe_validation.json",
+      "sha256": "eae02b3d7cb9f3fe3959bb7047d56153004fb367ff41c90c47101d3675bf8faa"
+    },
+    "output/contact_first_full/run_02/independent_audit.json": {
+      "path": "/home/chloe/Desktop/genesis-local/soy_cloth_scene/output/contact_first_full/run_02/independent_audit.json",
+      "sha256": "08c38fbcf179fcfc1125ece59b6cff1399616771d5b4771d5aa1fdd235f28b72"
+    },
+    "output/contact_first_full/run_02/independent_audit_summary.json": {
+      "path": "/home/chloe/Desktop/genesis-local/soy_cloth_scene/output/contact_first_full/run_02/independent_audit_summary.json",
+      "sha256": "486bc623f1a7fd13adb26f7f8cc10ffff5f10acae31a814e280462b1bf7aedf5"
+    },
+    "output/contact_first_full/run_02/independent_conclusions.json": {
+      "path": "/home/chloe/Desktop/genesis-local/soy_cloth_scene/output/contact_first_full/run_02/independent_conclusions.json",
+      "sha256": "8cef1f97d527f39214e469f06caf5e1a8ad80a7966f0236d1840f64945d078ff"
+    },
+    "output/contact_first_full/run_02/sampled_material_transients.json": {
+      "path": "/home/chloe/Desktop/genesis-local/soy_cloth_scene/output/contact_first_full/run_02/sampled_material_transients.json",
+      "sha256": "c212504d0ff1e9cf2f592ffd780c665ee493dbd9982f61eba3bb1fe543a8bbf7"
+    },
+    "output/contact_first_full/four_grasps_final_review.json": {
+      "path": "/home/chloe/Desktop/genesis-local/soy_cloth_scene/output/contact_first_full/four_grasps_final_review.json",
+      "sha256": "bd9c52d8c66bd8e2770c6ad5fbf4d1d1caae0d779f706b009eb44077d8b50e58"
+    },
+    "output/contact_first_full/source_index.json": {
+      "path": "/home/chloe/Desktop/genesis-local/soy_cloth_scene/output/contact_first_full/source_index.json",
+      "sha256": "a518e44e344cbeaa0463258560ded154cc88ba56b2ca574262da3d4084da23d0"
+    },
+    "output/contact_first_full/interruption_record.json": {
+      "path": "/home/chloe/Desktop/genesis-local/soy_cloth_scene/output/contact_first_full/interruption_record.json",
+      "sha256": "f8ccd50a7d49b682987c864d4795f37626a1995be7a04bed57f36aa5234d82bc"
+    },
+    "output/contact_first_full/continuation_review/composition_provenance.json": {
+      "path": "/home/chloe/Desktop/genesis-local/soy_cloth_scene/output/contact_first_full/continuation_review/composition_provenance.json",
+      "sha256": "861f3570362aa7054704f24b03681af0c4303cfcbfc917cb813ba7d818114a19"
+    },
+    "output/contact_first_full/continuation_review/visual_review.json": {
+      "path": "/home/chloe/Desktop/genesis-local/soy_cloth_scene/output/contact_first_full/continuation_review/visual_review.json",
+      "sha256": "b44ce0db63ec3270fea99715aafeef59f3516dd522bad2b7cf54b96f2d088ec9"
+    },
+    "output/contact_first_full/continuation_review/final_hold_and_strain_observation.json": {
+      "path": "/home/chloe/Desktop/genesis-local/soy_cloth_scene/output/contact_first_full/continuation_review/final_hold_and_strain_observation.json",
+      "sha256": "2cdc755d5e50c3ee80af6b7a1f1989e45ce78a2bb50603214fed59f895a61d4c"
+    },
+    "output/contact_first_full/continuation_review/key_stage_evidence.png": {
+      "path": "/home/chloe/Desktop/genesis-local/soy_cloth_scene/output/contact_first_full/continuation_review/key_stage_evidence.png",
+      "sha256": "1324653d9f7d1030787af3bd5f0b0186e7fc4a35c6401d6840c87614bd084d9d"
+    },
+    "output/contact_first_full/continuation_review/cotton_contact_first_full_cn.mp4": {
+      "path": "/home/chloe/Desktop/genesis-local/soy_cloth_scene/output/contact_first_full/continuation_review/cotton_contact_first_full_cn.mp4",
+      "sha256": "990f4b6d4c14a892b76dd8e0713aeef6f5cb3c843f1f47e4d875a08ebfd43535"
+    },
+    "config_robot_wipe.json": {
+      "path": "/home/chloe/Desktop/genesis-local/soy_cloth_scene/config_robot_wipe.json",
+      "sha256": "b68b90539ed075997d9d1f312758058ed26c8f57ba2c66ff2da21009bd127d0e"
+    },
+    "run_complete_contact_first.py": {
+      "path": "/home/chloe/Desktop/genesis-local/soy_cloth_scene/run_complete_contact_first.py",
+      "sha256": "9e7fd84378cfe9620b3ceb0c5f0e4cfaaa174b17cecf15f286a24202410f9919"
+    },
+    "README_CN.md": {
+      "path": "/home/chloe/Desktop/genesis-local/soy_cloth_scene/README_CN.md",
+      "sha256": "30721369aac51898654b1f1fd3ca6f02b343633150623612c6864e980e2521cd"
+    },
+    "cotton_material_validation.md": {
+      "path": "/home/chloe/Desktop/genesis-local/soy_cloth_scene/cotton_material_validation.md",
+      "sha256": "7996106856a37a31fd065e0a4cb88cdda37a652189193449387edb1b61c9cc69"
+    }
+  },
+  "video_decode_validation": {
+    "tool": "ffmpeg",
+    "scope": "Decode entire final MP4 to null output",
+    "exit_code": 0,
+    "error_output": ""
+  }
+}

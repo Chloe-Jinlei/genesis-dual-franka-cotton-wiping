@@ -1,0 +1,84 @@
+{
+  "scope": "Two native execution segments, joined by an unchanged production checkpoint. Not one uninterrupted run. The run_01 suffix after frame19350 was abandoned following user interruption and is excluded.",
+  "run_chain": [
+    {
+      "run": "/home/chloe/Desktop/genesis-local/soy_cloth_scene/output/contact_first_full/run_01",
+      "start_frame": 0,
+      "consumed_through_frame": 19350,
+      "consumed_through_checkpoint": "/home/chloe/Desktop/genesis-local/soy_cloth_scene/output/contact_first_full/run_01/after_reposition_1.pkl",
+      "checkpoint_sha256": "1141dbee5d307316fefd021936e718b74073589948c06c451d0754b2afd91696",
+      "manifest_sha256": "63ef69e92b63599804e8a969e66d91e70e7979106f561da4a2f764395006d6da",
+      "config_sha256": "b68b90539ed075997d9d1f312758058ed26c8f57ba2c66ff2da21009bd127d0e"
+    },
+    {
+      "run": "/home/chloe/Desktop/genesis-local/soy_cloth_scene/output/contact_first_full/run_02",
+      "start_frame": 19350,
+      "manifest_sha256": "96fa80e0688f8d47659df927eba078025520175e278e9e8a723cd897ab552895",
+      "config_sha256": "b68b90539ed075997d9d1f312758058ed26c8f57ba2c66ff2da21009bd127d0e",
+      "final_checkpoint_status": "actual native terminal checkpoint available",
+      "final_checkpoint": "/home/chloe/Desktop/genesis-local/soy_cloth_scene/output/contact_first_full/run_02/after_complete_hold.pkl",
+      "final_checkpoint_sha256": "f5cd2b64abadf824884fef7f563750364cf1a78bee38cf2f3d3aa1b982f7c732",
+      "completed_lift_checkpoint": "/home/chloe/Desktop/genesis-local/soy_cloth_scene/output/contact_first_full/run_02/after_wet_lift.pkl",
+      "completed_lift_checkpoint_sha256": "5b3ed10b54ac1f0dc81f5157795a5f050ec1b2dcfae934f3f4712ef1ae71168c",
+      "final_frame": 45525,
+      "final_time_s": 91.05,
+      "production_task_end_time_s": 87.05
+    }
+  ],
+  "artifacts": {
+    "01_initial_cloth.npz": {
+      "path": "/home/chloe/Desktop/genesis-local/soy_cloth_scene/output/contact_first_full/run_01/01_initial_cloth.npz",
+      "sha256": "e3eded3c86001816806d65708a85f9aecea41d636bbcccd13aadd3c9ab58fdda",
+      "evidence": "Stage appears in the actual consumed checkpoint task_state.fabric_stages."
+    },
+    "03_grasped_cloth.npz": {
+      "path": "/home/chloe/Desktop/genesis-local/soy_cloth_scene/output/contact_first_full/run_01/03_grasped_cloth.npz",
+      "sha256": "66f8a0680ec831c040517cada33e9a5bf8197e134ce44bc1a978e9726b9a4172",
+      "evidence": "Stage appears in the actual consumed checkpoint task_state.fabric_stages."
+    },
+    "04_cloth_lifted_cloth.npz": {
+      "path": "/home/chloe/Desktop/genesis-local/soy_cloth_scene/output/contact_first_full/run_01/04_cloth_lifted_cloth.npz",
+      "sha256": "46712660fa793cfd7e45e2d08bb243c8a0ab0cf77b36068fab76b9ef74b83aad",
+      "evidence": "Stage appears in the actual consumed checkpoint task_state.fabric_stages."
+    },
+    "06_laid_over_soy_cloth.npz": {
+      "path": "/home/chloe/Desktop/genesis-local/soy_cloth_scene/output/contact_first_full/run_01/06_laid_over_soy_cloth.npz",
+      "sha256": "f4a00476fc88915fb0985a334e75eb50da491f5d2ebe5373b8822c5088b4bf4e",
+      "evidence": "Stage appears in the actual consumed checkpoint task_state.fabric_stages."
+    },
+    "08_reposition_1_laid_cloth.npz": {
+      "path": "/home/chloe/Desktop/genesis-local/soy_cloth_scene/output/contact_first_full/run_01/08_reposition_1_laid_cloth.npz",
+      "sha256": "83deb8a92e43547454055bd3cc23f023fcd4077ff02cca2d86f47ec4da5e067c",
+      "evidence": "Stage appears in the actual consumed checkpoint task_state.fabric_stages."
+    },
+    "after_dry_lift.pkl": {
+      "path": "/home/chloe/Desktop/genesis-local/soy_cloth_scene/output/contact_first_full/run_01/after_dry_lift.pkl",
+      "sha256": "0e8a62df62687b1db7af105983d21ff383f8c380f4681704d11bcb316b9db3ac",
+      "frame": 4625
+    },
+    "before_pressing.pkl": {
+      "path": "/home/chloe/Desktop/genesis-local/soy_cloth_scene/output/contact_first_full/run_01/before_pressing.pkl",
+      "sha256": "038ae4efb52b205174f04c651036ee09bd63069817f322a847f370351dd2360c",
+      "frame": 7700
+    },
+    "after_press_cycle_1.pkl": {
+      "path": "/home/chloe/Desktop/genesis-local/soy_cloth_scene/output/contact_first_full/run_01/after_press_cycle_1.pkl",
+      "sha256": "cfab5bb34fcee5054503233e81682358ad6eeec17c64ca7b26d82d7efe2f3b46",
+      "frame": 10775
+    },
+    "after_press_cycle_2.pkl": {
+      "path": "/home/chloe/Desktop/genesis-local/soy_cloth_scene/output/contact_first_full/run_01/after_press_cycle_2.pkl",
+      "sha256": "e4651a9ee467ec4bb03a6dbd108a70fbdfb99de9b04eedb89408a7d32fe9f137",
+      "frame": 13850
+    },
+    "after_reposition_1.pkl": {
+      "path": "/home/chloe/Desktop/genesis-local/soy_cloth_scene/output/contact_first_full/run_01/after_reposition_1.pkl",
+      "sha256": "1141dbee5d307316fefd021936e718b74073589948c06c451d0754b2afd91696",
+      "frame": 19350
+    }
+  },
+  "interruption_record": {
+    "path": "/home/chloe/Desktop/genesis-local/soy_cloth_scene/output/contact_first_full/interruption_record.json",
+    "sha256": "f8ccd50a7d49b682987c864d4795f37626a1995be7a04bed57f36aa5234d82bc"
+  }
+}

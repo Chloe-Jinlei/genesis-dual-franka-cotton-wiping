@@ -1,0 +1,29 @@
+{
+  "scope": "Record a fresh native wiping task or a same-physics checkpoint continuation.\n\nUses the production task/continuation methods without changing control or physics.\nOptional post-completion hold is separately labelled and checkpointed at its\nown time. A continuation is explicitly labelled; no particle edits or threshold overrides.\n",
+  "fresh_uninterrupted_run": false,
+  "resumed_from": "/home/chloe/Desktop/genesis-local/soy_cloth_scene/output/contact_first_full/run_01/after_reposition_1.pkl",
+  "start_frame": 19350,
+  "resume_stage": "pressing",
+  "final_frame": 45525,
+  "production_task_completed": true,
+  "production_task_end_time_s": 87.05,
+  "additional_hold_s": 4.0,
+  "additional_hold_completed": true,
+  "final_time_s": 91.05,
+  "failure": null,
+  "cleanup_or_report_errors": [],
+  "trace_outer_step_stride": 1,
+  "trace_rows": 26268,
+  "pad_support_sample_stride_s": 0.1,
+  "pad_support_rows": 187,
+  "raw_report_written": true,
+  "raw_task_passed": true,
+  "raw_all_checks_passed": false,
+  "independent_contact_and_material_acceptance": "Not asserted; audit saved states separately.",
+  "video_dimensions": [
+    1280,
+    900
+  ],
+  "video_first_frame_time_s": 38.742,
+  "video_frame_stride": 33
+}

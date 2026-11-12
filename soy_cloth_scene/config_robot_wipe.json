@@ -1,0 +1,244 @@
+{
+  "seed": 17,
+  "simulation": {
+    "dt": 0.002,
+    "substeps": 20,
+    "settle_steps": 250,
+    "stretch_iterations": 10,
+    "bending_iterations": 4,
+    "viewer_refresh_rate": 15,
+    "precision": "64",
+    "cloth_maximum_world_z_m": 1.25
+  },
+  "table": {
+    "size": [
+      1.6,
+      1.0,
+      0.06
+    ],
+    "height": 0.76
+  },
+  "robots": {
+    "left_base": [
+      -0.57,
+      0.22,
+      0.78
+    ],
+    "right_base": [
+      0.57,
+      0.22,
+      0.78
+    ],
+    "left_yaw": -0.65,
+    "right_yaw": 3.791592653589793,
+    "home": [
+      0.0,
+      -0.45,
+      0.0,
+      -2.15,
+      0.0,
+      1.7,
+      0.785398
+    ],
+    "finger_opening": 0.01,
+    "finger_position_gain": 2000,
+    "finger_velocity_gain": 40
+  },
+  "cloth": {
+    "position_xy": [
+      0,
+      -0.23
+    ],
+    "initial_clearance": 0.006,
+    "particle_size": 0.003,
+    "areal_density": 0.18,
+    "stretch_compliance": 1e-07,
+    "friction": 0.6,
+    "material_description": "plush_cotton PDF reference: 180 g/m2 planar woven-cotton approximation with directional finite-extension limits and physical dihedral bending; not experimentally calibrated.",
+    "collision_radius_m": 0.00075,
+    "air_density_kg_m3": 1.225,
+    "air_drag_coefficient": 1.0,
+    "material_profile": "plush_cotton_pdf",
+    "stretch_relaxation": 0.3,
+    "bending_rigidity_nm": 5e-05,
+    "bending_relaxation": 0.5,
+    "warp_max_extension": 0.02,
+    "weft_max_extension": 0.02,
+    "bias_max_extension": 0.1,
+    "strain_limit_iterations": 24,
+    "internal_damping_per_s": 4.0,
+    "linear_drag_per_s": 1.0,
+    "kinetic_friction": 0.45,
+    "physical_mesh": "material_aligned_grid",
+    "size_m": [
+      0.28,
+      0.18
+    ],
+    "material_source_pdf": "/home/chloe/Desktop/\u718a\u4e0e\u68c9\u5e03_\u7269\u7406\u53c2\u6570\u8bbe\u7f6e_plush_cotton.pdf",
+    "preserve_integrated_velocity": true,
+    "internal_damping_model": "rigid_motion_residual",
+    "bending_damping_ratio": 0.5
+  },
+  "soy": {
+    "position_xy": [
+      0,
+      0.04
+    ],
+    "initial_clearance": 0.001,
+    "depth_scale": 1.0,
+    "particle_size": 0.002,
+    "density": 1100.0,
+    "viscosity": 0.001,
+    "surface_tension": 2e-05,
+    "pressure_solver": "WCSPH",
+    "color": [
+      0.095,
+      0.022,
+      0.006,
+      1.0
+    ],
+    "xy_scale": [
+      0.5,
+      0.6
+    ]
+  },
+  "coupling": {
+    "enabled": true,
+    "capacity_kg_m2": 1.08,
+    "absorption_flux_kg_m2_s": 1.0,
+    "minimum_contact_time_s": 0.035,
+    "drag_rate_s": 25.0,
+    "collision_distance_m": 0.0015,
+    "absorption_gap_m": 0.0035,
+    "wicking": {
+      "enabled": true,
+      "diffusivity_m2_s": 5e-06,
+      "maximum_material_step_m": 0.0002,
+      "maximum_neighbor_hop_m": 0.003
+    }
+  },
+  "cameras": {
+    "overview": {
+      "position": [
+        1.35,
+        -1.8,
+        1.8
+      ],
+      "target": [
+        0,
+        -0.02,
+        1.0
+      ],
+      "fov": 46
+    },
+    "detail": {
+      "position": [
+        0.4,
+        -0.9,
+        1.35
+      ],
+      "target": [
+        0,
+        -0.06,
+        0.83
+      ],
+      "fov": 40
+    },
+    "top": {
+      "position": [
+        0.0,
+        -0.04,
+        2.65
+      ],
+      "target": [
+        0.0,
+        0.0,
+        0.76
+      ],
+      "fov": 42
+    }
+  },
+  "profile_notes": {
+    "purpose": "PDF-referenced woven cotton with diagonal grasping and conservative local soy absorption.",
+    "puddle_initial_xy_extent_m": [
+      0.1,
+      0.084
+    ],
+    "puddle_mesh_max_thickness_m": 0.002,
+    "cloth_dry_areal_mass_kg_m2": 0.18,
+    "liquid_capacity_per_dry_mass_kg_kg": 6.0,
+    "capacity_is_finite": true,
+    "requires_xy_scale_support_in_scene": true,
+    "absorption_parameters_source": "Independent uncalibrated 6 g/g assumption; the provided PDF contains no absorption measurements.",
+    "numerical_deviations_from_pdf": "Keep existing SPH-stable 100 us substeps and 1.5 mm cloth collision diameter; these are numerical settings, not fabric thickness."
+  },
+  "robot_task": {
+    "enabled": true,
+    "pinch_tcp_z_m": 0.7704,
+    "maximum_press_cycles": 14,
+    "final_pinch_tcp_z_m": 0.7704,
+    "grasp_offsets_xy_m": {
+      "left": [
+        -0.13,
+        0.08
+      ],
+      "right": [
+        0.13,
+        -0.08
+      ]
+    },
+    "pregrasp_finger_opening_m": 0.01,
+    "material_patch_radius_m": 0.022,
+    "maximum_fixed_pair_extension": 0.02,
+    "minimum_bound_per_finger": 1,
+    "wipe_translation_xy_m": [
+      0.0,
+      -0.03
+    ],
+    "wet_grasp_finger_position_gain": 2000,
+    "wet_grasp_finger_velocity_gain": 40,
+    "wet_grasp_hold_position_gain": 10000,
+    "wet_grasp_hold_velocity_gain": 100,
+    "wet_pregrasp_finger_opening_m": 0.01,
+    "wet_lift_duration_s": 3.5,
+    "wet_lift_settle_s": 1.0,
+    "wet_grasp_feedback_closure": true,
+    "dry_grasp_feedback_closure": true,
+    "wipe_endpoint_hold_s": 0.75,
+    "cloth_reposition_schedule": [
+      {
+        "after_cycle": 2,
+        "center_offset_xy_m": [
+          -0.06,
+          -0.045
+        ],
+        "wipe_translation_xy_m": [
+          0.0,
+          0.01
+        ]
+      },
+      {
+        "after_cycle": 3,
+        "center_offset_xy_m": [
+          -0.06,
+          0.0
+        ],
+        "wipe_translation_xy_m": [
+          0.0,
+          0.03
+        ]
+      }
+    ],
+    "wet_grasp_track_layout_from_cycle": 3,
+    "wipe_stroke_schedule": [
+      {
+        "after_cycle": 7,
+        "translation_xy_m": [
+          0.0,
+          0.045
+        ]
+      }
+    ],
+    "contact_first_grasp": true
+  }
+}

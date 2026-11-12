@@ -1,0 +1,12 @@
+.venv/
+.cache/
+__pycache__/
+*.py[cod]
+*.nbc
+*.nbi
+.pytest_cache/
+.DS_Store
+*.tar.gz
+*.zip
+soy_cloth_scene/output/
+# Five small historical CPU-test fixtures under output/ are explicitly tracked.

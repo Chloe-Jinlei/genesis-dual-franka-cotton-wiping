@@ -1,0 +1,14 @@
+{
+  "reason": "User interrupted active turn; native process no longer present. No final summary was emitted. User then requested continuation.",
+  "original_run": "run_01",
+  "last_logged_simulated_time_s": 41.0,
+  "raw_video_frames": 624,
+  "raw_video_last_global_simulated_time_s": 41.184,
+  "adopted_complete_checkpoint": "run_01/after_reposition_1.pkl",
+  "checkpoint_time_s": 38.7,
+  "checkpoint_sha256": "1141dbee5d307316fefd021936e718b74073589948c06c451d0754b2afd91696",
+  "discarded_partial_cycle_branch_after_s": 38.7,
+  "continuation_output": "run_02",
+  "production_control_physics_or_config_changes": false,
+  "wrapper_change": "Add normal same-physics checkpoint restoration and restored native array evidence."
+}
